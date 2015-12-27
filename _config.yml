@@ -4,8 +4,7 @@ email:              imanol.schlag@gmail.com
 
 links:
   - name:         Blog
-    url:          http://ischlag.github.io
-    external:     true
+    url:          /
   - name:         About
     url:          /about
   - name:         GitHub
