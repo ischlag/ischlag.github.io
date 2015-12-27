@@ -1,20 +1,25 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title:              Imanol Schlag
+email:              imanol.schlag@gmail.com
+
+links:
+  - name:         Blog
+    url:          http://ischlag.github.io
+    external:     true
+  - name:         About
+    url:          /about
+  - name:         GitHub
+    url:          http://github.com/ischlag
+    external:     true
 
 # Build settings
-markdown: kramdown
+highlighter:        pygments
+markdown:           kramdown
 kramdown:
   # The following is untested, suppossed to work once Github gets Kramdown 1.6...
   # (current visible at https://pages.github.com/versions)
-  math_engine: mathjax  # default in Kramdown
-  math_engine_opts:
-    preview: true   # not default but better acessibility
+  math_engine:      mathjax  # default in Kramdown
+  math_engine_opts: preview: true   # not default but better acessibility
+redcarpet:
+  extensions:
+    - smart
