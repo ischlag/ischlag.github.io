@@ -20,6 +20,15 @@ print_hi('Tom')
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
+Delimiters [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
+
+inline $$ \frac{kram}{down} \sum_0^\infty $$ text.
+
+$$ \frac{kram}{down} \sum_0^\infty $$
+
+The second is display math because it occurs alone in a block.
+
+
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-help]: https://github.com/jekyll/jekyll-help
