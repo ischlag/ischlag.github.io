@@ -4,7 +4,7 @@ title:  "Welcome to Jekyll!"
 date:   2015-12-27 15:42:13
 categories: jekyll update
 ---
-Delimiters [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
+Delimiters2 [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
 
 inline $$ \frac{kram}{down} \sum_0^\infty $$ text.
 
