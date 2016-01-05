@@ -80,7 +80,7 @@ header {
 
 footer {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   line-height: 2em;
   margin: auto;
   padding-bottom: 30px;
@@ -94,7 +94,7 @@ footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background: #fff;
   margin: 40px auto 20px;
   border-radius: 7px;
@@ -239,7 +239,7 @@ ul.posts .datetime {
 
 section.post {
   margin: 0 -60px;
-  text-align: left;
+  text-align: justify;
   border-top: 0;
   padding: 0; }
   section.post > * {
@@ -357,6 +357,6 @@ img {
   left: 50%;
   font-size: 60px; }
 .paging .left {
-  margin-left: -340px; }
+  margin-left: -390px; }
 .paging .right {
-  margin-left: 320px; }
+  margin-left: 370px; }
