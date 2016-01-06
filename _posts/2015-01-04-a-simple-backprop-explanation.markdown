@@ -15,7 +15,7 @@ You probably know this function. It is very simple. However, we are not yet able
 
 ##The Cost Function##
 
-Let's now try to change the weights of our function with respect to some data. Lets ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example we are going to work with the two data points $$A$$ and $$B$$ and we start of with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ and our prediction vector $$y$$.
+Let's now try to change the weights of our function with respect to some data. Let's ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example, we are going to work with the two data points $$A$$ and $$B$$ and we start of with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ and our prediction vector $$y$$.
 
 $$
 x = \begin{pmatrix} A_x \\ B_x \end{pmatrix}
@@ -46,7 +46,7 @@ So far so good. As you now know, our goal is to find a set of values for our wei
 
 ## Gradient Descent##
 
-Gradient descent is a very simple but powerful algorithm to find the local minimum of a function. It is an iterative algorithm. With every step it uses the sign of the first derivative (the slope) to evaluate if it should go left or right.
+Gradient descent is a very simple but powerful algorithm to find the local minimum of a function. It is an iterative algorithm. With every step, it uses the sign of the first derivative (the slope) to evaluate if it should go left or right.
 
 <div>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2374191/width/478/height/259/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="478px" height="259px" style="border:0px;"> </iframe>
@@ -56,7 +56,7 @@ The derivative notation for a function like $$ g(x) = x^2 $$ with respect to $$x
 
 $$ \frac{\partial g(x)}{\partial x} = 2x $$
 
-Lets now define the derivative of our cost function as $$\nabla C$$
+Let's now define the derivative of our cost function as $$\nabla C$$
 
 $$ \nabla C = \frac{\partial C(m)}{\partial m} $$
 
@@ -128,11 +128,11 @@ $$ \frac{\partial C(m)}{\partial m} =
 \sum_{i} \Vert f(x^{(i)}) - \hat{y}^{(i)} \Vert * x
 $$
 
-Congratulations! You have successfully trained a linear function. Training a neural network is not much different. But first, lets have a look at the last piece of the puzzle.
+Congratulations! You have successfully trained a linear function. Training a neural network is not much different. But first, let's have a look at the last piece of the puzzle.
 
-##Multi Variable Derivative##
+##Multi-Variable Derivative##
 
-Do you still remember our $$c$$ we had earlier? Well, lets now include $$c$$ as our second weight. Now we have a small problem. We can only find derivatives with respect to a single variable. If we want to find the derivative of two or more variables we need to find the total derivative. Lets look at an example where we have $$f(x,y) = 2x^2y^3$$
+Do you still remember our $$c$$ we had earlier? Well, let's now include $$c$$ as our second weight. Now we have a small problem. We can only find derivatives with respect to a single variable. If we want to find the derivative of two or more variables we need to find the total derivative. Let's look at an example where we have $$f(x,y) = 2x^2y^3$$
 
 $$ df(x,y) = \frac{\partial f(x,y)}{\partial x} dx + \frac{\partial f(x,y)}{\partial y} dy $$
 
@@ -160,13 +160,13 @@ $$ c = c + \Delta c $$
 
 ##Neural Networks##
 
-You already know all the basics to train a neural network. Lets now try to apply what we have done so far to train a multi-layer perceptron neural network. Lets try to calculate the cost for a set of data. The cost is a feedforward pass through our random initialized neural network with a quadratic error at the end.
+You already know all the basics to train a neural network. Let's now try to apply what we have done so far to train a multi-layer perceptron neural network. Let's try to calculate the cost for a set of data. The cost is a feedforward pass through our random initialized neural network with a quadratic error at the end.
 
-In this example we are using 2 input neurons, 3 hidden neurons and 1 output neuron. The activation function depicted as $$\sigma()$$ and the neuron we use is the classical with a bias added at the end.
+In this example, we are using 2 input neurons, 3 hidden neurons, and 1 output neuron. The activation function depicted as $$\sigma()$$ and the neuron we use is the classical model with a bias added at the end.
 
 $$ a^{(l+1)}=\sigma(a^{(l)}W^{(l)} + b^{(l)})$$
 
-Always keep track of the dimensions! I have added the dimensionality as subscript. Lets stepwise calculate the cost. If you know how a feedforward neural network works this should be pretty clear to you.
+Always keep track of the dimensions! I have added the dimensionality as the subscript. Let's stepwise calculate the cost. If you know how a feedforward neural network works this should be pretty clear to you.
 
 $$ a^{(1)}_{1x2} = x = \begin{pmatrix} A_x , B_x \end{pmatrix} $$
 
@@ -182,11 +182,11 @@ $$ s_{1x1} = a^{(3)}_{1x1} - \hat{y} $$
 
 $$ C(W,b) = \frac{1}{2}s^2_{1x1} $$
 
-If we now resubstitute all those lines we get one big equation for $$C(W,b)$$. Our goal now is to find the derivative of that equation with respect to every weight $$W$$ and bias $$b$$. Lets look how this would turn out. As we did before, we are now using the chain rule over and over. We begin with the derivative for $$W^{(1)}$$. $$W^{(1)}$$ is of course a matrix so our derivative will also produce a matrix with the derivative of every weight as an element.
+If we now resubstitute all those lines we get one big equation for $$C(W,b)$$. Our goal now is to find the derivative of that equation with respect to every weight $$W$$ and bias $$b$$. Let's look how this would turn out. As we did before, we are now using the chain rule over and over. We begin with the derivative for $$W^{(1)}$$. $$W^{(1)}$$ is of course a matrix so our derivative will also produce a matrix with the derivative of every weight as an element.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} = \frac{\partial \frac{1}{2}s^2_{1x1}}{\partial W^{(1)}}$$
 
-Lets apply the chain rule and replace $$s_{1x1}$$ with the definition we had in our forward pass.
+Let's apply the chain rule and replace $$s_{1x1}$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
@@ -195,7 +195,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial a^{(3)}_{1x1} - \hat{y}}{\partial W^{(1)}}
 $$
 
-Lets apply the chain rule and replace $$a^{(3)}_{1x1}$$ with the definition we had in our forward pass.
+Let's apply the chain rule and replace $$a^{(3)}_{1x1}$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
@@ -203,7 +203,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial \sigma(z^{(3)}_{1x1})}{\partial W^{(1)}}
 $$
 
-Lets apply the chain rule and replace $$\sigma(z^{(3)}_{1x1})$$ with the definition we had in our forward pass.
+Let's apply the chain rule and replace $$\sigma(z^{(3)}_{1x1})$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
@@ -212,7 +212,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x1} + b^{(1)}_{1x1}}{\partial W^{(1)}}
 $$
 
-Lets apply the chain rule and replace $$a^{(2)}_{1x3}$$ with the definition we had in our forward pass.
+Let's apply the chain rule and replace $$a^{(2)}_{1x3}$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
@@ -222,7 +222,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial \sigma(z^{(2)}_{1x3})}{\partial W^{(1)}}
 $$
 
-Lets apply the chain rule and replace $$\sigma(z^{(2)}_{1x3})$$ with the definition we had in our forward pass.
+Let's apply the chain rule and replace $$\sigma(z^{(2)}_{1x3})$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} = $$
 
@@ -235,7 +235,7 @@ $$
 \frac{\partial a^{(1)}_{1x2} * W^{(1)}_{2x3} + b^{(1)}_{1x3}}{\partial W^{(1)}_{2x3}}
 $$
 
-Finally! We have reached a term where we can now derive $$W^{(1)}$$. Lets now simplify this a little bit.
+Finally! We have reached a term where we can now derive $$W^{(1)}$$. Let's now simplify this a little bit.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} = $$
 
@@ -243,7 +243,7 @@ $$
 (s_{1x1}) (1) (\sigma'(z^{(3)}_{1x1})) (W^{(2)}_{3x1})^T (\sigma'(z^{(2)}_{1x3})) (a^{(1)}_{1x2})
 $$
 
-Lets resubstitute the last variable we have with known numbers.
+Let's resubstitute the last variable we have with known numbers.
 
 $$
 (a^{(3)}_{1x1} - \hat{y}) (1) (\sigma'(z^{(3)}_{1x1})) (W^{(2)}_{3x1})^T (\sigma'(z^{(2)}_{1x3})) (a^{(1)}_{1x2})
@@ -251,7 +251,7 @@ $$
 
 Now our equation only consists of things we know and we are able to calculate the derivative.
 
-Lets now quickly have a look at $$\frac{\partial C(W,b)}{\partial W^{(2)}}$$. This is the derivative of our cost function with respect to the weights of our last layer. If you follow the steps we just did we can stop using the chain rule much sooner and end up with the equation we also had above.
+Let's now quickly have a look at $$\frac{\partial C(W,b)}{\partial W^{(2)}}$$. This is the derivative of our cost function with respect to the weights of our last layer. If you follow the steps we just did we can stop using the chain rule much sooner and end up with the equation we also had above.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(2)}} =
 \frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
@@ -292,7 +292,7 @@ $$ \Delta b^{(l)} = -\frac{\eta}{k}\sum^k_i \frac{\partial C(W,b)}{\partial b^{(
 
 Now we only need to add those to our current values for $$W^{(l)}$$ and $$b^{(l)}$$ and check if we should stop or continue with another batch.
 
-If you are more comfortable with code you can look up my implementation of this in Julia [here][2].
+If you are more comfortable with source code you can look up my implementation of this in Julia [here][2].
 
 Some useful resources:
 
