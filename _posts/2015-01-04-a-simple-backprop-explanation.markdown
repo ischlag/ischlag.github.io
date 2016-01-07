@@ -285,7 +285,7 @@ $$ \delta^{(L)} = (a^{(L)} - \hat{y}) \circ \sigma'(z^{(L)}) $$
 
 $$ \delta^{(l)} = \delta^{(l+1)} * (W^{(l)})^T \circ \sigma'(z^{(l)}) $$
 
-And this is essentially why it is called backpropagation. We propagate the error $$\delta$$ from the ouput layer back through the network until we reach the first layer. This is a little hard to grasp but as you can see $$\delta$$ nothing else then a part of our cost derivative which we can reuse when calculating other derivatives. We can now finish our training by summing up all the gradients over all the data $$k$$ in our batch.
+And this is essentially why it is called backpropagation. We propagate the error $$\delta$$ from the ouput layer back through the network until we reach the first layer. This is a little hard to grasp but as you can see $$\delta$$ is nothing else then a part of our cost derivative which we can reuse when calculating other derivatives. We can now finish our training by summing up all the gradients over all the data $$k$$ in our batch.
 
 $$ \Delta W^{(l)} = -\frac{\eta}{k}\sum^k_i \frac{\partial C(W,b)}{\partial W^{(l)}} $$
 
