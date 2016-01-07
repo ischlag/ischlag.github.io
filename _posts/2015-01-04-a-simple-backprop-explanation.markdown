@@ -42,7 +42,7 @@ The following figure is a visualization of our current state. The left side show
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2373641/width/578/height/250/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="578px" height="250px" style="border:0px;"> </iframe>
 </div>
 
-So far so good. As you now know, our goal is to find a set of values for our weights so that their error is as small as possible. One way to do this is if we just go through all possible values for $$x$$ and then choose the one with the lowest error value. But this approach is expensive. It requires too much processing power and is therefore not feasible. But we have now encountered an optimization problem. We might as well use a well-known algorithm to solve such optimization problems. The one we are going to look at is called _Gradient Descent_.
+So far so good. As you now know, our goal is to find a set of values for our weights so that their error is as small as possible. One way to do this is to go through all possible values for $$x$$ and then choose the one with the lowest error value. But this approach is expensive. It requires too much processing power and is therefore not feasible. But we have now encountered an optimization problem. We might as well use a well-known algorithm to solve such optimization problems. The one we are going to look at is called _Gradient Descent_.
 
 ## Gradient Descent##
 
@@ -106,7 +106,7 @@ $$ \frac{\partial C(m)}{\partial m} =
 \frac{\partial f(x^{(i)})}{\partial m}
 $$
 
-And finally we substitute $$f(x)$$ with the derivative of our linear function which gives us the $$m$$ we were looking for.
+And finally we substitute $$f(x)$$ with our linear function which gives us the $$m$$ we were looking for.
 
 $$ \frac{\partial C(m)}{\partial m} =
 \sum_{i} \frac{\partial \frac{1}{2} s^2}{\partial s}
@@ -122,7 +122,7 @@ $$ \frac{\partial C(m)}{\partial m} =
 x
 $$
 
-Which is ...
+Which then becomes:
 
 $$ \frac{\partial C(m)}{\partial m} =
 \sum_{i} \Vert f(x^{(i)}) - \hat{y}^{(i)} \Vert * x
@@ -285,7 +285,7 @@ $$ \delta^{(L)} = (a^{(L)} - \hat{y}) \circ \sigma'(z^{(L)}) $$
 
 $$ \delta^{(l)} = \delta^{(l+1)} * (W^{(l)})^T \circ \sigma'(z^{(l)}) $$
 
-And this is essentially why it is called backpropagation. We propagate the error $$\delta$$ from the ouput layer back through the network until we reach the first layer. We can now finish our training by summing up all the gradients over all the data in our batch.
+And this is essentially why it is called backpropagation. We propagate the error $$\delta$$ from the ouput layer back through the network until we reach the first layer. This is a little hard to grasp but as you can see $$\delta$$ nothing else then a part of our cost derivative which we can reuse when calculating other derivatives. We can now finish our training by summing up all the gradients over all the data $$k$$ in our batch.
 
 $$ \Delta W^{(l)} = -\frac{\eta}{k}\sum^k_i \frac{\partial C(W,b)}{\partial W^{(l)}} $$
 
