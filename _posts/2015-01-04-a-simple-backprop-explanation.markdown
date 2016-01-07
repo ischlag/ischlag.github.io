@@ -297,10 +297,12 @@ If you are more comfortable with source code you can look up my implementation o
 
 Some useful resources:
 
-  - [Neural Networks and Deep Learning][3]
+  - [Neural Networks and Deep Learning, Michael Nielsen][3]
+  - [Machine Learning, Stanford University, Andrew Ng][5]
   - [Backpropagation Algorithm][4]
 
 [1]: https://en.wikipedia.org/wiki/Multilayer_perceptron
 [2]: https://github.com/ischlag/Julia-Machine-Learning/blob/master/Neural%20Network/BackpropNeuralNetwork.jl
 [3]: http://neuralnetworksanddeeplearning.com/chap1.html
 [4]: http://deeplearning.stanford.edu/wiki/index.php/Backpropagation_Algorithm
+[5]: https://www.coursera.org/learn/machine-learning
