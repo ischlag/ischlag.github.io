@@ -15,7 +15,7 @@ You probably know this function. It is very simple. However, we are not yet able
 
 ##The Cost Function##
 
-Let's now try to change the weights of our function with respect to some data. Let's ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example, we are going to work with the two data points $$A$$ and $$B$$ and we start of with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ and our prediction vector $$y$$.
+Let's now try to change the weights of our function with respect to some data. Let's ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example, we are going to work with the two data points $$A$$ and $$B$$ and we start of with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ (the clue) and our prediction vector $$y$$.
 
 $$
 x = \begin{pmatrix} A_x \\ B_x \end{pmatrix}
@@ -26,15 +26,15 @@ $$ y = f(x) = \begin{pmatrix} f(A_x) \\ f(B_x) \end{pmatrix} $$
 $$ \hat{y} = \begin{pmatrix} A_y \\ B_y \end{pmatrix} $$
 
 The _cost_ of our function $$f$$ is now the difference between our prediction $$y$$ and our desired prediction $$\hat{y}$$. We denote this with the cost-function $$C(m)$$. A first and straight forward way to calculate the cost would be the absolute value of its difference.
-The next equation shows the cost calculation for data point $$A$$. The following equation is the cost over all data points.
+The next equation shows the cost calculation for data point $$A$$ and the following equation is the cost over all data points.
 
 $$C_{linear,A}(m) = \Vert f(A_x) - A_y \Vert  $$
 
 $$C_{linear}(m) = \sum_{i} \Vert y^{(i)} - \hat{y}^{(i)} \Vert  $$
 
-However, if we use the quadratic distance function or the sometimes known as the _squared error_ we see that $$C$$ is never negative and it continues to decrease in a steady way. The fraction in front of it is just to make it simpler to take the derivative which we will in the next section.
+However, if we use the quadratic distance function or the sometimes known as the _squared error_ we see that $$C$$ is never negative and it continues to decrease in a steady way. The $$\frac{1}{2}$$ fraction which we put in front is just to make it simpler to take the derivative which we will do later.
 
-$$C_{quadratic}(m) = \frac{1}{2}\sum_{i} \Vert y^{(i)} - \hat{y}^{(i)} \Vert^2  $$
+$$C(m) = \frac{1}{2}\sum_{i} \Vert y^{(i)} - \hat{y}^{(i)} \Vert^2  $$
 
 The following figure is a visualization of our current state. The left side shows our current function and the error values $$ Error_A $$ and $$ Error_B $$. The right side shows how the error changes with respect to $$m$$. You can play around with it by moving the slider for $$m$$. I have added both cost functions so you can see the difference.
 
@@ -68,7 +68,7 @@ Finally we add our $$\Delta m$$ - our weight adjustment - to our current weight 
 
 $$ m = m + \Delta m $$
 
-We repeat this process until we have reached a maximum number of iterations or until the gradient has approached 0. This would mean that we have reached a minimum in our function. We now have a good configuration of our weight $$m$$. The network is now trained.
+We repeat this process until we have reached a maximum number of iterations or until the gradient has approached 0. This would mean that we have reached a minimum in our function. We probably have now a good configuration of our weight $$m$$. The network is now trained.
 
 ##Calculating The Derivative##
 
@@ -132,11 +132,11 @@ Congratulations! You have successfully trained a linear function. Training a neu
 
 ##Multi-Variable Derivative##
 
-Do you still remember our $$c$$ we had earlier? Well, let's now include $$c$$ as our second weight. Now we have a small problem. We can only find derivatives with respect to a single variable. If we want to find the derivative of two or more variables we need to find the total derivative. Let's look at an example where we have $$f(x,y) = 2x^2y^3$$
+Do you still remember our $$c$$ we had earlier? Well, let's now include $$c$$ as our second weight. Now we have a small problem. We can only find derivatives with respect to a single variable. If we want to find the derivative of two or more variables we need to find the total derivative. Let's look at an example where we have $$f(x,y) = 2x^2y^3$$. Calculus tells us the following about the total derivative of a two-variable function.
 
 $$ df(x,y) = \frac{\partial f(x,y)}{\partial x} dx + \frac{\partial f(x,y)}{\partial y} dy $$
 
-So we basically calculate the partial derivatives with respect to every variable and add them together.
+So we basically calculate the partial derivatives with respect to every variable on its own.
 
 $$ \frac{\partial f(x,y)}{\partial x} dx = 4xy^3 $$
 
@@ -158,67 +158,69 @@ $$ m = m + \Delta m $$
 
 $$ c = c + \Delta c $$
 
+The same thing is done considering more variables. Now we know everything to apply the same thing to an untrained neural network.
+
 ##Neural Networks##
 
-You already know all the basics to train a neural network. Let's now try to apply what we have done so far to train a multi-layer perceptron neural network. Let's try to calculate the cost for a set of data. The cost is a feedforward pass through our random initialized neural network with a quadratic error at the end.
+You already know all the basics to train a neural network. Forget the example we have been looking at so far. Let's now try to apply what we have learned to train a multi-layer perceptron neural network. We are going to calculate the cost for an arbitrary set of data. The cost is a feedforward pass through our random initialized neural network with a quadratic error at the end.
 
-In this example, we are using 2 input neurons, 3 hidden neurons, and 1 output neuron. The activation function depicted as $$\sigma()$$ and the neuron we use is the classical model with a bias added at the end.
+In this example, we are using 2 input neurons, 3 hidden neurons, and 2 output neurons. The activation function depicted as $$\sigma()$$ and the neuron we use is the classical model with a bias added at the end.
 
 $$ a^{(l+1)}=\sigma(a^{(l)}W^{(l)} + b^{(l)})$$
 
 Always keep track of the dimensions! I have added the dimensionality as the subscript. Let's stepwise calculate the cost. If you know how a feedforward neural network works this should be pretty clear to you.
 
-$$ a^{(1)}_{1x2} = x = \begin{pmatrix} A_x , B_x \end{pmatrix} $$
+$$ a^{(1)}_{1x2} = x = \begin{pmatrix} x_1 , x_2 \end{pmatrix} $$
 
 $$ z^{(2)}_{1x3} = a^{(1)}_{1x2} * W^{(1)}_{2x3} + b^{(1)}_{1x3} $$
 
 $$ a^{(2)}_{1x3} = \sigma(z^{(2)}_{1x3}) $$
 
-$$ z^{(3)}_{1x1} = a^{(2)}_{1x3} * W^{(2)}_{3x1} + b^{(1)}_{1x1} $$
+$$ z^{(3)}_{1x2} = a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2} $$
 
-$$ a^{(3)}_{1x1} = \sigma(z^{(3)}_{1x1}) $$
+$$ a^{(3)}_{1x2} = \sigma(z^{(3)}_{1x2}) $$
 
-$$ s_{1x1} = a^{(3)}_{1x1} - \hat{y} $$
+$$ s_{1x2} = a^{(3)}_{1x2} - \hat{y} $$
 
-$$ C(W,b) = \frac{1}{2}s^2_{1x1} $$
+$$ C(W,b) = \frac{1}{2}s^2_{1x2} $$
 
-If we now resubstitute all those lines we get one big equation for $$C(W,b)$$. Our goal now is to find the derivative of that equation with respect to every weight $$W$$ and bias $$b$$. Let's look how this would turn out. As we did before, we are now using the chain rule over and over. We begin with the derivative for $$W^{(1)}$$. $$W^{(1)}$$ is of course a matrix so our derivative will also produce a matrix with the derivative of every weight as an element.
+If we now resubstitute all those lines we get one big equation for $$C(W,b)$$. Our goal now is to find the derivative of that equation with respect to every weight $$W$$ and bias $$b$$. Let's look how this would turn out. As we did before, we are now using the chain rule over and over. We begin with the derivative for $$W^{(1)}$$ which is of course a matrix. So at the end, our derivative will also produce a matrix with the derivative of every weight as an element.
 
-$$ \frac{\partial C(W,b)}{\partial W^{(1)}} = \frac{\partial \frac{1}{2}s^2_{1x1}}{\partial W^{(1)}}$$
+$$ \frac{\partial C(W,b)}{\partial W^{(1)}} = \frac{\partial \frac{1}{2}s^2_{1x2}}{\partial W^{(1)}}$$
 
-Let's apply the chain rule and replace $$s_{1x1}$$ with the definition we had in our forward pass.
+Let's apply the chain rule and replace $$s_{1x2}$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
-\frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
-\frac{\partial s_{1x1}}{\partial W^{(1)}} =
-\frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
-\frac{\partial a^{(3)}_{1x1} - \hat{y}}{\partial W^{(1)}}
+\frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
+\frac{\partial s_{1x2}}{\partial W^{(1)}} =
+\frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
+\frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial W^{(1)}}
 $$
 
-Let's apply the chain rule and replace $$a^{(3)}_{1x1}$$ with the definition we had in our forward pass.
+Let's apply the chain rule and replace $$a^{(3)}_{1x2}$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
-\frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
-\frac{\partial a^{(3)}_{1x1} - \hat{y}}{\partial a^{(3)}_{1x1}}
-\frac{\partial \sigma(z^{(3)}_{1x1})}{\partial W^{(1)}}
+\frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
+\frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
+\frac{\partial \sigma(z^{(3)}_{1x2})}{\partial W^{(1)}}
 $$
 
-Let's apply the chain rule and replace $$\sigma(z^{(3)}_{1x1})$$ with the definition we had in our forward pass.
+Let's apply the chain rule and replace $$\sigma(z^{(3)}_{1x2})$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
-\frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
-\frac{\partial a^{(3)}_{1x1} - \hat{y}}{\partial a^{(3)}_{1x1}}
-\frac{\partial \sigma(z^{(3)}_{1x1})}{\partial z^{(3)}_{1x1}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x1} + b^{(1)}_{1x1}}{\partial W^{(1)}}
+\frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
+\frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
+\frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2}}{\partial W^{(1)}}
 $$
 
 Let's apply the chain rule and replace $$a^{(2)}_{1x3}$$ with the definition we had in our forward pass.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
-\frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
-\frac{\partial a^{(3)}_{1x1} - \hat{y}}{\partial a^{(3)}_{1x1}}
-\frac{\partial \sigma(z^{(3)}_{1x1})}{\partial z^{(3)}_{1x1}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x1} + b^{(1)}_{1x1}}{\partial a^{(2)}_{1x3}}
+\frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
+\frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
+\frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2}}{\partial a^{(2)}_{1x3}}
 \frac{\partial \sigma(z^{(2)}_{1x3})}{\partial W^{(1)}}
 $$
 
@@ -227,56 +229,55 @@ Let's apply the chain rule and replace $$\sigma(z^{(2)}_{1x3})$$ with the defini
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} = $$
 
 $$
-\frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
-\frac{\partial a^{(3)}_{1x1} - \hat{y}}{\partial a^{(3)}_{1x1}}
-\frac{\partial \sigma(z^{(3)}_{1x1})}{\partial z^{(3)}_{1x1}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x1} + b^{(1)}_{1x1}}{\partial a^{(2)}_{1x3}}
+\frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
+\frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
+\frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2}}{\partial a^{(2)}_{1x3}}
 \frac{\partial \sigma(z^{(2)}_{1x3})}{\partial z^{(2)}_{1x3}}
 \frac{\partial a^{(1)}_{1x2} * W^{(1)}_{2x3} + b^{(1)}_{1x3}}{\partial W^{(1)}_{2x3}}
 $$
 
 Finally! We have reached a term where we can now derive $$W^{(1)}$$. Let's now simplify this a little bit.
 
-$$ \frac{\partial C(W,b)}{\partial W^{(1)}} = $$
-
 $$
-(s_{1x1}) (1) (\sigma'(z^{(3)}_{1x1})) (W^{(2)}_{3x1})^T (\sigma'(z^{(2)}_{1x3})) (a^{(1)}_{1x2})
+(s_{1x2}); (1); (\sigma'(z^{(3)}_{1x2})); (W^{(2)}_{3x2}); (\sigma'(z^{(2)}_{1x3})); (a^{(1)}_{1x2})
 $$
 
-Let's resubstitute the last variable we have with known numbers.
+Note that I have put $$;$$ inbetween the factors. The reason is that we are not always doing a normal multiplication and we need to be careful about dimensionality. Let's resubstitute the last variable we have with known numbers and put in the proper operators.
 
 $$
-(a^{(3)}_{1x1} - \hat{y}) (1) (\sigma'(z^{(3)}_{1x1})) (W^{(2)}_{3x1})^T (\sigma'(z^{(2)}_{1x3})) (a^{(1)}_{1x2})
+\frac{\partial C(W,b)}{\partial W^{(1)}} =
+(a^{(3)}_{1x2} - \hat{y})\circ(\sigma'(z^{(3)}_{1x2})) (W^{(2)}_{3x2})^T \circ (\sigma'(z^{(2)}_{1x3})) (a^{(1)}_{1x2})
 $$
 
-Now our equation only consists of things we know and we are able to calculate the derivative.
+The $$\circ $$ is the Hadamard Product and only means element-wise multiplication. You can think of it as only multiplying the error with its respective gradient. This is needed because we don't want to mix up the derivative of different weights when computing all weights of a single weight matrix at once. Now our equation only consists of things we know and we are able to calculate the derivative.
 
 Let's now quickly have a look at $$\frac{\partial C(W,b)}{\partial W^{(2)}}$$. This is the derivative of our cost function with respect to the weights of our last layer. If you follow the steps we just did we can stop using the chain rule much sooner and end up with the equation we also had above.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(2)}} =
-\frac{\partial \frac{1}{2}s^2_{1x1}}{\partial s_{1x1}}
-\frac{\partial a^{(3)}_{1x1} - \hat{y}}{\partial a^{(3)}_{1x1}}
-\frac{\partial \sigma(z^{(3)}_{1x1})}{\partial z^{(3)}_{1x1}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x1} + b^{(1)}_{1x1}}{\partial W^{(2)}_{3x1}}
+\frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
+\frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
+\frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x1} + b^{(1)}_{1x2}}{\partial W^{(2)}_{3x1}}
 $$
 
 If we simplify this equation we get the following.
 
 $$
-(a^{(3)}_{1x1} - \hat{y}) (1) (\sigma'(z^{(3)}_{1x1})) (a^{(2)}_{1x2})
+\frac{C(W,b)}{\partial W^{(2)}} = (a^{(3)}_{1x2} - \hat{y}) \circ (\sigma'(z^{(3)}_{1x2})) (a^{(2)}_{1x2})
 $$
 
 As you can see, those are the same calculations we did before. We can compute the results much more efficient if we keep track of our progress. Therefore, we introduce a new variable $$\delta$$.
 
-$$ \delta^{(3)}_{1x1} = (a^{(3)}_{1x1} - \hat{y}) \circ \sigma'(z^{(3)}_{1x1}) $$
+$$ \delta^{(3)}_{1x2} = (a^{(3)}_{1x2} - \hat{y}) \circ \sigma'(z^{(3)}_{1x2}) $$
 
-The $$\circ $$ is the hadamard product and only means element-wise multiplication. Now our derivative with respect to $$W^{(2)}_{3x1} $$ is simple.
+Now our derivative with respect to $$W^{(2)}_{3x1} $$ is simple.
 
-$$ \frac{\partial C(W,b)}{\partial W^{(2)}} = \delta^{(3)}_{1x1} a^{(2)}_{1x2} $$
+$$ \frac{\partial C(W,b)}{\partial W^{(2)}} = \delta^{(3)}_{1x2} a^{(2)}_{1x2} $$
 
-We can also use $$ \delta^{(3)}_{1x1}$$ to calculate $$\delta^{(2)}_{1x3} $$. Since $$ \delta^{(3)}_{1x1}$$ is a part of $$\delta^{(2)}_{1x3} $$.
+We can also use $$ \delta^{(3)}_{1x2}$$ to calculate $$\delta^{(2)}_{1x3} $$. Since $$ \delta^{(3)}_{1x2}$$ is a part of $$\delta^{(2)}_{1x3} $$.
 
-$$ \delta^{(2)}_{1x3} = \delta^{(3)}_{1x1} * (W^{(2)}_{3x1})^T \circ \sigma'(z^{(3)}_{1x1}) $$
+$$ \delta^{(2)}_{1x3} = \delta^{(3)}_{1x2} * (W^{(2)}_{3x2})^T \circ \sigma'(z^{(3)}_{1x2}) $$
 
 We can actually generalize this for the last layer $$L$$ and every other layer.
 
