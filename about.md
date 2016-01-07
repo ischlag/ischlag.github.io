@@ -9,3 +9,5 @@ I am currently a Computer Science Master student in Artificial Intelligence at t
 I'm currently looking for a Ph.D. advisor to continue my research in Deep Learning, Recurrent Neural Networks, and self-learning agents.
 
 My mail is imanol.schlag@<span style="display: none">null</span>gmail.com
+
+[Curriculum vitae](/CV.pdf)
