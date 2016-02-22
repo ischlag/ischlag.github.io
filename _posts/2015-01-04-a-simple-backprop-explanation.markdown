@@ -275,7 +275,7 @@ Now we can simplify $$\frac{\partial C(W,b)}{\partial W^{(1)}}$$
 
 $$
 \frac{\partial C(W,b)}{\partial W^{(1)}} =
-(a^{(1)}_{1x2})' (((a^{(3)}_{1x2} - \hat{y})\circ\sigma'(z^{(3)}_{1x2})) (W^{(2)}_{3x2})^T \circ \sigma'(z^{(2)}_{1x3})) 
+(a^{(1)}_{1x2})' ((W^{(2)}_{3x2})^T \circ \sigma'(z^{(2)}_{1x3})) 
 $$
 
 Now our derivative with respect to $$W^{(2)}_{3x1} $$ is simple.
