@@ -264,7 +264,7 @@ $$
 If we simplify this equation we get the following.
 
 $$
-\frac{C(W,b)}{\partial W^{(2)}} = (a^{(3)}_{1x2} - \hat{y}) \circ (\sigma'(z^{(3)}_{1x2})) (a^{(2)}_{1x2})
+\frac{C(W,b)}{\partial W^{(2)}} = (a^{(2)}_{1x3})' ((a^{(3)}_{1x2} - \hat{y}) \circ (\sigma'(z^{(3)}_{1x2})))
 $$
 
 As you can see, those are the same calculations we did before. We can compute the results much more efficient if we keep track of our progress. Therefore, we introduce a new variable $$\delta$$.
@@ -273,7 +273,7 @@ $$ \delta^{(3)}_{1x2} = (a^{(3)}_{1x2} - \hat{y}) \circ \sigma'(z^{(3)}_{1x2}) $
 
 Now our derivative with respect to $$W^{(2)}_{3x1} $$ is simple.
 
-$$ \frac{\partial C(W,b)}{\partial W^{(2)}} = a^{(2)}_{1x2}' \delta^{(3)}_{1x2}  $$
+$$ \frac{\partial C(W,b)}{\partial W^{(2)}_{3x2}} = (a^{(2)}_{1x3})' \delta^{(3)}_{1x2}  $$
 
 We can also use $$ \delta^{(3)}_{1x2}$$ to calculate $$\delta^{(2)}_{1x3} $$. Since $$ \delta^{(3)}_{1x2}$$ is a part of $$\delta^{(2)}_{1x3} $$.
 
