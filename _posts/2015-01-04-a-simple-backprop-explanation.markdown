@@ -247,7 +247,7 @@ Note that I have put $$;$$ inbetween the factors. The reason is that we are not 
 
 $$
 \frac{\partial C(W,b)}{\partial W^{(1)}} =
-(a^{(3)}_{1x2} - \hat{y})\circ(\sigma'(z^{(3)}_{1x2})) (W^{(2)}_{3x2})^T \circ \sigma'(z^{(2)}_{1x3}) (a^{(1)}_{1x2})
+(a^{(1)}_{1x2})' (((a^{(3)}_{1x2} - \hat{y})\circ\sigma'(z^{(3)}_{1x2})) (W^{(2)}_{3x2})^T \circ \sigma'(z^{(2)}_{1x3})) 
 $$
 
 The $$\circ $$ is the Hadamard Product and only means element-wise multiplication. You can think of it as only multiplying the error with its respective gradient. This is needed because we don't want to mix up the derivative of different weights when computing all weights of a single weight matrix at once. Now our equation only consists of things we know and we are able to calculate the derivative.
