@@ -271,7 +271,7 @@ As you can see, those are the same calculations we did before. We can compute th
 
 $$ \delta^{(3)}_{1x2} = (a^{(3)}_{1x2} - \hat{y}) \circ \sigma'(z^{(3)}_{1x2}) $$
 
-Now we can simplify $\frac{\partial C(W,b)}{\partial W^{(1)}}$
+Now we can simplify 
 
 $$
 \frac{\partial C(W,b)}{\partial W^{(1)}} =
