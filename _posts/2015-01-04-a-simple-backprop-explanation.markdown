@@ -211,7 +211,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
 \frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
 \frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2}}{\partial W^{(1)}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(2)}_{1x2}}{\partial W^{(1)}}
 $$
 
 Let's apply the chain rule and replace $$a^{(2)}_{1x3}$$ with the definition we had in our forward pass.
@@ -220,7 +220,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(1)}} =
 \frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
 \frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
 \frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2}}{\partial a^{(2)}_{1x3}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(2)}_{1x2}}{\partial a^{(2)}_{1x3}}
 \frac{\partial \sigma(z^{(2)}_{1x3})}{\partial W^{(1)}}
 $$
 
