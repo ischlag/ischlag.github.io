@@ -287,9 +287,9 @@ $$
 (a^{(1)}_{1x2})' (\delta^{(2)}_{1x3}) 
 $$
 
-And also our derivative with respect to $$W^{(2)}_{3x1} $$ is simple.
+And also our derivative with respect to $$W^{(2)} $$ is simple.
 
-$$ \frac{\partial C(W,b)}{\partial W^{(2)}_{3x2}} = (a^{(2)}_{1x3})' \delta^{(3)}_{1x2}  $$
+$$ \frac{\partial C(W,b)}{\partial W^{(2)}} = (a^{(2)}_{1x3})' \delta^{(3)}_{1x2}  $$
 
 
 
