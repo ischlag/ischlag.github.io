@@ -258,7 +258,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(2)}} =
 \frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
 \frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
 \frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2}}{\partial W^{(2)}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(2)}_{1x2}}{\partial W^{(2)}}
 $$
 
 If we simplify this equation we get the following.
