@@ -232,9 +232,9 @@ $$
 \frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
 \frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
 \frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2}}{\partial a^{(2)}_{1x3}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(2)}_{1x2}}{\partial a^{(2)}_{1x3}}
 \frac{\partial \sigma(z^{(2)}_{1x3})}{\partial z^{(2)}_{1x3}}
-\frac{\partial a^{(1)}_{1x2} * W^{(1)}_{2x3} + b^{(1)}_{1x3}}{\partial W^{(1)}_{2x3}}
+\frac{\partial a^{(1)}_{1x2} * W^{(1)}_{2x3} + b^{(1)}_{1x3}}{\partial W^{(1)}}
 $$
 
 Finally! We have reached a term where we can now derive $$W^{(1)}$$. Let's now simplify this a little bit.
@@ -247,7 +247,7 @@ Note that I have put $$;$$ inbetween the factors. The reason is that we are not 
 
 $$
 \frac{\partial C(W,b)}{\partial W^{(1)}} =
-(a^{(3)}_{1x2} - \hat{y})\circ(\sigma'(z^{(3)}_{1x2})) (W^{(2)}_{3x2})^T \circ (\sigma'(z^{(2)}_{1x3})) (a^{(1)}_{1x2})
+(a^{(3)}_{1x2} - \hat{y})\circ(\sigma'(z^{(3)}_{1x2})) (W^{(2)}_{3x2})^T \circ \sigma'(z^{(2)}_{1x3}) (a^{(1)}_{1x2})
 $$
 
 The $$\circ $$ is the Hadamard Product and only means element-wise multiplication. You can think of it as only multiplying the error with its respective gradient. This is needed because we don't want to mix up the derivative of different weights when computing all weights of a single weight matrix at once. Now our equation only consists of things we know and we are able to calculate the derivative.
@@ -258,7 +258,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(2)}} =
 \frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
 \frac{\partial a^{(3)}_{1x2} - \hat{y}}{\partial a^{(3)}_{1x2}}
 \frac{\partial \sigma(z^{(3)}_{1x2})}{\partial z^{(3)}_{1x2}}
-\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x1} + b^{(1)}_{1x2}}{\partial W^{(2)}_{3x1}}
+\frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(1)}_{1x2}}{\partial W^{(2)}}
 $$
 
 If we simplify this equation we get the following.
@@ -273,7 +273,7 @@ $$ \delta^{(3)}_{1x2} = (a^{(3)}_{1x2} - \hat{y}) \circ \sigma'(z^{(3)}_{1x2}) $
 
 Now our derivative with respect to $$W^{(2)}_{3x1} $$ is simple.
 
-$$ \frac{\partial C(W,b)}{\partial W^{(2)}} = \delta^{(3)}_{1x2} a^{(2)}_{1x2} $$
+$$ \frac{\partial C(W,b)}{\partial W^{(2)}} = a^{(2)}_{1x2}' \delta^{(3)}_{1x2}  $$
 
 We can also use $$ \delta^{(3)}_{1x2}$$ to calculate $$\delta^{(2)}_{1x3} $$. Since $$ \delta^{(3)}_{1x2}$$ is a part of $$\delta^{(2)}_{1x3} $$.
 
