@@ -15,7 +15,7 @@ You probably know this function. It is very simple. However, we are not yet able
 
 ##The Cost Function##
 
-Let's now try to change the weights of our function with respect to some data. Let's ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example, we are going to work with the two data points $$A$$ and $$B$$ and we start of with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ (the clue) and our prediction vector $$y$$.
+Let's now try to change the weights of our function with respect to some data. Let's ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example, we are going to work with the two data points $$A$$ and $$B$$ and we start of with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ (the clue) and our prediction vector $$\hat{y}$$.
 
 $$
 x = \begin{pmatrix} A_x \\ B_x \end{pmatrix}
@@ -25,7 +25,7 @@ $$ y = f(x) = \begin{pmatrix} f(A_x) \\ f(B_x) \end{pmatrix} $$
 
 $$ \hat{y} = \begin{pmatrix} A_y \\ B_y \end{pmatrix} $$
 
-The _cost_ of our function $$f$$ is now the difference between our prediction $$y$$ and our desired prediction $$\hat{y}$$. We denote this with the cost-function $$C(m)$$. A first and straight forward way to calculate the cost would be the absolute value of its difference.
+The _cost_ of our function $$f$$ is now the difference between our prediction $$\hat{y}$$ and our desired output $$y$$. We denote this with the cost-function $$C(m)$$. A first and straight forward way to calculate the cost would be the absolute value of its difference.
 The next equation shows the cost calculation for data point $$A$$ and the following equation is the cost over all data points.
 
 $$C_{linear,A}(m) = \Vert f(A_x) - A_y \Vert  $$
@@ -98,7 +98,7 @@ $$ \frac{\partial C(m)}{\partial m} =
 \frac{\partial \Vert y^{(i)} - \hat{y}^{(i)} \Vert}{\partial m}
 $$
 
-Now we apply the chain rule again. We derive the second derivative with respect to $$y^{(i)}$$.
+Now we apply the chain rule again. We derive the second fraction with respect to $$y^{(i)}$$.
 
 $$ \frac{\partial C(m)}{\partial m} =
 \sum_{i} \frac{\partial \frac{1}{2} s^2}{\partial s}
