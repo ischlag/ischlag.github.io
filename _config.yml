@@ -14,7 +14,7 @@ links:
     external:     true
 
 # Build settings
-highlighter:        pygments
+highlighter:        rouge
 markdown:           kramdown
 kramdown:
   # The following is untested, suppossed to work once Github gets Kramdown 1.6...
