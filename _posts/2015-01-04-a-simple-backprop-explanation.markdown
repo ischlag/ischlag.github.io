@@ -3,17 +3,17 @@ layout: post
 title:  "A simple backprop explanation"
 date:   2016-01-05
 ---
-##Abstract##
+## Abstract##
 The goal of this article is to provide a simple and easy to understand explanation of the backpropagation algorithm. It is used to train different types of artificial neural networks. In this article, we will focus on [multi-layer perceptron networks][1]. It is the basis on which more advanced deep learning techniques build upon. For this article, I assume you know how a simple multi-layer perceptron network works once it is trained.
 
-##First Things First##
+## First Things First##
 Before we jump to the backpropagation algorithm, we are going to explain the notion of _training_. Let me introduce my function $$ f $$.
 
 $$ f(x) = m*x + c $$
 
 You probably know this function. It is very simple. However, we are not yet able to use it to our advantage since we haven't defined $$ m $$ and $$ c $$ yet. $$m$$ and $$c$$ are our _weights_. They define the behaviour of our function and if we want our function to behave in a certain way, we have to change the weights until it does as we please. This is what we call _training_.
 
-##The Cost Function##
+## The Cost Function##
 
 Let's now try to change the weights of our function with respect to some data. Let's ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example, we are going to work with the two data points $$A$$ and $$B$$ and we start of with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ (the clue) and our prediction vector $$\hat{y}$$.
 
@@ -70,7 +70,7 @@ $$ m = m + \Delta m $$
 
 We repeat this process until we have reached a maximum number of iterations or until the gradient has approached 0. This would mean that we have reached a minimum in our function. We probably have now a good configuration of our weight $$m$$. The network is now trained.
 
-##Calculating The Derivative##
+## Calculating The Derivative##
 
 We left out a small step in the previous part. This is the derivative so far.
 
@@ -130,7 +130,7 @@ $$
 
 Congratulations! You have successfully trained a linear function. Training a neural network is not much different. But first, let's have a look at the last piece of the puzzle.
 
-##Multi-Variable Derivative##
+## Multi-Variable Derivative##
 
 Do you still remember our $$c$$ we had earlier? Well, let's now include $$c$$ as our second weight. Now we have a small problem. We can only find derivatives with respect to a single variable. If we want to find the derivative of two or more variables we need to find the total derivative. Let's look at an example where we have $$f(x,y) = 2x^2y^3$$. Calculus tells us the following about the total derivative of a two-variable function.
 
