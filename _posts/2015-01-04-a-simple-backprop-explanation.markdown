@@ -2,6 +2,7 @@
 layout: post
 title:  "A simple backprop explanation"
 date:   2016-01-05
+description: "A step by step beginner explanation of the backprop algorithm in order to train neural networks."
 ---
 ## Abstract##
 The goal of this article is to provide a simple and easy to understand explanation of the backpropagation algorithm. It is used to train different types of artificial neural networks. In this article, we will focus on [multi-layer perceptron networks][1]. It is the basis on which more advanced deep learning techniques build upon. For this article, I assume you know how a simple multi-layer perceptron network works once it is trained.
@@ -15,7 +16,7 @@ You probably know this function. It is very simple. However, we are not yet able
 
 ## The Cost Function##
 
-Let's now try to change the weights of our function with respect to some data. Let's ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example, we are going to work with the two data points $$A$$ and $$B$$ and we start of with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ (the clue) and our prediction vector $$\hat{y}$$.
+Let's now try to change the weights of our function with respect to some data. Let's ignore $$c$$ for a while. We define $$c = 0$$ until later. For this example, we are going to work with the two data points $$A$$ and $$B$$ and we start off with $$ m = 1 $$. Since we can have multiple data points, we will put our data into vectors. Therefore, our data consists of the input vector $$x$$ (the clue) and our prediction vector $$\hat{y}$$.
 
 $$
 x = \begin{pmatrix} A_x \\ B_x \end{pmatrix}
@@ -26,7 +27,7 @@ $$ y = f(x) = \begin{pmatrix} f(A_x) \\ f(B_x) \end{pmatrix} $$
 $$ \hat{y} = \begin{pmatrix} A_y \\ B_y \end{pmatrix} $$
 
 The _cost_ of our function $$f$$ is now the difference between our prediction $$\hat{y}$$ and our desired output $$y$$. We denote this with the cost-function $$C(m)$$. A first and straight forward way to calculate the cost would be the absolute value of its difference.
-The next equation shows the cost calculation for data point $$A$$ and the following equation is the cost over all data points.
+The next equation shows the cost calculation for data point $$A$$ and the following equation is the cost of all data points.
 
 $$C_{linear,A}(m) = \Vert f(A_x) - A_y \Vert  $$
 
@@ -36,7 +37,7 @@ However, if we use the quadratic distance function or the sometimes known as the
 
 $$C(m) = \frac{1}{2}\sum_{i} \Vert y^{(i)} - \hat{y}^{(i)} \Vert^2  $$
 
-The following figure is a visualization of our current state. The left side shows our current function and the error values $$ Error_A $$ and $$ Error_B $$. The right side shows how the error changes with respect to $$m$$. You can play around with it by moving the slider for $$m$$. I have added both cost functions so you can see the difference.
+The following figure is a visualisation of our current state. The left side shows our current function and the error values $$ Error_A $$ and $$ Error_B $$. The right side shows how the error changes with respect to $$m$$. You can play around with it by moving the slider for $$m$$. I have added both cost functions so you can see the difference.
 
 <div>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2373641/width/578/height/250/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="578px" height="250px" style="border:0px;"> </iframe>
@@ -64,7 +65,7 @@ To make sure that our iterative algorithm is always going downhill we are now us
 
 $$ \Delta m = - \eta \nabla C $$
 
-Finally we add our $$\Delta m$$ - our weight adjustment - to our current weight configuration.
+Finally, we add our $$\Delta m$$ - our weight adjustment - to our current weight configuration.
 
 $$ m = m + \Delta m $$
 
@@ -106,7 +107,7 @@ $$ \frac{\partial C(m)}{\partial m} =
 \frac{\partial f(x^{(i)})}{\partial m}
 $$
 
-And finally we substitute $$f(x)$$ with our linear function which gives us the $$m$$ we were looking for.
+And finally, we substitute $$f(x)$$ with our linear function which gives us the $$m$$ we were looking for.
 
 $$ \frac{\partial C(m)}{\partial m} =
 \sum_{i} \frac{\partial \frac{1}{2} s^2}{\partial s}
@@ -146,13 +147,13 @@ Now we add them together and we get our total derivative.
 
 $$ df(x,y) = 4xy^3dx + 6x^2y^2dy $$
 
-Since we now know that we can add up the partial derivatives we can now do something similar. Instead of only calculating $$\Delta m$$ with respect to $$m$$ we can now also calculate $$\Delta c$$ with respect to $$c$$.
+Since we now know that we can add up the partial derivatives, we can now do something similar. Instead of only calculating $$\Delta m$$ with respect to $$m$$ we can now also calculate $$\Delta c$$ with respect to $$c$$.
 
 $$ \Delta m = -\eta \frac{\partial C(m,c)}{\partial m} $$
 
 $$ \Delta c = -\eta \frac{\partial C(m,c)}{\partial c} $$
 
-With every iteration we now change $$m$$ and $$c$$ at the same time.
+With every iteration, we now change $$m$$ and $$c$$ at the same time.
 
 $$ m = m + \Delta m $$
 
@@ -164,7 +165,7 @@ The same thing is done considering more variables. Now we know everything to app
 
 You already know all the basics to train a neural network. Forget the example we have been looking at so far. Let's now try to apply what we have learned to train a multi-layer perceptron neural network. We are going to calculate the cost for an arbitrary set of data. The cost is a feedforward pass through our random initialized neural network with a quadratic error at the end.
 
-In this example, we are using 2 input neurons, 3 hidden neurons, and 2 output neurons. The activation function depicted as $$\sigma()$$ and the neuron we use is the classical model with a bias added at the end.
+In this example, we are using 2 input neurons, 3 hidden neurons, and 2 output neurons. The activation function is depicted as $$\sigma()$$ and the neuron we use is the classical model with a bias added at the end.
 
 $$ a^{(l+1)}=\sigma(a^{(l)}W^{(l)} + b^{(l)})$$
 
@@ -184,7 +185,7 @@ $$ s_{1x2} = a^{(3)}_{1x2} - \hat{y} $$
 
 $$ C(W,b) = \frac{1}{2}s^2_{1x2} $$
 
-If we now resubstitute all those lines we get one big equation for $$C(W,b)$$. Our goal now is to find the derivative of that equation with respect to every weight $$W$$ and bias $$b$$. Let's look how this would turn out. As we did before, we are now using the chain rule over and over. We begin with the derivative for $$W^{(1)}$$ which is of course a matrix. So at the end, our derivative will also produce a matrix with the derivative of every weight as an element.
+If we now resubstitute all those lines, we get one big equation for $$C(W,b)$$. Our goal now is to find the derivative of that equation for every weight $$W$$ and bias $$b$$. Let's look how this would turn out. As we did before, we are now using the chain rule over and over. We begin with the derivative for $$W^{(1)}$$ which is, of course, a matrix. So in the end, our derivative will also produce a matrix with the derivative of every weight as an element.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(1)}} = \frac{\partial \frac{1}{2}s^2_{1x2}}{\partial W^{(1)}}$$
 
@@ -243,7 +244,7 @@ $$
 (s_{1x2}); (1); (\sigma'(z^{(3)}_{1x2})); (W^{(2)}_{3x2}); (\sigma'(z^{(2)}_{1x3})); (a^{(1)}_{1x2})
 $$
 
-Note that I have put $$;$$ inbetween the factors. The reason is that we are not always doing a normal multiplication and we need to be careful about dimensionality. Let's resubstitute the last variable we have with known numbers and put in the proper operators.
+Note that I have put $$;$$ between the factors. The reason is that we are not always doing a normal multiplication and we need to be careful about dimensionality. Let's resubstitute the last variable we have with known numbers and put in the proper operators.
 
 $$
 \frac{\partial C(W,b)}{\partial W^{(1)}} =
@@ -252,7 +253,7 @@ $$
 
 The $$\circ $$ is the Hadamard Product and only means element-wise multiplication. You can think of it as only multiplying the error with its respective gradient. This is needed because we don't want to mix up the derivative of different weights when computing all weights of a single weight matrix at once. Now our equation only consists of things we know and we are able to calculate the derivative.
 
-Let's now quickly have a look at $$\frac{\partial C(W,b)}{\partial W^{(2)}}$$. This is the derivative of our cost function with respect to the weights of our last layer. If you follow the steps we just did we can stop using the chain rule much sooner and end up with the equation we also had above.
+Let's now quickly have a look at $$\frac{\partial C(W,b)}{\partial W^{(2)}}$$. This is the derivative of our cost function of the weights of our last layer. If you follow the steps we just did, we can stop using the chain rule much sooner and end up with the equation we also had above.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(2)}} =
 \frac{\partial \frac{1}{2}s^2_{1x2}}{\partial s_{1x2}}
@@ -261,7 +262,7 @@ $$ \frac{\partial C(W,b)}{\partial W^{(2)}} =
 \frac{\partial a^{(2)}_{1x3} * W^{(2)}_{3x2} + b^{(2)}_{1x2}}{\partial W^{(2)}}
 $$
 
-If we simplify this equation we get the following.
+If we simplify this equation, we get the following.
 
 $$
 \frac{C(W,b)}{\partial W^{(2)}} = (a^{(2)}_{1x3})' ((a^{(3)}_{1x2} - \hat{y}) \circ (\sigma'(z^{(3)}_{1x2})))
@@ -287,19 +288,19 @@ $$
 (a^{(1)}_{1x2})' (\delta^{(2)}_{1x3}) 
 $$
 
-And also our derivative with respect to $$W^{(2)} $$ is simple.
+And also our derivative of $$W^{(2)} $$ is simple.
 
 $$ \frac{\partial C(W,b)}{\partial W^{(2)}} = (a^{(2)}_{1x3})' \delta^{(3)}_{1x2}  $$
 
 
 
-We can actually generalize this for the last layer $$L$$ and every other layer.
+We can actually generalise this for the last layer $$L$$ and every other layer.
 
 $$ \delta^{(L)} = (a^{(L)} - \hat{y}) \circ \sigma'(z^{(L)}) $$
 
 $$ \delta^{(l)} = \delta^{(l+1)} * (W^{(l)})^T \circ \sigma'(z^{(l)}) $$
 
-And this is essentially why it is called backpropagation. We propagate the error $$\delta$$ from the ouput layer back through the network until we reach the first layer. This is a little hard to grasp but as you can see $$\delta$$ is nothing else then a part of our cost derivative which we can reuse when calculating other derivatives. We can now finish our training by summing up all the gradients over all the data $$k$$ in our batch.
+And this is essentially why it is called backpropagation. We propagate the error $$\delta$$ from the output layer back through the network until we reach the first layer. This is a little hard to grasp but as you can see $$\delta$$ is nothing else then a part of our cost derivative which we can reuse when calculating other derivatives. We can now finish our training by summing up all the gradients over all the data $$k$$ in our batch.
 
 $$ \Delta W^{(l)} = -\frac{\eta}{k}\sum^k_i \frac{\partial C(W,b)}{\partial W^{(l)}} $$
 
