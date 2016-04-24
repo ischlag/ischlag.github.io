@@ -1,21 +1,22 @@
-    <meta charset="utf-8">
+<meta charset="utf-8">
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
-    <style>
-      /* We want previews included so at least the TeX source is visible to clients
-         without Javascript, or without network connection
-         (new option in kramdown 1.6, enabled in _config.yml)
-         but we hide them if math rendering completes sucessfully. */
-      .MathJax_Preview { color: #888 }
-      .math_finished .MathJax_Preview { display: none }
-    </style>
+<link rel="stylesheet" href="/katex-0.6/katex.min.css">
+<script src="/katex-0.6/katex.min.js"></script>
+
+<style>
+  /* We want previews included so at least the TeX source is visible to clients
+     without Javascript, or without network connection
+     (new option in kramdown 1.6, enabled in _config.yml)
+     but we hide them if math rendering completes sucessfully. */
+  .MathJax_Preview { color: #888 }
+  .math_finished .MathJax_Preview { display: none }
+</style>
 
 <!-- scribble -->
 <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 <link rel="alternate" type="application/rss+xml" title="Imanol Schlag RSS" href="/feed.xml" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+<link href='/stylesheets/opensans.css' rel='stylesheet' type='text/css' />
 <link href='/stylesheets/style.css' rel='stylesheet' type='text/css' />
 <link href='/stylesheets/syntax.css' rel='stylesheet' type='text/css' />
 <link href='/stylesheets/responsive.css' rel='stylesheet' type='text/css' />
@@ -24,7 +25,6 @@
 <script src='/javascripts/pd.js' type='text/javascript'></script>
 <script src='/javascripts/basics.js' type='text/javascript'></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-
 
 <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
 <meta content='text/html; charset=utf-8' http-equiv='content-type' />
@@ -39,3 +39,4 @@
   <meta content="blog" property="og:type" />
 {% endif %}
 {% include google-analytics.html %}
+

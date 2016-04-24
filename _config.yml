@@ -12,6 +12,9 @@ links:
   - name:         GitHub
     url:          http://github.com/ischlag
     external:     true
+  - name:         RSS
+    url:          /feed.xml
+
 
 # Build settings
 highlighter:        rouge

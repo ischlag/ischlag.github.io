@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Test post"
+date:   2016-01-10
+---
+## Test##
+This is my content text.
+
