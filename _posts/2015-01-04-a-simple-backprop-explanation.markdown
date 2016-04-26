@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A simple backprop explanation"
+title:  "A Simple Backprop Explanation"
 date:   2016-01-05
 description: "A step by step beginner explanation of the backprop algorithm in order to train neural networks."
 ---

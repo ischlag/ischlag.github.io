@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learning in a neural network"
+title:  "Learning in a Neural Network"
 date:   2016-02-25
 description: "What makes neural networks so powerful? How does a neural network learn?"
 ---

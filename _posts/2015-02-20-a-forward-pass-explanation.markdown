@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A short explanation of the forward pass in a neural network"
+title:  "A Short Explanation of the Forward Pass in a Neural Network"
 date:   2016-02-20
 description: "This short article explains the mathematics of a forward pass in a neural network."
 ---
