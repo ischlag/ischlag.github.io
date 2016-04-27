@@ -9,7 +9,7 @@ Overfitting is a serious problem in Neural Networks (NN) and large networks make
 A regularizer can be a term which we add to our cost function $$J$$ so that it limits the capacity of our NN to model the true underlying function $$\tilde{J}$$. It achieves this by adding a penalty to the parameters of the NN. This penalty increases the value of our cost function if the parameters are too big, hence they will be kept as small as possible while the LA is training the network. The regularization term $$R$$ is always introduced together with the regularization parameter $$\lambda $$. It is another hyper-parameter which we can use to adjust our cost function according to the dataset.
 
 $$
-\tilde{J}(W,b) = J(W,b) + \lambda R(W)
+\tilde{C}(W,b) = C(W,b) + \lambda R(W)
 $$
 
 Usually, researchers tend to only regularise the weights of a cost function and not the biases. This has to do with the nature of the biases and seems first counter-intuitive. It becomes clear once we look at a linear problem. 
@@ -24,7 +24,7 @@ In this example, we can reduce the problem of overfitting. It is caused by $$a$$
 The  L2 Norm is perhaps the most common regularization term. It forces the LA to find small values for the weights of the NN. For every weight of the network, we add its squared magnitude. This regularization term can be used for any cost function. In the following equation, we describe the original, unregularized cost function as $$J_0$$.
 
 $$
-J(W,b) = J_0 + \frac{\lambda}{2n}\Sigma W^2
+C(W,b) = C_0 + \frac{\lambda}{2n}\Sigma W^2
 $$
 
 This forces larger weights to decay more than smaller ones, thus resulting in an overall simpler model. The L2 Norm usually forces all weights to collaborate because it usually never reduces any weight to zero. 
@@ -33,7 +33,7 @@ This forces larger weights to decay more than smaller ones, thus resulting in an
 The L1 norm is also very common and quite similar to the L2 norm. However, its effect is somewhat different. 
 
 $$
-J(W,b) = J_0 + \frac{\lambda}{n}\Sigma \vert W\vert
+C(W,b) = C_0 + \frac{\lambda}{n}\Sigma \vert W\vert
 $$
 
 It has the property which leads the weight matrix to become sparse. It will force the LA to identify the most important neurons in its network and to reduce the unnecessary inputs to zero. In the end, the weight matrix will be sparse with some large weights and some weights being exactly zero.
