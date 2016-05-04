@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Important ILSVRC Achievements from 2012-2016"
+title:  "Important ILSVRC Achievements from 2012-2015"
 date:   2016-04-05
 description: "A brief summary about the winning techniques used at the ILSVRC challenges since 2012."
 ---
