@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "On Regularisation in Neural Networks"
-date:   2016-03-05
+date:   2016-03-10
 description: "What is a regularizer in a neural network?"
 ---
 Overfitting is a serious problem in Neural Networks (NN) and large networks make it even more difficult to deal with it. Large NNs are able to find more complex models in our data so we are naturally inclined to use large networks. However, if our network is larger than the model it tries to fit it will tend to overfit and thus fail to generalise to new situations. If our network is too simple, it will not be able to achieve the high accuracy we want. In Machine Learning, there are many techniques explicitly designed to reduce the validation error. These strategies are collectively known as regularization techniques. They usually consist of some kind of modification to an existing Learning Algorithm (LA) in order to improve its ability to generalise. It is important to understand how an LA works and as it turns out, developing better regularisation techniques has been and still is one of the major research efforts in this field. 

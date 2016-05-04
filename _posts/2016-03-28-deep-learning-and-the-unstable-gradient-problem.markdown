@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deep Learning and the Unstable Gradient Problem"
-date:   2016-03-05
+date:   2016-03-28
 description: "A short explanation of the unstable (including the vanishing) gradient problem."
 ---
 Deep Learning (DL) refers to the multi-layer approach of neural networks (NN). Intuitively, we expect NNs with many hidden layers to be more powerful than shallow ones with a single hidden layer. Such networks could build up different levels of abstractions just like the brain does for vision. However, training deep networks is surprisingly hard. If we pay close attention to the gradient of different layers during backpropagation we would discover how our different layers are learning in vastly different speeds, which is the size of the gradient and thus the step-size of our learning algorithm. __The fundamental reason why learning breaks down is connected to our use of the gradient-based learning technique.__ We know that it is theoretically possible that there is a specific NN architecture with an according weight setting which would satisfy whatever problem it tries to solve. Assuming that adding more layers is indeed a good thing, we can conclude that the deep NN is either overfitting or underfitting. The vanishing and exploding gradient problem captures the underfitting hypothesis. The overfitting hypothesis, on the other hand, doesn’t have a title but is due to having many more parameters and not being able to regularize well. Both of these scenarios are not bound to fully connected feed-forward architectures. They also apply to other types of NN which might be used for different kind of problems.
