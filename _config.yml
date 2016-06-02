@@ -17,14 +17,21 @@ links:
 
 
 # Build settings
-highlighter:        rouge
-markdown:           kramdown
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
 kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
   # The following is untested, suppossed to work once Github gets Kramdown 1.6...
   # (current visible at https://pages.github.com/versions)
   math_engine:      mathjax  # default in Kramdown
   math_engine_opts:
     preview: true   # not default but better acessibility
+
 redcarpet:
   extensions:
     - smart
