@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How-to setup Tensorflow without Root"
+title:  "How-to setup Tensorflow"
 date:   2016-06-01
 description: "Learn how to setup Tensorflow on a remote linux machine without root access."
 ---
