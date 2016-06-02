@@ -280,7 +280,7 @@ section.post, section > p {
   font-size: 14px;
   line-height: 1.6em; }
   section.post *, section > p * {
-    max-width: 100%; }
+    /*max-width: 100%;*/ }
   section.post em strong, section > p em strong {
     background-color: #ffffee;
     padding: 0 2px; }
@@ -338,7 +338,6 @@ pre {
 code {
   font-size: 13px;
   color: #eee;
-  background: #39382e;
   padding: 2px 4px 3px;
   border-radius: 2px;
   line-height: 1.3em;
