@@ -115,58 +115,21 @@ pc-01.lab.university.edu:8889
 ```
 
 ## Test Tensorflow
-You should not only run the hello world example of Tensorflow but actually train a simple mnist model in order to make sure that your system is working correct and is using the GPU. Create a new notebook in jupyter and use the following code to train a simple model.
+You should not only run the hello world example of Tensorflow but actually train a simple mnist model in order to make sure that your system is working correct and is using the GPU. Create a new notebook in jupyter and use the following code to perform some operations on the GPU.
 
 ```python
-# load mnist data set
-from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
-
-# build graph in an interactive session
 import tensorflow as tf
-sess = tf.InteractiveSession()
 
-# input images
-# None -> batch size can be any size, 784 -> flattened mnist image
-x = tf.placeholder(tf.float32, shape=[None, 784]) 
+x = tf.Variable(0, name='x')
 
-# target 10 output classes
-y_ = tf.placeholder(tf.float32, shape=[None, 10])
-
-# weights, initialize with zeroes, 784 input, 10 output
-W = tf.Variable(tf.zeros([784,10]))
-
-# bias
-b = tf.Variable(tf.zeros([10]))
-
-# variables need to be initialized before we can use them
-sess.run(tf.initialize_all_variables())
-
-# implement model
-y = tf.nn.softmax(tf.matmul(x,W) + b)
-
-# specify cost function
-cross_entropy = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
-
-# specify optimizer
-train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
-
-# perform 1000 train steps
-for i in range(1000):
-  batch = mnist.train.next_batch(50)
-  train_step.run(feed_dict={x: batch[0], y_: batch[1]})
-
-# compare prediction with truth
-correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
-
-# calculate accuracy
-accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
-
-# print accuracy
-print(accuracy.eval(feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
+with tf.Session() as sess:    
+    sess.run(tf.initialize_all_variables())    
+    for i in range(5):        
+        x = x + 1
+        print(sess.run(x))
 ```
 
-This should give you an accuracy of ~0.909. Make sure that you can see the console output of jupyter. It will show something similar to the following. 
+This should print the numbers from 1 to 5. Make sure that you can see the console output of jupyter and that you see the GPU logs. It should look similar to the following. 
 
 ```bash
 Found device 0 with properties: 
