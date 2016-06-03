@@ -59,7 +59,7 @@ Use the following command to check what GPU is installed.
 ```bash
 $ lspci -v | grep VGA
 ```
-Btw. if you want to connect to the lab machine from now on use the following command to sve time
+Btw. if you want to connect to the lab machine from now on use the following command to save time
 
 ```bash
 $ ssh -t entry ssh lab01
