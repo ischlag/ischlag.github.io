@@ -68,11 +68,11 @@ $ ssh -t entry ssh lab01
 ## Prerequisites
 In order to use Tensorflow with GPU support the GPU needs to support NVidia Compute Capability >= 3.0. The easiest way to read somewhere online the specification of the GPU used. 
 
-To run Tensorflow with GPU support the root user needs to install the Cuda Toolkit 7.5, which will be installed into ```/usr/local/cuda``` and cuDNN **v4**. Tensorflow doesn't support yet cudNN v5 (as of release 0.8.0).
+To run Tensorflow with GPU support the root user needs to install the Cuda Toolkit 7.5 and cudNN **v4** which both should be installed into /usr/local/cuda. Tensorflow doesn't yet support cudNN v5 (as of release 0.8.0).
 
 Further requirements which need to be installed are python 2.7, pip, virtualenv, and swig. Though depending on the installation maybe further applications are needed. 
 
-You need to add the following two lines to your ```~/.bash_profile```. Change the lines accordingly if the Cuda Toolkit has been installed in a different location. 
+You need to add the following two lines to your ~/.bash_profile. Change the lines accordingly if the Cuda Toolkit has been installed in a different location. 
 
 ```bash
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-7.5/lib64"
