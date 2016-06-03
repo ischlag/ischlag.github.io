@@ -4,15 +4,15 @@ title:  "How to setup Tensorflow"
 date:   2016-06-01
 description: "Learn how to setup Tensorflow on a remote linux machine without root access."
 ---
-## TL;DR;
+### TL;DR;
 A brief and concise tutorial on installing Tensorflow and Jupyter on a remote linux machine which is hidden behind a university or company firewall.
 
-## Context
+### Context
 Sometimes the machines we use to train our Machine Learning models are not in our cozy home and don't belong to us. In such a case it is also most likely that we don't have root privileges. But walking to the lab/office in order to monitor our training errors is not really an option is it?
 
 This brief explanation will setup an ssh tunnel and install the newest tensorflow version using pip and show you how to work remotly on your lab machine. For more details on setting up tensorflow, as well as, more details go to the [official Tensorflow website.](https://www.tensorflow.org/versions/master/get_started/os_setup.html)
 
-## Connect to the lab machine
+### Connect to the lab machine
 Let's assume that our GPU equiped lab machine is running on an internal network of our university and is not accessible over the internet. However, we can access a public server from which we can then connect into our lab machine. 
 
 Let's create an ssh config entry on our personal machine to make things easier: 
@@ -95,7 +95,7 @@ Now install the following dependencies, as well as, the master release of Tensor
 ```
 This will take a while. 
 
-## Remote access 
+### Remote access 
 Connect to the lab computer as before and run jupyter.
 
 ```bash
@@ -114,7 +114,7 @@ We can no add 127.0.0.1:1080 as our SOCKS proxy in our browser. You should then 
 pc-01.lab.university.edu:8889
 ```
 
-## Test Tensorflow
+### Test Tensorflow
 You should not only run the hello world example of Tensorflow but actually train a simple mnist model in order to make sure that your system is working correct and is using the GPU. Create a new notebook in jupyter and use the following code to perform some operations on the GPU.
 
 ```python
