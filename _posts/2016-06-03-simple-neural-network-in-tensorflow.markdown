@@ -10,6 +10,7 @@ A brief and concise step by step explanation on how to train a simple neural net
 ### Context
 We are going to use the MNIST dataset to train a very simple neural network with no hidden layer. If you don't know how to install tensorflow check out this [post]({% post_url 2016-06-02-installing-tensorflow %}). Also have a look at the [official tutorials](https://www.tensorflow.org/versions/master/tutorials/index.html) for tensorflow.
 
+### Code
 First, we need to import tensorflow and add a few parameters which we will use later.
 
 ```python

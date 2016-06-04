@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to setup Tensorflow"
+title:  "How to Setup Tensorflow"
 date:   2016-06-01
 description: "Learn how to setup Tensorflow on a remote linux machine without root access."
 ---
@@ -12,7 +12,7 @@ Sometimes the machines we use to train our Machine Learning models are not in ou
 
 This brief explanation will setup an ssh tunnel and install the newest tensorflow version using pip and show you how to work remotly on your lab machine. For more details on setting up tensorflow, as well as, more details go to the [official Tensorflow website.](https://www.tensorflow.org/versions/master/get_started/os_setup.html)
 
-### Connect to the lab machine
+### Connect to the Lab Machine
 Let's assume that our GPU equiped lab machine is running on an internal network of our university and is not accessible over the internet. However, we can access a public server from which we can then connect into our lab machine. 
 
 Let's create an ssh config entry on our personal machine to make things easier: 
@@ -65,7 +65,7 @@ Btw. if you want to connect to the lab machine from now on use the following com
 $ ssh -t entry ssh lab01
 ```
 
-## Prerequisites
+### Prerequisites
 In order to use Tensorflow with GPU support the GPU needs to support NVidia Compute Capability >= 3.0. The easiest way to read somewhere online the specification of the GPU used. 
 
 To run Tensorflow with GPU support the root user needs to install the Cuda Toolkit 7.5 and cudNN **v4** which both should be installed into /usr/local/cuda. Tensorflow doesn't yet support cudNN v5 (as of release 0.8.0).
@@ -79,7 +79,7 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-7.5/lib64"
 export CUDA_HOME=/usr/local/cuda-7.5/
 ```
 
-## Install Tensorflow
+### Install Tensorflow
 We are going to install Tensorflow in a virtual python environment. Create a new virtual python environment in which we will install our python packages.
 
 ```bash
