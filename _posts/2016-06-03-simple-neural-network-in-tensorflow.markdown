@@ -43,13 +43,13 @@ W = tf.Variable(tf.zeros([784, 10]))
 # bias
 b = tf.Variable(tf.zeros([10]))
 ```
-Now we have prepared all the ingredients for our model. We can now define our model which will calculate our prediction y. In this simple neuronal network, we have no hidden layer and perform a softmax for our 10 prediction classes.
+Now we have prepared all the ingredients for our model. We can now define our model which will calculate our prediction y. In this simple neural network, we have no hidden layer and perform a softmax over 10 prediction classes.
 
 ```python
 # y is our prediction
 y = tf.nn.softmax(tf.matmul(x,W) + b)
 ```
-An important part in order to train our network is the cost function. Here we use the cross-entropy error based on our prediction y and our target value y_.
+An important part in order to train our network is the cost function. Here, we use the cross-entropy error based on our prediction y and our target value y_.
 
 ```python
 cross_entropy = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
@@ -60,7 +60,7 @@ Another value we want to calculate is the accuracy of our parameters. We don't n
 correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 ```
-To train our model we use a gradient descent method. Tensorflow comes with several already implemented techniques. As a result we get a operation. This operation is tied to our graph and once we start a session we can execute this optimizer operation.
+To train our model we use a gradient descent method. Tensorflow comes with several techniques already implemented. As a result, we get an operation. This operation is tied to our graph and once we start a session, we can execute this optimizer operation.
 
 ```python
 train_op = tf.train.GradientDescentOptimizer(learning_rate).minimize(cross_entropy) 

@@ -5,18 +5,18 @@ date:   2016-06-04
 description: "Learn how to visualize your neural networks using Tensorboard."
 ---
 ### TL;DR;
-A brief and concise tutorial on how visualize different aspects such as the loss of your neural network using Tensorboard.
+A brief and concise tutorial on how visualize different aspects such as the loss of your neural network using tensorboard.
 
 ### Context
-We are going to work with a fully-connected neural network using the MNIST dataset. I'm going to use the network I have introduced in an earlier [post]({% post_url 2016-06-03-simple-neural-network-in-tensorflow %}). It achieves an accuracy of ~0.9. This is not bad but we have no clue what is actually going on or how our model looks like. In this post we will add the necessary commands to visualize the graph and some training values using tensorboard. If you haven't installed tensorflow yet look at this [post]({% post_url 2016-06-02-installing-tensorflow %}). You also want to have a look at the [official tensorflow documentation](https://www.tensorflow.org/versions/r0.8/api_docs/index.html).	
+We are going to work with a fully-connected neural network using the MNIST dataset. I'm going to use the network I have introduced in an earlier [post]({% post_url 2016-06-03-simple-neural-network-in-tensorflow %}). It achieves on the test-set an accuracy of ~90%. This is not bad but we have no clue what is actually going on or how our model looks like. In this post we will add the necessary commands to visualize the graph and some training values using tensorboard. If you haven't installed tensorflow yet look at this [post]({% post_url 2016-06-02-installing-tensorflow %}). You also want to have a look at the [official tensorflow documentation](https://www.tensorflow.org/versions/r0.8/api_docs/index.html).	
 
 ### Write a Log File and Run Tensorboard
-Tensorflow summaries are essentially logs. And in order to write logs we need a log writer or what is called in tensorflow a SummaryWriter. So for starters we'll add the following line before our train loop.
+Tensorflow summaries are essentially logs. And in order to write logs we need a log writer (or what it is called in tensorflow) a SummaryWriter. So for starters, we'll add the following line before our train loop.
 
 ```python
 writer = tf.train.SummaryWriter(logs_path, graph=tf.get_default_graph())
 ```
-This will create a log folder and save the graph of this session. We can now start tensorboard.
+This will create a log folder and save the graph structure. We can now start tensorboard.
 
 ```bash
 tensorboard --logdir=run1:/tmp/tensorflow/ --port 6006
@@ -40,7 +40,7 @@ I've had trouble reloading the graphs in tensorboard (tensorflow release 0.8.0) 
 ![The graph visualization I got for the current example](/images/graph_example.png){: .center-image }
 
 ### Log Dynamic Values
-So far all our changes are only modifying how our graph looks in tensorboard. In this second part we are now going to add summaries in order to log specific variables like the training error of our model. To log specific scalar values we need to create operations which we can then execute in our session. Such an operation can be created with the00 scalar_summary() function. You can find other summary operators [here](https://www.tensorflow.org/versions/r0.8/api_docs/python/train.html#summary-operations).
+So far all our changes are only modifying how our graph looks in tensorboard. In this second part, we are now going to add summaries to log specific variables like the training error of our model. To log specific scalar values we need to create operations which we can then execute in our session. Such an operation can be created with the scalar_summary() function. You can find other summary operators [here](https://www.tensorflow.org/versions/r0.8/api_docs/python/train.html#summary-operations).
 
 ```python
 # create a summary for our cost and accuracy

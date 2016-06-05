@@ -5,12 +5,12 @@ date:   2016-06-01
 description: "Learn how to setup Tensorflow on a remote linux machine without root access."
 ---
 ### TL;DR;
-A brief and concise tutorial on installing Tensorflow and Jupyter on a remote linux machine which is hidden behind a university or company firewall.
+A brief and concise tutorial on installing tensorflow and jupyter on a remote linux machine which is hidden behind a university or company firewall.
 
 ### Context
 Sometimes the machines we use to train our Machine Learning models are not in our cozy home and don't belong to us. In such a case it is also most likely that we don't have root privileges. But walking to the lab/office in order to monitor our training errors is not really an option is it?
 
-This brief explanation will setup an ssh tunnel and install the newest tensorflow version using pip and show you how to work remotly on your lab machine. For more details on setting up tensorflow, as well as, more details go to the [official Tensorflow website.](https://www.tensorflow.org/versions/master/get_started/os_setup.html)
+This brief explanation will setup an ssh tunnel and install the newest tensorflow version using pip and show you how to work remotly on your lab machine. For more details on setting up tensorflow visit the official tensorflow [website.](https://www.tensorflow.org/versions/master/get_started/os_setup.html)
 
 ### Connect to the Lab Machine
 Let's assume that our GPU equiped lab machine is running on an internal network of our university and is not accessible over the internet. However, we can access a public server from which we can then connect into our lab machine. 
@@ -32,7 +32,7 @@ Connect to the public server
 ```bash
 $ ssh entry
 ```
-And create another ssh configuration for our lab machine.
+And create another ssh configuration on our server for our lab machine.
 
 ```bash
 $ nano ~/.ssh/config
@@ -59,16 +59,16 @@ Use the following command to check what GPU is installed.
 ```bash
 $ lspci -v | grep VGA
 ```
-Btw. if you want to connect to the lab machine from now on use the following command to save time
+By the way, you can connect to the lab machine in one step.
 
 ```bash
 $ ssh -t entry ssh lab01
 ```
 
 ### Prerequisites
-In order to use Tensorflow with GPU support the GPU needs to support NVidia Compute Capability >= 3.0. The easiest way to read somewhere online the specification of the GPU used. 
+In order to use tensorflow with GPU support the GPU needs to support NVidia Compute Capability >= 3.0. The easiest way to find out if your GPU supports this is to look it up online. 
 
-To run Tensorflow with GPU support the root user needs to install the Cuda Toolkit 7.5 and cudNN **v4** which both should be installed into /usr/local/cuda. Tensorflow doesn't yet support cudNN v5 (as of release 0.8.0).
+To run tensorflow with GPU support the root user needs to install the Cuda Toolkit 7.5 and cudNN **v4** which both should be installed into /usr/local/cuda. Tensorflow doesn't yet support cudNN v5 (as of release 0.8.0).
 
 Further requirements which need to be installed are python 2.7, pip, virtualenv, and swig. Though depending on the installation maybe further applications are needed. 
 
@@ -80,13 +80,13 @@ export CUDA_HOME=/usr/local/cuda-7.5/
 ```
 
 ### Install Tensorflow
-We are going to install Tensorflow in a virtual python environment. Create a new virtual python environment in which we will install our python packages.
+We are going to install tensorflow in a virtual python environment. Use the source command to enter the environment.
 
 ```bash
 virtualenv --system-site-packages ~/tensorflow
 source ~/tensorflow/bin/activate
 ```
-Now install the following dependencies, as well as, the master release of Tensorflow for GPU, Linux 64Bit, and Python 2.7.
+Now install the following dependencies, as well as, the master release of tensorflow for GPU, Linux 64Bit, and Python 2.7.
 
 ```bash
 (tensorflow) $ pip install --upgrade python-numpy python-dev
@@ -96,26 +96,26 @@ Now install the following dependencies, as well as, the master release of Tensor
 This will take a while. 
 
 ### Remote access 
-Connect to the lab computer as before and run jupyter.
+Still connected to the lab computer we run jupyter.
 
 ```bash
 (tensorflow) $ jupyter notebook --no-browser --ip=* --port=8889
 ```
 **Warning**: ip=* will allow anyone on the same network to access your python notebooks. You can read [here](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html) how to secure your jupyter server. 
 
-In order to access our notebooks we will create an SSH tunnel from our personal machine to the lab machine. Create a local SOCKS server to forward everything through an SSH tunnel over the public server.
+In order to access our notebooks we will create an SSH tunnel from our personal machine to the lab machine. Create a local SOCKS server to forward everything through an SSH tunnel through the public server which we used to access our lab machine.
 
 ```bash
 $ ssh -C -D 1080 -N -t entry ssh lab01
 ```
-We can no add 127.0.0.1:1080 as our SOCKS proxy in our browser. You should then be able to connect to the jupyter server using the hostname of your lab machine and the jupyter port 8889.
+We can no add 127.0.0.1:1080 as our SOCKS proxy in our browser. You should then be able to connect to the jupyter server using the hostname of your lab machine and the jupyter port.
 
 ```bash
 pc-01.lab.university.edu:8889
 ```
 
 ### Test Tensorflow
-You should not only run the hello world example of Tensorflow but actually train a simple mnist model in order to make sure that your system is working correct and is using the GPU. Create a new notebook in jupyter and use the following code to perform some operations on the GPU.
+You should not only run the hello world example of tensorflow but actually train a simple mnist model in order to make sure that your system is working correct and is using the GPU. Create a new notebook in jupyter and use the following code to perform some operations on the GPU.
 
 ```python
 import tensorflow as tf
