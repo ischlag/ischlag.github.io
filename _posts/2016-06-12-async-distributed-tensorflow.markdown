@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Distributed TensorFlow Example"
+title:  "Distributed Tensorflow Example"
 date:   2016-06-12
 description: "This example shows how to train a simple neural network asynchronous and distributed on multiple machines using data parallelism."
 ---
