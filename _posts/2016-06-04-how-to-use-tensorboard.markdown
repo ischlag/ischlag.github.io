@@ -5,7 +5,7 @@ date:   2016-06-04
 description: "Learn how to visualize your neural networks using Tensorboard."
 ---
 ### TL;DR;
-A brief and concise tutorial on how visualize different aspects such as the loss of your neural network using tensorboard.
+A brief and concise tutorial on how to visualize different aspects such as the loss of your neural network using tensorboard.
 
 ### Context
 We are going to work with a fully-connected neural network using the MNIST dataset. I'm going to use the network I have introduced in an earlier [post]({% post_url 2016-06-03-simple-neural-network-in-tensorflow %}). It achieves on the test-set an accuracy of ~90%. This is not bad but we have no clue what is actually going on or how our model looks like. In this post we will add the necessary commands to visualize the graph and some training values using tensorboard. If you haven't installed tensorflow yet look at this [post]({% post_url 2016-06-02-installing-tensorflow %}). You also want to have a look at the [official tensorflow documentation](https://www.tensorflow.org/versions/r0.8/api_docs/index.html).	
