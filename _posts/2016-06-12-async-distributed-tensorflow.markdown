@@ -30,7 +30,7 @@ workers = [ "pc-02:2222",
             "pc-04:2222"]
 cluster = tf.train.ClusterSpec({"ps":parameter_servers, "worker":workers})
 ```
-_ps_ and _workers_ are called **jobs** which is basically just a container for one or several tasks. The task is a unique thing the worker will do. If we wanted, we could add several task running on the same machine. This might make sense if you have e.g. multiple GPUs on one machine. In this example, all the tasks will include the complete graph of our model but if you want to parallise the model instead of the data you'd have to change what every task does. Next, we need to initialize the running machine.
+_ps_ and _workers_ are called **jobs** which is basically just a container for one or several **tasks**. The task is a unique thing the worker will do. If we wanted, we could add several task running on the same machine. This might make sense if you have e.g. multiple GPUs on one machine. In this example, all the tasks will include the complete graph of our model but if you want to parallise the model instead of the data you'd have to change what every task does. Next, we need to initialize the running machine.
 
 ```python
 # input flags
