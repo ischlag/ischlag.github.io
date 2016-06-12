@@ -30,7 +30,7 @@ workers = [ "pc-02:2222",
             "pc-04:2222"]
 cluster = tf.train.ClusterSpec({"ps":parameter_servers, "worker":workers})
 ```
-_ps_ and _workers_ are called **jobs** which is basically just a container for one or several **tasks**. The task is a unique thing the worker will do. If we wanted, we could add several task running on the same machine. This might make sense if you have e.g. multiple GPUs on one machine. In this example, all the tasks will include the complete graph of our model but if you want to parallise the model instead of the data you'd have to change what every task does. Next, we need to initialize the running machine.
+_ps_ and _workers_ are called **jobs** which is basically just a container for one or several **tasks**. The task is a unique thing the worker will do. If we wanted, we could add several tasks running on the same machine. This might make sense if you have e.g. multiple GPUs on one machine. In this example, all the tasks will include the complete graph of our model but if you want to parallise the model instead of the data you'd have to change what every task does. Next, we need to initialize the running machine.
 
 ```python
 # input flags
@@ -43,25 +43,25 @@ server = tf.train.Server(cluster,
                           job_name=FLAGS.job_name,
                           task_index=FLAGS.task_index)
 ```
-Make sure that you run the correct task on the current machine. In our example, pc3-002-l should be a worker with task_index 0. What follows in our code is the configuration parameters and loading the mnist data as we have seen before. If the current script is run on a parameters server all we have to do is to call server.join() in order for it to join the cluster. 
+Make sure that you run the correct task on the current machine. In our example, pc-02 should be a worker with task_index 0. What follows in our code is the configuration parameters and loading the mnist data as we have seen before. If the current script is run on a parameters server all we have to do is to call server.join() in order for it to join the cluster. 
 
-What follows is the configuration of our workers. First, we are going to define the computation for every worker. Since we are going to compute the whole model on all the devices we will add the scope of all workers.
+What follows are some configuration variables. Next, we are going to define the computation for every worker. Since we are going to compute the whole model on all the devices we will add the scope of all workers.
 
 ```python
   with tf.device(tf.train.replica_device_setter(
     worker_device="/job:worker/task:%d" % FLAGS.task_index,
     cluster=cluster)):
 ```
-What follows is the model implemented. This is just slightly different to what we have been looking at before. We include a global_step variables which will increment by one with every update to better keep track of our updates. If also set the random seed to 1 to better compare different cluster configurations. However, because of the threads used by tensorflow internally this doesn't make the script deterministic so don't expect the exact same results after every run. I've also added the global_step variable to the optimizer. 
+What follows is the implemented model. This is just slightly different to what we have been working with so far. We include a global_step variable which will increment by one with every update to better keep track of them. Furthermore, we also set the random seed to 1 to better compare different cluster configurations. However, because of the threads used by tensorflow internally this doesn't make the script deterministic so don't expect the exact same results after every run. I've also added the global_step variable to the optimizer and the following supervisor. 
 
-After we have done this we need to get a session in order to run our training cycles similar to what we had before. In a distributed setting one machine will be the **chief**. The chief is a worker machine (in our case task 0) which manages the rest of the cluster. The sessions are handled by the chief i.e. the supervisor object.
+After we have done this we need to get a session in order to run our training cycles similar to what we already had. In a distributed setting one machine will be the **chief**. The chief is a worker machine (in our case task 0) which manages the rest of the cluster. The session is handled by the chief i.e. the supervisor object.
 
 ```python
   sv = tf.train.Supervisor(is_chief=(FLAGS.task_index == 0),
                             global_step=global_step,
                             init_op=init_op)
 ```
-The supervisor object has several parameters which are supposed to simplify things ([see here](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html#Supervisor)) but in my case adding e.g. the summary_op to the supervisor as a parameter together with a log path didn't work. Some aspects here felt buggy and there were some issues on Github. We can, however, do our logs as we did before and continue.
+The supervisor object has several parameters which are supposed to simplify things ([see here](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html#Supervisor)) but in my case adding e.g. the summary_op to the supervisor as a parameter together with a log path didn't work. Some aspects here felt buggy and there were some open issues on Github as well. We can, however, do our logs as we did before and continue.
 
 We can now in a similar way obtain a session using the following command.
 
@@ -69,7 +69,7 @@ We can now in a similar way obtain a session using the following command.
   with sv.prepare_or_wait_for_session(server.target) as sess:
 ```
 
-The rest of our code is fairly similar. You can find the complete code [here](https://github.com/ischlag/distributed-tensorflow-example) or below.
+That's it! The rest of our code is fairly similar. You can find the complete code [here](https://github.com/ischlag/distributed-tensorflow-example) or below.
 
 ```python
 '''
