@@ -4,6 +4,8 @@ title:  "Important ILSVRC Achievements from 2012-2015"
 date:   2016-04-05
 description: "A brief summary about the winning techniques used at the ILSVRC challenges since 2012."
 ---
+In this post, I'll go through some of the ILSVRC achievements of the recent years. If you are interested in the evolution of neural architectures I highly recommend this [blog post by Eugenio Culurciello](http://culurciello.github.io/tech/2016/06/04/nets.html)!
+
 The ImageNet [ILSVRC challenge](http://www.image-net.org/challenges/LSVRC/) consists of 1.2 million images associated with 1’000 categories. While some categories were quite different, others were very similar.
 
 ![A sample of two very similar looking dog species.](/images/ilsvrc_example.png){: .center-image }
