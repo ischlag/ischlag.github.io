@@ -161,7 +161,7 @@ $$ c = c + \Delta c $$
 
 The same thing is done considering more variables. Now we know everything to apply the same thing to an untrained neural network.
 
-##Neural Networks##
+## Neural Networks##
 
 You already know all the basics to train a neural network. Forget the example we have been looking at so far. Let's now try to apply what we have learned to train a multi-layer perceptron neural network. We are going to calculate the cost for an arbitrary set of data. The cost is a feedforward pass through our random initialized neural network with a quadratic error at the end.
 
