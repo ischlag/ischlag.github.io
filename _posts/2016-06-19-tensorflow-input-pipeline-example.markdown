@@ -5,14 +5,14 @@ date:   2016-06-19
 description: "An example of how to use tensorflows input pipeline to load custom data in an efficient way with randomization, batch processing, and the partition into a test and validation set."
 ---
 ### TL;DR;
-A brief example of using tensorflows input pipeline to load your own custom data structures into tensorflows computational graph. This includes the partitioning of the data into a test and train set and batching together a set of images. You can find all the code at the bottom of this page. 
+A brief example of using tensorflows input pipeline to load your own custom data structures into tensorflows computational graph. This includes the partitioning of the data into a test and train set and batching together a set of images. You can find all the code at the bottom of this page. **Note: This will not work for large datasets as _ops.convert_to_tensor_ will create constants of your data in your graph! Have a look at this [next]({%post_url 2016-07-11-tensorflow-input-pipeline-for-large-datasets %}) post in order to use TensorFlow input pipelines with very large datasets.**
 
 ### Context
 The official tensorflow documentation on reading in data can be found [here](https://www.tensorflow.org/versions/master/how_tos/reading_data/index.html) but also have a look at the [API](https://www.tensorflow.org/versions/master/api_docs/index.html). With [this script](https://gist.github.com/ischlag/41d15424e7989b936c1609b53edd1390) you can create a jpg based dataset from the compact mnist dataset format. With this dataset, we are going to build a simple and efficient input pipeline. This example was done using tensorflow 0.8.0. 
 
 ### Load Data in Tensorflow
 
-Ok, let's take one step back. There are two ways on how you can load your data into your tensorflow graph (excluding a third way of loading the data as a constant). In an earlier [post](% post_url 2016-06-03-simple-neural-network-in-tensorflow %), we have used the _feeding_ method where we provide a _feed_dict_ object with our data and labels at every step. This can be problematic if our dataset is too big to be stored in our working memory and so the authors of tensorflow introduced input pipelines. The next steps are going to describe how that pipeline should look like. Only when we start our queue runners right before our session operations the pipeline will be active and loading data. 
+Ok, let's take one step back. There are two ways on how you can load your data into your tensorflow graph (excluding a third way of loading the data as a constant). In an earlier [post]({% post_url 2016-06-03-simple-neural-network-in-tensorflow %}), we have used the _feeding_ method where we provide a _feed_dict_ object with our data and labels at every step. This can be problematic if our dataset is too big to be stored in our working memory and so the authors of tensorflow introduced input pipelines. The next steps are going to describe how that pipeline should look like. Only when we start our queue runners right before our session operations the pipeline will be active and loading data. 
 
 The input pipeline deals with reading csv files, decode file formats, restructure the data, shuffle the data, data augmentation or other preprocessing, and load the data in batches using threads. However, we do have to write some code to get this to work.
 
