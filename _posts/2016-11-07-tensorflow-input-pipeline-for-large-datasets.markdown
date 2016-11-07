@@ -10,7 +10,7 @@ A more advanced example compared to [this earlier post]({% post_url 2016-06-19-t
 ### Context
 I'm using TensorFlow 0.11 but other versions should work just fine. This is a toy example but later I'll also add a real example using SVHN or imagenet. TensorFlow makes it really easy to read data from TFRecords files i.e. TensorFlows own data format. If you can convert your data into this binary format you might want to consider this as it will make it easier to deal with. However, we're not going to that here.
 
-### Load the Label Data
+### Load the Data
 
 For this example we are creating a dataset for the purpose of demonstraion. This numpy data will fit into our working memory (RAM). But instead of reading from a numpy array you could easily change it to read directly from a file if you can't fit the whole dataset into your working memory.  
 
@@ -23,6 +23,9 @@ r = np.arange(0.0,100003.0)
 raw_data = np.dstack((r,r,r,r))[0]
 raw_target = np.array([[1,0,0]] * 100003)
 ```
+
+### Build an FIFOQueue
+
 From our numpy data we'll read multiple samples at once and push them into our FIFOQueue. For this purpose we need to create placeholders to hold this small junks of data, the queue itself, and an enqueue and dequeue operation. 
 The *enqueue_many* functions adds multiple samples at once. In this case we enqueue a bunch and dequeue one sample at the time. 
 
@@ -42,6 +45,9 @@ Now we can already continue building our input pipeline as we did in the prior b
 # capacity = min_after_dequeue + (num_threads + a small safety margin) * batch_size
 data_batch, target_batch = tf.train.batch(dequeue_op, batch_size=15, capacity=40)
 ```
+
+### Start the Threads
+
 Now the only thing that is missing are the queue runner threads for our tf.train.batch.
 
 
@@ -87,7 +93,6 @@ Once we are done with our input pipeline we should stop all running threads befo
 
 ```python
 sess.run(queue.close(cancel_pending_enqueues=True))
-
 coord.request_stop()
 coord.join(threads)
 sess.close()
