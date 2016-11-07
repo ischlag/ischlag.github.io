@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tensorflow Input Pipeline For Large Datasets"
-date:   2016-07-11
+date:   2016-11-07
 description: "Efficiently feed data into your computational graph using threaded queues."
 ---
 ### TL;DR;
