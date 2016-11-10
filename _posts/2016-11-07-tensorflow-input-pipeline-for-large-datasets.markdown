@@ -8,7 +8,7 @@ description: "Efficiently feed data into your computational graph using threaded
 A more advanced example compared to [this earlier post]({% post_url 2016-06-19-tensorflow-input-pipeline-example%}) on input pipelines in TensorFlow. This post is about a toy example which shows how to use a FIFOQueue in order to create an input pipeline that will also work with big datasets. There might still be room for improvements. Please let me know if you have some ideas.
 
 ### Context
-I'm using TensorFlow 0.11 but other versions should work just fine. This is a toy example but later I'll also add a real example using SVHN or imagenet. TensorFlow makes it really easy to read data from TFRecords files i.e. TensorFlows own data format. If you can convert your data into this binary format you might want to consider this as it will make it easier to deal with. However, we're not going to that here.
+I'm using TensorFlow 0.11 but other versions should work just fine. This is a toy example but later I'll also add a real example using SVHN or imagenet later on. TensorFlow makes it really easy to read data from TFRecords files i.e. TensorFlows own data format. If you can convert your data into this binary format you might want to consider this as it will make it easier to deal with. However, we're not going to that here. In this examples we are going to use two queues. One will be fed imagepaths and labels by our own enqueue functions reading from a numpy array (or file if you wish). The second one is hidden inside tf.train.batch which will dequeue samples from our first queue, load the image, do some processing and build batches.  
 
 ### Load the Data
 
