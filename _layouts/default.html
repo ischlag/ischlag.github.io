@@ -1,22 +1,31 @@
-<!--Default-->
-<!doctype html>
-<html>
-<head>
-<meta content='{{ site.title }}' name='title' />
-<title>{{ site.title }}</title>
-{% include head.html %}
-</head>
+<!DOCTYPE html>
+<html lang="en">
 
-<body>
-{% include header.html %}
-<div id='container'>
-{% include links.html %}
-<div class="content">
-{{ content }}
-</div>
-</div>
+  {% include head.html %}
 
-{% include footer.html %}
-</body>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          <h2 class="nav-title">{{ site.title }}</h2>
+        </a>
+        <ul>
+          <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+          <li><a href="{{ site.baseurl }}/">Research</a></li>
+          <li><a href="https://scholar.google.ch/citations?user=nFQJEskAAAAJ">Publications</a></li>
+          <li><a href="https://github.com/ischlag">GitHub</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+      </span>
+    </footer>
+  </body>
 </html>

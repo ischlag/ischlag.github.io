@@ -1,42 +1,21 @@
-<meta charset="utf-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="/katex-0.6/katex.min.css">
-<script src="/katex-0.6/katex.min.js"></script>
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
 
-<style>
-  /* We want previews included so at least the TeX source is visible to clients
-     without Javascript, or without network connection
-     (new option in kramdown 1.6, enabled in _config.yml)
-     but we hide them if math rendering completes sucessfully. */
-  .MathJax_Preview { color: #888 }
-  .math_finished .MathJax_Preview { display: none }
-</style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
 
-<!-- scribble -->
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-<link rel="alternate" type="application/rss+xml" title="Imanol Schlag RSS" href="/feed.xml" />
-<link href='/stylesheets/opensans.css' rel='stylesheet' type='text/css' />
-<link href='/stylesheets/style.css' rel='stylesheet' type='text/css' />
-<link href='/stylesheets/syntax2.css' rel='stylesheet' type='text/css' />
-<link href='/stylesheets/responsive.css' rel='stylesheet' type='text/css' />
-
-<script src='/javascripts/jquery.js' type='text/javascript'></script>
-<script src='/javascripts/pd.js' type='text/javascript'></script>
-<script src='/javascripts/basics.js' type='text/javascript'></script>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-
-<meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
-<meta content='text/html; charset=utf-8' http-equiv='content-type' />
-<meta content="{{ site.facebook_appid }}" property="fb:app_id" />
-{% if page.date %}
-  <meta content='{{ site.url }}{{ page.url }}' property='og:url' />
-  <meta content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
-  <meta content="article" property="og:type" />
-{% else %}
-  <meta content='{{ site.url }}' property='og:url' />
-  <meta content="{{ site.description }}" property='og:description' />
-  <meta content="blog" property="og:type" />
-{% endif %}
-{% include google-analytics.html %}
-
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon-32x32.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon-16x16.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/apple-touch-icon.png" | relative_url }}">
+</head>

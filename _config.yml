@@ -1,37 +1,26 @@
 # Site settings
-title:              Imanol Schlag
-email:              imanol.schlag@gmail.com
-description:        My personal website about Deep Learning, Recurrent Neural Networks, and more.
-url:                http://ischlag.github.io
+title:          Imanol Schlag
+description:    "Minimal Jekyll theme for storytellers"
+url:            "https://ischlag.github.io"
 
-links:
-  - name:         Blog
-    url:          /
-  - name:         About
-    url:          /about
-  - name:         GitHub
-    url:          http://github.com/ischlag
-    external:     true
-  - name:         RSS
-    url:          /feed.xml
-
+# Author
+author:
+  name:         Imanol Schlag
+  url:          https://ischlag.github.io
+  email:        imanol.schlag@gmail.com
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+markdown:       kramdown
 
-highlighter: rouge
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
 
-  # The following is untested, suppossed to work once Github gets Kramdown 1.6...
-  # (current visible at https://pages.github.com/versions)
-  math_engine:      mathjax  # default in Kramdown
-  math_engine_opts:
-    preview: true   # not default but better acessibility
+# Gems
+plugins:
+  - jekyll-paginate
 
-redcarpet:
-  extensions:
-    - smart
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       10

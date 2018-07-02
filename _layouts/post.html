@@ -1,32 +1,29 @@
-<!--Post-->
-<!doctype html>
-<html>
-<head>
-<meta content='{{ page.title }} - {{ site.title }}' name='title' />
-<meta name="description" content="{{page.description}}"/>
-<title>{{ page.title }} - {{ site.title }}</title>
-{% include head.html %}
-</head>
+---
+layout: default
+---
 
-<body>
-{% include header.html %}
-<div id='container'>
-    {% include links.html %}
-    {% include pages.html %}
-    <div class="content">
-        <section class='post'>
-            <h1 class="upcase">
-                <div class='date'>{{ page.date | date: "%-d %B %Y" }}</div>
-                {{ page.title }}
-            </h1>
-            {{ content }}
-        </section>
-    </div>
+<div class="post">
+  <div class="post-info">
+    {% if page.date %}
+      <br>
+      <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+  </div>
 
-    {% include links.html %}
-	{% include google-comments.html %}
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-line"></div>
+
+  {{ content }}
+
 </div>
-{% include footer.html %}
-</body>
 
-</html>
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <a href="#" class="top">Top</a>
+</div>
