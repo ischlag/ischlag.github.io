@@ -1,26 +1,23 @@
-# Site settings
-title:          Imanol Schlag
-description:    "Minimal Jekyll theme for storytellers"
-url:            "https://ischlag.github.io"
+title: Your Research Blog
+description: Personal website with versioned articles
+url: ""
+baseurl: ""
 
-# Author
 author:
-  name:         Imanol Schlag
-  url:          https://ischlag.github.io
-  email:        imanol.schlag@gmail.com
+  name: Your Name
+  email: your.email@example.com
 
-# Build settings
-markdown:       kramdown
-
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-# Gems
+markdown: kramdown
 plugins:
   - jekyll-paginate
 
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       10
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+paginate: 10

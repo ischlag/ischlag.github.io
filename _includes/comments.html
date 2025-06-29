@@ -1,0 +1,15 @@
+{% comment %}
+This template displays comments from markdown files
+Usage: {% include comments.html comments_file="filename.md" %}
+{% endcomment %}
+
+{% capture comments_content %}{% include_relative {{ include.comments_file }} %}{% endcapture %}
+
+{% if comments_content and comments_content != "" %}
+<div class="comments-container">
+  <h3>Comments</h3>
+  <div class="comments-content">
+    {{ comments_content | markdownify }}
+  </div>
+</div>
+{% endif %}

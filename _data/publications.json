@@ -1,0 +1,477 @@
+[
+  {
+    "key": "fan2025can",
+    "title": "Can Performant LLMs Be Ethical? Quantifying the Impact of Web Crawling Opt-Outs",
+    "authors": "Dongyang Fan, Vinko Sabolčec, Matin Ansaripour, Ayush Kumar Tarun, Martin Jaggi, Antoine Bosselut, <strong>Imanol Schlag</strong>",
+    "year": 2025,
+    "venue": "Preprint",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2504.06219",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "xu2025positional",
+    "title": "Positional Fragility in LLMs: How Offset Effects Reshape Our Understanding of Memorization Risks",
+    "authors": "Yixuan Xu, Antoine Bosselut, <strong>Imanol Schlag</strong>",
+    "year": 2025,
+    "venue": "Preprint",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2505.13171",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "hernandez2025towards",
+    "title": "Towards Fully FP8 GEMM LLM Training at Scale",
+    "authors": "Alejandro Hernández-Cano, Dhia Garbaya, <strong>Imanol Schlag</strong>, Martin Jaggi",
+    "year": 2025,
+    "venue": "Preprint",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2505.20524",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "schafer2024effect",
+    "title": "On the Effect of (Near) Duplicate Subwords in Language Modelling",
+    "authors": "Anton Schäfer, Thomas Hofmann, <strong>Imanol Schlag</strong>*, Tiago Pimentel*",
+    "year": 2024,
+    "venue": "ACL 2024",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://aclanthology.org/2024.findings-acl.571/",
+        "text": "ACL"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "anagnostidis2024navigating",
+    "title": "Navigating Scaling Laws: Compute Optimality in Adaptive Model Training",
+    "authors": "Sotiris Anagnostidis, Gregor Bachmann, <strong>Imanol Schlag</strong>, Thomas Hofmann",
+    "year": 2024,
+    "venue": "ICML",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://proceedings.mlr.press/v235/anagnostidis24a.html",
+        "text": "ICML"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "he2024understanding",
+    "title": "Understanding and Minimising Outlier Features in Transformer Training",
+    "authors": "Bobby He, Lorenzo Noci, Daniele Paliotta, <strong>Imanol Schlag</strong>, Thomas Hofmann",
+    "year": 2024,
+    "venue": "NeurIPS",
+    "venueType": "journal",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/986292a930c3692168b177a770025ab3-Abstract-Conference.html",
+        "text": "NeurIPS"
+      }
+    ],
+    "note": null,
+    "pages": "83786--83846",
+    "volume": "37"
+  },
+  {
+    "key": "romanou2024include",
+    "title": "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
+    "authors": "Angelika Romanou, Negar Foroutan, Anna Sotnikova, Zeming Chen, Sree Harsha Nelaturu, Shivalika Singh, Rishabh Maheshwary, Micol Altomare, Mohamed A Haggag, Alfonso Amayuelas, others",
+    "year": 2025,
+    "venue": "ICLR",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://openreview.net/forum?id=k3gCieTXeY",
+        "text": "OpenReview"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "schafer2024role",
+    "title": "The Role of Language Imbalance in Cross-lingual Generalisation: Insights from Cloned Language Experiments",
+    "authors": "Anton Schäfer, Shauli Ravfogel, Thomas Hofmann, Tiago Pimentel*, <strong>Imanol Schlag</strong>*",
+    "year": 2024,
+    "venue": "Preprint",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2404.07982",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "huang2024deriving",
+    "title": "Deriving Activation Functions Using Integration",
+    "authors": "Allen Hao Huang, <strong>Imanol Schlag</strong>",
+    "year": 2024,
+    "venue": "Preprint",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2411.13010",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "schlag2023large",
+    "title": "Large Language Model Programs",
+    "authors": "<strong>Imanol Schlag</strong>, Sainbayar Sukhbaatar, Asli Celikyilmaz, Wen-tau Yih, Jason Weston, Jürgen Schmidhuber, Xian Li",
+    "year": 2023,
+    "venue": "Preprint",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2305.05364",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "zhuge2023mindstorms",
+    "title": "Mindstorms in Natural Language-Based Societies of Mind",
+    "authors": "Mingchen Zhuge, Haozhe Liu, Francesco Faccio, Dylan R Ashley, Róbert Csordás, Anand Gopalakrishnan, Abdullah Hamdi, Hasan Abed Al Kader Hammoud, Vincent Herrmann, Kazuki Irie, others",
+    "year": 2025,
+    "venue": "Computational Visual Media",
+    "venueType": "journal",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://doi.org/10.26599/CVM.2025.9450460",
+        "text": "DOI"
+      }
+    ],
+    "note": null,
+    "pages": "29--81",
+    "volume": "11"
+  },
+  {
+    "key": "stanic2023languini",
+    "title": "The Languini Kitchen: Enabling Language Modelling Research at Different Scales of Compute",
+    "authors": "Aleksandar Stanić, Dylan Ashley, Oleg Serikov, Louis Kirsch, Francesco Faccio, Jürgen Schmidhuber, Thomas Hofmann, <strong>Imanol Schlag</strong>",
+    "year": 2023,
+    "venue": "Preprint",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2309.11197",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "schlag2023fast",
+    "title": "Fast Weight Programmers for Greater Systematic Generalisation in Language",
+    "authors": "<strong>Imanol Schlag</strong>",
+    "year": 2023,
+    "venue": "Thesis",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://www.usi.ch/en/feeds/24978",
+        "text": "USI"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "hutchins2022block",
+    "title": "Block-Recurrent Transformers",
+    "authors": "DeLesley Hutchins*, <strong>Imanol Schlag</strong>*, Yuhuai Wu, Ethan Dyer, Behnam Neyshabur",
+    "year": 2022,
+    "venue": "NeurIPS",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/d6e0bbb9fc3f4c10950052ec2359355c-Abstract-Conference.html",
+        "text": "NeurIPS"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "lewkowycz2022solving",
+    "title": "Solving Quantitative Reasoning Problems with Language Models",
+    "authors": "Aitor Lewkowycz, Anders Andreassen, David Dohan, Ethan Dyer, Henryk Michalewski, Vinay Ramasesh, Ambrose Slone, Cem Anil, <strong>Imanol Schlag</strong>, Theo Gutman-Solo, others",
+    "year": 2022,
+    "venue": "NeurIPS",
+    "venueType": "journal",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://proceedings.neurips.cc//paper_files/paper/2022/hash/18abbeef8cfe9203fdf9053c9c4fe191-Abstract-Conference.html",
+        "text": "NeurIPS"
+      }
+    ],
+    "note": null,
+    "pages": "3843--3857",
+    "volume": "35"
+  },
+  {
+    "key": "schlag2021learning",
+    "title": "Learning Associative Inference Using Fast Weight Memory",
+    "authors": "<strong>Imanol Schlag</strong>, Tsendsuren Munkhdalai, Jürgen Schmidhuber",
+    "year": 2021,
+    "venue": "ICLR",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://openreview.net/forum?id=TuK6agbdt27",
+        "text": "OpenReview"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "irie2021going",
+    "title": "Going Beyond Linear Transformers with Recurrent Fast Weight Programmers",
+    "authors": "Kazuki Irie*, <strong>Imanol Schlag</strong>*, Róbert Csordás, Jürgen Schmidhuber",
+    "year": 2021,
+    "venue": "NeurIPS",
+    "venueType": "journal",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://papers.neurips.cc/paper/2021/hash/3f9e3767ef3b10a0de4c256d7ef9805d-Abstract.html",
+        "text": "NeurIPS"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": "34"
+  },
+  {
+    "key": "schlag2021linear",
+    "title": "Linear Transformers are Secretly Fast Weight Programmers",
+    "authors": "<strong>Imanol Schlag</strong>*, Kazuki Irie*, Jürgen Schmidhuber",
+    "year": 2021,
+    "venue": "ICML",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://proceedings.mlr.press/v139/schlag21a.html",
+        "text": "ICML"
+      }
+    ],
+    "note": null,
+    "pages": "9355--9366",
+    "volume": null
+  },
+  {
+    "key": "schlag2021augmenting",
+    "title": "Augmenting Classic Algorithms with Neural Components for Strong Generalisation on Ambiguous and High-Dimensional Data",
+    "authors": "<strong>Imanol Schlag</strong>, Jürgen Schmidhuber",
+    "year": 2021,
+    "venue": "NeurIPS 2021 Workshop AIPLANS",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://openreview.net/forum?id=_Y4FQu1aJ1Z",
+        "text": "OpenReview"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "irie2021improving",
+    "title": "Improving Baselines in the Wild",
+    "authors": "Kazuki Irie, <strong>Imanol Schlag</strong>, Róbert Csordás, Jürgen Schmidhuber",
+    "year": 2021,
+    "venue": "NeurIPS 2021 Workshop on Distribution Shifts",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://openreview.net/forum?id=9vxOrkNTs1x",
+        "text": "OpenReview"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "irie2021modern",
+    "title": "A Modern Self-Referential Weight Matrix That Learns to Modify Itself",
+    "authors": "Kazuki Irie, <strong>Imanol Schlag</strong>, Róbert Csordás, Jürgen Schmidhuber",
+    "year": 2021,
+    "venue": "Deep RL Workshop NeurIPS 2021",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://openreview.net/forum?id=lVUGfLpNpCF",
+        "text": "OpenReview"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "schlag2019enhancing",
+    "title": "Enhancing the Transformer with Explicit Relational Encoding for Math Problem Solving",
+    "authors": "<strong>Imanol Schlag</strong>, Paul Smolensky, Roland Fernandez, Nebojsa Jojic, Jürgen Schmidhuber, Jianfeng Gao",
+    "year": 2019,
+    "venue": "Preprint",
+    "venueType": "other",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/1910.06611",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "schlag2018learning",
+    "title": "Learning to Reason with Third Order Tensor Products",
+    "authors": "<strong>Imanol Schlag</strong>, Jürgen Schmidhuber",
+    "year": 2018,
+    "venue": "NeurIPS",
+    "venueType": "journal",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2018/hash/a274315e1abede44d63005826249d1df-Abstract.html",
+        "text": "NeurIPS"
+      }
+    ],
+    "note": null,
+    "pages": "9981--9993",
+    "volume": "31"
+  },
+  {
+    "key": "schlag2017ancient",
+    "title": "Ancient Roman Coin Recognition in the Wild Using Deep Learning Based Recognition of Artistically Depicted Face Profiles",
+    "authors": "<strong>Imanol Schlag</strong>, Ognjen Arandjelovic",
+    "year": 2017,
+    "venue": "Proceedings of the IEEE International Conference on Computer Vision Workshops",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://doi.org/10.1109/ICCVW.2017.342",
+        "text": "DOI"
+      }
+    ],
+    "note": null,
+    "pages": "2898--2906",
+    "volume": null
+  },
+  {
+    "key": "schlag2017gated",
+    "title": "Gated Fast Weights for On-the-fly Neural Program Generation",
+    "authors": "<strong>Imanol Schlag</strong>, Jürgen Schmidhuber",
+    "year": 2017,
+    "venue": "NIPS Metalearning Workshop",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://openreview.net/forum?id=HJ8W1Q-0Z",
+        "text": "OpenReview"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  }
+]

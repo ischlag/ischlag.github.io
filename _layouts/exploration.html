@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<article class="exploration-content">
+  <header class="exploration-header">
+    <div class="exploration-meta">
+      <span class="exploration-date">{{ page.date | date: "%B %Y" }}</span>
+      {% if page.category %}
+        <span class="exploration-category">{{ page.category }}</span>
+      {% endif %}
+    </div>
+    
+    {% if page.tags %}
+      <div class="exploration-tags">
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+  
+  <div class="exploration-body">
+    {{ content }}
+  </div>
+  
+  <!-- Comments Section -->
+  <section class="comments-section">
+    {% capture comments_file %}{{ page.url | replace: '/index.html', '' | replace: '/', '-' | remove_first: '-' }}-comments.md{% endcapture %}
+    {% assign comments_path = 'explorations/' | append: comments_file %}
+    
+    <!-- Check if comments file exists and include it -->
+    {% for static_file in site.static_files %}
+      {% if static_file.path contains comments_file %}
+        {% assign has_comments = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    
+    {% if has_comments %}
+      {% include comments.html comments_file=comments_file %}
+    {% endif %}
+    
+    <!-- Comment CTA -->
+    <div class="comment-cta">
+      <h3>Add Your Thoughts</h3>
+      <p>Have something to say about this exploration? 
+        <a href="https://github.com/ischlag/ischlag.github.io/edit/master/explorations/{{ comments_file }}" 
+           class="comment-link" target="_blank" rel="noopener">
+          Add a comment via GitHub PR →
+        </a>
+      </p>
+      <p class="comment-note">Comments are moderated and will appear after review. You'll need a GitHub account to contribute.</p>
+    </div>
+  </section>
+</article>

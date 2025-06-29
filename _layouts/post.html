@@ -2,28 +2,74 @@
 layout: default
 ---
 
-<div class="post">
+<article class="post">
   <div class="post-info">
     {% if page.date %}
-      <br>
       <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+    {% if page.lastUpdated and page.lastUpdated != page.date %}
+      <div class="last-updated">
+        Last updated: <time datetime="{{ page.lastUpdated }}">{{ page.lastUpdated | date: "%B %d, %Y" }}</time>
+      </div>
     {% endif %}
   </div>
 
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 class="post-title">
+    {{ page.title }}
+    {% if page.version %}
+      <span class="version-badge">v{{ page.version }}</span>
+    {% endif %}
+  </h1>
   <div class="post-line"></div>
 
   {{ content }}
 
-</div>
-
-<div class="pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% if page.changelog and page.changelog.size > 0 %}
+    <div class="changelog-container">
+      <h3 class="changelog-toggle" onclick="toggleChangelog()">
+        Changelog <span class="changelog-arrow">▼</span>
+      </h3>
+      <div class="changelog-content" id="changelog">
+        {% for entry in page.changelog %}
+          <div class="changelog-entry">
+            <div class="changelog-version">v{{ entry.version }}</div>
+            <div class="changelog-date">{{ entry.date | date: "%B %d, %Y" }}</div>
+            <div class="changelog-changes">{{ entry.changes }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
   {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
+</article>
 
-  <a href="#" class="top">Top</a>
-</div>
+<script>
+function toggleChangelog() {
+  const content = document.getElementById('changelog');
+  const arrow = document.querySelector('.changelog-arrow');
+  
+  if (content.classList.contains('expanded')) {
+    content.classList.remove('expanded');
+    arrow.style.transform = 'rotate(0deg)';
+  } else {
+    content.classList.add('expanded');
+    arrow.style.transform = 'rotate(180deg)';
+  }
+}
+
+// Auto-expand if recent update (within 30 days)
+document.addEventListener('DOMContentLoaded', function() {
+  const entries = document.querySelectorAll('.changelog-entry');
+  if (entries.length > 0) {
+    const firstDate = entries[0].querySelector('.changelog-date');
+    if (firstDate) {
+      const entryDate = new Date(firstDate.textContent);
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+      
+      if (entryDate > thirtyDaysAgo) {
+        toggleChangelog();
+      }
+    }
+  }
+});
+</script>

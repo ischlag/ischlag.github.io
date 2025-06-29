@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon-32x32.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon-16x16.png" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+</head>
+<body>
+  {% include nav.html %}
+  
+  <main class="content">
+    {{ content }}
+  </main>
 
-  {% include head.html %}
-
-  <body>
-    <nav class="nav">
-      <div class="nav-container">
-        <a href="{{ site.baseurl }}/">
-          <h2 class="nav-title">{{ site.title }}</h2>
-        </a>
-        <ul>
-          <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-          <li><a href="{{ site.baseurl }}/">Research</a></li>
-          <li><a href="https://scholar.google.ch/citations?user=nFQJEskAAAAJ">Publications</a></li>
-          <li><a href="https://github.com/ischlag">GitHub</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <main>
-      {{ content }}
-    </main>
-
-    <footer>
-      <span>
-        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
-      </span>
-    </footer>
-  </body>
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: '%Y' }} Imanol Schlag. Built with Jekyll and Claude.</p>
+  </footer>
+</body>
 </html>

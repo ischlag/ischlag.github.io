@@ -1,0 +1,17 @@
+{
+  "articles": [
+    {
+      "filename": "test-article.md",
+      "slug": "test-article",
+      "title": "Test Article for Versioning System",
+      "date": "2024-01-15T00:00:00.000Z",
+      "version": "1.1.2",
+      "lastUpdated": "2025-06-07",
+      "tags": [],
+      "wordCount": 31,
+      "readingTime": 1
+    }
+  ],
+  "totalArticles": 1,
+  "lastGenerated": "2025-06-07T19:55:49.509Z"
+}
