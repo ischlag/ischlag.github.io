@@ -53,6 +53,8 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Jul 2025</span> — <a href="https://www.youtube.com/watch?v=o6fF8w91emU" target="_blank">Prompt Zero Podcast</a> appearance by Blick (in Swiss German)</p>
+    <p><span class="news-date">Jul 2025</span> — Keynote at the first <a href="https://lu.ma/pfjxc8v9" target="_blank">International Open-Source Model Builder Summit</a> before the AI for Good Summit in Geneva</p>
     <p><span class="news-date">Jun 2025</span> — <a href="https://www.startupticker.ch/en/events/pan-talk-swiss-ai-initiative-der-weg-zur-ki-souveraenitaet" target="_blank">pan.talk keynote</a> on Swiss AI Initiative: The Path to AI Sovereignty</p>
     <p><span class="news-date">Jun 2025</span> — Grant accepted "A Swiss-Centric Foundation Model for Switzerland's Sovereign AI Future"</p>
     <p><span class="news-date">Jun 2025</span> — Grant accepted "Democratizing LLMs for Global Languages with Mixtures of Multilingual Experts"</p>
