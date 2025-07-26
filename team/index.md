@@ -9,7 +9,7 @@ title: Team
   <div class="team-grid">
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Antoni Solergibert</div>
+        <img src="/assets/images/team/antoni-solergibert.jpg" alt="Antoni Solergibert" />
       </div>
       <h3><a href="https://www.linkedin.com/in/tj-solergibert/" target="_blank">Antoni Solergibert</a></h3>
       <p class="member-title">Performance Engineer</p>
@@ -18,7 +18,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Eduard Ďurech</div>
+        <img src="/assets/images/team/eduard-durech.jpg" alt="Eduard Ďurech" />
       </div>
       <h3><a href="https://www.linkedin.com/in/eduarddurech" target="_blank">Eduard Ďurech</a></h3>
       <p class="member-title">Research Engineer</p>
@@ -27,7 +27,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Dr. Sven Najem-Meyer</div>
+        <img src="/assets/images/team/sven-najem-meyer.jpg" alt="Dr. Sven Najem-Meyer" />
       </div>
       <h3><a href="https://github.com/sven-nm" target="_blank">Dr. Sven Najem-Meyer</a></h3>
       <p class="member-title">Research Engineer</p>
@@ -36,7 +36,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Yixuan Xu</div>
+        <img src="/assets/images/team/yixuan-xu.jpg" alt="Yixuan Xu" />
       </div>
       <h3><a href="https://www.linkedin.com/in/yixuan-xu-9b1575201/" target="_blank">Yixuan Xu</a></h3>
       <p class="member-title">Research Engineer</p>
@@ -45,7 +45,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Ilia Badanin</div>
+        <img src="/assets/images/team/ilia-badanin.jpg" alt="Ilia Badanin" />
       </div>
       <h3><a href="https://www.linkedin.com/in/ilia-badanin" target="_blank">Ilia Badanin</a></h3>
       <p class="member-title">Student Assistant</p>
@@ -54,7 +54,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Mathieu Sauser</div>
+        <img src="/assets/images/team/mathieu-sauser.jpg" alt="Mathieu Sauser" />
       </div>
       <h3>Mathieu Sauser</h3>
       <p class="member-title">Student Assistant</p>
@@ -63,7 +63,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Dhia Garbaya</div>
+        <img src="/assets/images/team/dhia-garbaya.jpg" alt="Dhia Garbaya" />
       </div>
       <h3><a href="https://github.com/dhia680" target="_blank">Dhia Garbaya</a></h3>
       <p class="member-title">Research Intern</p>
@@ -72,7 +72,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Camille Challier</div>
+        <img src="/assets/images/team/camille-challier.jpg" alt="Camille Challier" />
       </div>
       <h3><a href="https://www.linkedin.com/in/camille-challier-8975aa250/" target="_blank">Camille Challier</a></h3>
       <p class="member-title">Student Assistant</p>
@@ -90,7 +90,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Luca Mouchel</div>
+        <img src="/assets/images/team/luca-mouchel.jpg" alt="Luca Mouchel" />
       </div>
       <h3><a href="https://www.linkedin.com/in/luca-mouchel-2817321a0/" target="_blank">Luca Mouchel</a></h3>
       <p class="member-title">Student Assistant</p>
@@ -99,7 +99,7 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Nicola Irmiger</div>
+        <img src="/assets/images/team/nicola-irmiger.jpg" alt="Nicola Irmiger" />
       </div>
       <h3><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a></h3>
       <p class="member-title">Student Project</p>
@@ -110,7 +110,7 @@ title: Team
 
 <section class="collaboration-section">
   <h2>Collaborations</h2>
-  <p>Beyond those I directly supervise, we collaborate closely with many other researchers across the labs listed below who contribute to our shared goals.</p>
+  <p>Beyond our team, we deeply collaborate with 30+ PhD students and Postdocs from various academic labs, such as the ones listed below.</p>
   <ul class="collaboration-list">
     <li><a href="https://mlo.epfl.ch/" target="_blank"><strong>Machine Learning and Optimization Lab</strong></a> - Prof. Martin Jaggi, EPFL</li>
     <li><a href="https://nlp.epfl.ch/" target="_blank"><strong>Natural Language Processing Lab</strong></a> - Prof. Antoine Bosselut, EPFL</li>
@@ -150,7 +150,7 @@ title: Team
     
     <div class="alumni-member">
       <div class="team-photo">
-        <div class="photo-placeholder">Marco Scialanga</div>
+        <img src="/assets/images/team/marco-scialanga.jpg" alt="Marco Scialanga" />
       </div>
       <h3><a href="https://www.linkedin.com/in/marco-scialanga-36b30819b/" target="_blank">Marco Scialanga</a></h3>
       <p class="member-title">Former Student Project</p>
