@@ -45,60 +45,6 @@ title: Team
     
     <div class="team-member">
       <div class="team-photo">
-        <img src="/assets/images/team/ilia-badanin.jpg" alt="Ilia Badanin" />
-      </div>
-      <h3><a href="https://www.linkedin.com/in/ilia-badanin" target="_blank">Ilia Badanin</a></h3>
-      <p class="member-title">Student Assistant</p>
-      <p class="member-topics">Serving & Posttraining</p>
-    </div>
-    
-    <div class="team-member">
-      <div class="team-photo">
-        <img src="/assets/images/team/mathieu-sauser.jpg" alt="Mathieu Sauser" />
-      </div>
-      <h3>Mathieu Sauser</h3>
-      <p class="member-title">Student Assistant</p>
-      <p class="member-topics">Data Processing</p>
-    </div>
-    
-    <div class="team-member">
-      <div class="team-photo">
-        <img src="/assets/images/team/dhia-garbaya.jpg" alt="Dhia Garbaya" />
-      </div>
-      <h3><a href="https://github.com/dhia680" target="_blank">Dhia Garbaya</a></h3>
-      <p class="member-title">Research Intern</p>
-      <p class="member-topics">Efficiency</p>
-    </div>
-    
-    <div class="team-member">
-      <div class="team-photo">
-        <img src="/assets/images/team/camille-challier.jpg" alt="Camille Challier" />
-      </div>
-      <h3><a href="https://www.linkedin.com/in/camille-challier-8975aa250/" target="_blank">Camille Challier</a></h3>
-      <p class="member-title">Student Assistant</p>
-      <p class="member-topics">RL with verifiable Rewards</p>
-    </div>
-    
-    <div class="team-member">
-      <div class="team-photo">
-        <div class="photo-placeholder">Juan Garcia Giraldo</div>
-      </div>
-      <h3><a href="https://people.epfl.ch/juan.garciagiraldo" target="_blank">Juan Garcia Giraldo</a></h3>
-      <p class="member-title">Student Assistant</p>
-      <p class="member-topics">Alignment</p>
-    </div>
-    
-    <div class="team-member">
-      <div class="team-photo">
-        <img src="/assets/images/team/luca-mouchel.jpg" alt="Luca Mouchel" />
-      </div>
-      <h3><a href="https://www.linkedin.com/in/luca-mouchel-2817321a0/" target="_blank">Luca Mouchel</a></h3>
-      <p class="member-title">Student Assistant</p>
-      <p class="member-topics">Distributed RL Training</p>
-    </div>
-    
-    <div class="team-member">
-      <div class="team-photo">
         <img src="/assets/images/team/nicola-irmiger.jpg" alt="Nicola Irmiger" />
       </div>
       <h3><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a></h3>
@@ -155,6 +101,60 @@ title: Team
       <h3><a href="https://www.linkedin.com/in/marco-scialanga-36b30819b/" target="_blank">Marco Scialanga</a></h3>
       <p class="member-title">Former Student Project</p>
       <p class="member-topics">Alignment</p>
+    </div>
+
+    <div class="alumni-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/ilia-badanin.jpg" alt="Ilia Badanin" />
+      </div>
+      <h3><a href="https://www.linkedin.com/in/ilia-badanin" target="_blank">Ilia Badanin</a></h3>
+      <p class="member-title">Former Student Assistant</p>
+      <p class="member-topics">Serving & Posttraining</p>
+    </div>
+
+    <div class="alumni-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/mathieu-sauser.jpg" alt="Mathieu Sauser" />
+      </div>
+      <h3>Mathieu Sauser</h3>
+      <p class="member-title">Former Student Assistant</p>
+      <p class="member-topics">Data Processing</p>
+    </div>
+
+    <div class="alumni-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/dhia-garbaya.jpg" alt="Dhia Garbaya" />
+      </div>
+      <h3><a href="https://github.com/dhia680" target="_blank">Dhia Garbaya</a></h3>
+      <p class="member-title">Former Research Intern</p>
+      <p class="member-topics">Efficiency</p>
+    </div>
+
+    <div class="alumni-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/camille-challier.jpg" alt="Camille Challier" />
+      </div>
+      <h3><a href="https://www.linkedin.com/in/camille-challier-8975aa250/" target="_blank">Camille Challier</a></h3>
+      <p class="member-title">Former Student Assistant</p>
+      <p class="member-topics">RL with verifiable Rewards</p>
+    </div>
+
+    <div class="alumni-member">
+      <div class="team-photo">
+        <div class="photo-placeholder">Juan Garcia Giraldo</div>
+      </div>
+      <h3><a href="https://people.epfl.ch/juan.garciagiraldo" target="_blank">Juan Garcia Giraldo</a></h3>
+      <p class="member-title">Former Student Assistant</p>
+      <p class="member-topics">Alignment</p>
+    </div>
+
+    <div class="alumni-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/luca-mouchel.jpg" alt="Luca Mouchel" />
+      </div>
+      <h3><a href="https://www.linkedin.com/in/luca-mouchel-2817321a0/" target="_blank">Luca Mouchel</a></h3>
+      <p class="member-title">Former Student Assistant</p>
+      <p class="member-topics">Distributed RL Training</p>
     </div>
   </div>
 </section>

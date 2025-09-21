@@ -7,11 +7,11 @@ title: About
   <div class="hero-content">
     <div class="hero-text">
       <p class="hero-description">
-        I'm an <strong>AI Research Scientist</strong> at the <a href="https://ai.ethz.ch/" target="_blank">ETH AI Center</a> and co-leader of the LLM effort of the <a href="https://www.swiss-ai.org/" target="_blank">Swiss AI Initiative</a>. With a large team of engineers, researchers, and students throughout multiple Swiss institutions, we are currently developing the largest <strong>open-source and responsibly-trained large language model</strong> (LLM) in the world. I also teach a novel course at ETHZ called <a href="https://ai.ethz.ch/education/courses/large-scale-ai-engineering.html" target="_blank">Large-Scale AI Engineering</a>, where we provide hands-on, practical training to MSc graduates on how to efficiently train large distributed neural networks using the Alps supercomputer.
+        I'm an <strong>AI Research Scientist</strong> at the <a href="https://ai.ethz.ch/" target="_blank">ETH AI Center</a> and co-lead of <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a> developed as part of the <a href="https://www.swiss-ai.org/" target="_blank">Swiss AI Initiative</a>. With a large team of engineers, researchers, and students throughout multiple Swiss institutions, we are currently developing the largest <strong>open-source, responsibly-trained, and compliant large language model</strong> (LLM) in the world. I also teach a novel course at ETHZ called <a href="https://ai.ethz.ch/education/courses/large-scale-ai-engineering.html" target="_blank">Large-Scale AI Engineering</a>, where we provide hands-on, practical training to MSc graduates on how to efficiently train large distributed neural networks using the Alps supercomputer by CSCS.
       </p>
       
       <p class="hero-description">
-        <strong>Bio.</strong> I began my career with an apprenticeship in informatics at a Swiss bank and my military service. I then earned my BSc in Computer Science from FHNW and MSc in Artificial Intelligence with distinction from the University of St Andrews, Scotland. I completed my PhD with distinction at USI/IDSIA under <a href="https://people.idsia.ch/~juergen/" target="_blank">Prof. Jürgen Schmidhuber</a> in 2023, focusing on systematic generalisation of neural networks and fast weight programmers—scalable self-modifying neural architectures <a href="https://susi.usi.ch/usi/documents/326257" target="_blank">(thesis)</a>. My research journey included internships at Meta FAIR, Google Research, and Microsoft Research, where I explored foundational questions in neural computation, scalable neural network architectures, and LLMs. After my PhD I worked with <a href="https://da.inf.ethz.ch/people/ThomasHofmann/" target="_blank">Prof. Thomas Hofmann</a> before moving to the ETHZ AI Center.
+        <strong>Bio.</strong> I began my career with an apprenticeship in informatics at a Swiss bank followed by my military service. I then earned my BSc in Computer Science from FHNW and MSc in Artificial Intelligence with distinction from the University of St Andrews, Scotland. I completed my PhD with distinction at USI/IDSIA under <a href="https://people.idsia.ch/~juergen/" target="_blank">Prof. Jürgen Schmidhuber</a> in 2023, focusing on systematic generalisation of neural networks and fast weight programmers—scalable self-modifying neural architectures <a href="https://susi.usi.ch/usi/documents/326257" target="_blank">(thesis)</a>. During my PhD I was invited to join Meta FAIR, Google Research, and Microsoft Research for research internships, where I investigated foundational questions in neural computation, scalable neural network architectures, and LLMs. After my defense I worked with <a href="https://da.inf.ethz.ch/people/ThomasHofmann/" target="_blank">Prof. Thomas Hofmann</a> before moving to the ETHZ AI Center.
       </p>
       
     </div>
@@ -41,9 +41,9 @@ title: About
   <h2>Research Focus</h2>
   <p>My research centers on three interconnected areas that advance both the capabilities and responsibility of large-scale AI systems.</p>
   
-  <p><strong>First</strong>, I focus on developing state-of-the-art open-source LLMs that are transparent and compliant with current legal frameworks. This work provides a foundation for society to build trustworthy AI products and services while enabling researchers to better understand the benefits and risks of LLM-based systems.</p>
+  <p><strong>First</strong>, I focus on developing <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a>, a state-of-the-art open-source LLMs that is transparent and compliant with current legal frameworks. This work provides a foundation for society to build trustworthy AI products and services while enabling researchers to better understand the benefits and risks of LLM-based systems.</p>
   
-  <p><strong>Second</strong>, I advance neural architecture research through fast weight programmers such as the <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a>, which contributes to the most significant architectural innovation since the rise of the Transformer. Similar to linear RNNs, like Mamba or RWKV, it offers enhanced efficiency and generality compared to attention-based architectures.</p>
+  <p><strong>Second</strong>, I advance neural architecture research through fast weight programmers such as the <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a>, which contributes to the most significant architectural innovation since the rise of the Transformer. Similar to linear RNNs, like Mamba or RWKV, it offers enhanced efficiency and generality compared to attention-based architectures. Recently DeltaNet became a core component of <a href="https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list" target="_blank">Qwen3-Next</a> which is a major release from one of the leading AI labs in the world.</p>
   
   <p><strong>Third</strong>, I investigate fundamental questions around LLM scaling and generalisation. In particular, how to train these systems more efficiently and enable them to generalise beyond their current limitations. This includes exploring self-modifying neural networks as a pathway toward more general AI systems.</p>
   
@@ -53,6 +53,18 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Sep 2025</span> — <a href="https://www.linkedin.com/posts/chrisbeyeler_manchmal-braucht-es-mut-zeit-zu-investieren-activity-7373948854649389056-8rIK" target="_blank">Met with National Council members</a> Gerhard Andrey and Benoit Gaillard (with KImpact President Chris Beyeler) on AI legislation</p>
+    <p><span class="news-date">Sep 2025</span> — Follow-up interview with <a href="https://www.srf.ch/play/tv/10-vor-10/video/10-vor-10-vom-19-09-2025" target="_blank">10vor10</a> on national TV</p>
+    <p><span class="news-date">Sep 2025</span> — <a href="https://open.spotify.com/episode/5qDXRWQwUU3ytPkVWsJIax" target="_blank">Inside AI Podcast</a> appearance hosted by Marcel Salathé (EPFL AI Center)</p>
+    <p><span class="news-date">Sep 2025</span> — Presented the Swiss AI Initiative and Apertus to the SRG SSR AI & Data Guild</p>
+    <p><span class="news-date">Sep 2025</span> — Keynote at the <a href="https://ehealthsummit.ch/" target="_blank">eHealth Summit</a> presenting Apertus and generative AI use cases in health</p>
+    <p><span class="news-date">Sep 2025</span> — Keynote on Apertus at the <a href="https://latticeflow.ai/lp/trustworthy-ai-in-practice" target="_blank">Trustworthy AI in Practice</a> event by LatticeFlow</p>
+    <p><span class="news-date">Sep 2025</span> — The newly released <a href="https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list" target="_blank">Qwen3-Next</a> model uses <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a>, which I developed with Kazuki Irie, to improve LLM efficiency at scale!</p>
+    <p><span class="news-date">Sep 2025</span> — Presentation on Apertus to <a href="https://www.kimpact.ch/" target="_blank">KImpact - Verband für künstliche Intelligenz</a></p>
+    <p><span class="news-date">Sep 2025</span> — Keynote on the Swiss AI Initiative and Apertus at the <a href="https://symposium.enhancer.ch/" target="_blank">EnhanceR Symposium</a></p>
+    <p><span class="news-date">Sep 2025</span> — Interview on Apertus with <a href="https://www.srf.ch/play/tv/10-vor-10/video/10-vor-10-vom-02-09-2025" target="_blank">10vor10</a> on national TV</p>
+    <p><span class="news-date">Sep 2025</span> — 🎉 Released <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a> 8B and 70B LLMs trained on 15T tokens while fully-open and compliant with Swiss law and EU AI Act</p>
+    <p><span class="news-date">Aug 2025</span> — Presentation on the Swiss AI Initiative and our LLM effort at the <a href="https://www.aimeetup.ch" target="_blank">AI Meetup for Business Leaders</a></p>
     <p><span class="news-date">Jul 2025</span> — <a href="https://www.youtube.com/watch?v=o6fF8w91emU" target="_blank">Prompt Zero Podcast</a> appearance by Blick (in Swiss German)</p>
     <p><span class="news-date">Jul 2025</span> — Keynote at the first <a href="https://lu.ma/pfjxc8v9" target="_blank">International Open-Source Model Builder Summit</a> before the AI for Good Summit in Geneva</p>
     <p><span class="news-date">Jun 2025</span> — <a href="https://www.startupticker.ch/en/events/pan-talk-swiss-ai-initiative-der-weg-zur-ki-souveraenitaet" target="_blank">pan.talk keynote</a> on Swiss AI Initiative: The Path to AI Sovereignty</p>
@@ -88,7 +100,7 @@ title: About
   <h2>Selected Publications</h2>
   <div class="publication-items">
     <p><em>Can Performant LLMs Be Ethical? Quantifying the Impact of Web Crawling Opt-Outs</em><br>
-    D. Fan, V. Sabolčec, M. Ansaripour, A.K. Tarun, M. Jaggi, A. Bosselut, I. Schlag — <a href="https://arxiv.org/abs/2504.06219" target="_blank">Preprint 2025</a></p>
+    D. Fan, V. Sabolčec, M. Ansaripour, A.K. Tarun, M. Jaggi, A. Bosselut, I. Schlag — <a href="https://arxiv.org/abs/2504.06219" target="_blank">COLM 2025</a></p>
     
     <p><em>INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge</em><br>
     A. Romanou, N. Foroutan, A. Sotnikova, Z. Chen, et al. — <a href="https://openreview.net/forum?id=k3gCieTXeY" target="_blank">ICLR 2024</a></p>
