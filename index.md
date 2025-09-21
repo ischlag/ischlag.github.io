@@ -53,6 +53,7 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Sep 2025</span> — 2 papers accepted at NeurIPS 2025 and 1 paper accepted at COLM 2025</p>
     <p><span class="news-date">Sep 2025</span> — <a href="https://www.linkedin.com/posts/chrisbeyeler_manchmal-braucht-es-mut-zeit-zu-investieren-activity-7373948854649389056-8rIK" target="_blank">Met with National Council members</a> Gerhard Andrey and Benoit Gaillard (with KImpact President Chris Beyeler) on AI legislation</p>
     <p><span class="news-date">Sep 2025</span> — Follow-up interview with <a href="https://www.srf.ch/play/tv/10-vor-10/video/10-vor-10-vom-19-09-2025" target="_blank">10vor10</a> on national TV</p>
     <p><span class="news-date">Sep 2025</span> — <a href="https://open.spotify.com/episode/5qDXRWQwUU3ytPkVWsJIax" target="_blank">Inside AI Podcast</a> appearance hosted by Marcel Salathé (EPFL AI Center)</p>

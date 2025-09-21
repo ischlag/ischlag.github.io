@@ -40,7 +40,7 @@ title: Research
 </div>
 
 <div class="paper-list-compact">
-  {% assign architecture_papers = "hernandez2025towards,huang2024deriving,hutchins2022block,schlag2023fast,schlag2021learning,irie2021going,schlag2021linear,irie2021modern,schlag2019enhancing,schlag2018learning,schlag2017gated" | split: "," %}
+  {% assign architecture_papers = "hernandez2025towards,huang2024deriving,schlag2023fast,hutchins2022block,schlag2021learning,irie2021going,schlag2021linear,irie2021modern,schlag2019enhancing,schlag2018learning,schlag2017gated" | split: "," %}
   {% for paper_key in architecture_papers %}
     {% assign paper = site.data.publications | where: "key", paper_key | first %}
     {% if paper %}
