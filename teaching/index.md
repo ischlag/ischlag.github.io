@@ -3,7 +3,7 @@ layout: default
 title: Teaching
 ---
 
-<p class="page-description">Course I teach at ETH Zurich, focusing on large-scale AI engineering with hands-on experience using the Alps supercomputer.</p>
+<p class="page-description">Courses I teach at ETH Zurich, focusing on large-scale AI engineering with hands-on experience using the Alps supercomputer.</p>
 
 <section class="current-courses">
   <h2>Large-Scale AI Engineering</h2>
