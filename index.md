@@ -53,6 +53,7 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Oct 2025</span> — Apertus featured in <a href="https://www.3sat.de/wissen/nano/251014-sendung-offenes-ki-sprachmodell-chatgpt-deepseek-apertus-schweizer-ki-fuer-europas-unabhaengigkeit-und-antwort-auf-tech-giganten-nano-100.html" target="_blank">3sat and SRF nano</a> TV report on open AI models for European independence</p>
     <p><span class="news-date">Oct 2025</span> — Hosted the Apertus workshop and Swiss AI SME workshop at the <a href="https://www.plusx.ai/" target="_blank">AI+X Summit</a>, and presented to the general public on why Switzerland is building its own language models at the <a href="https://www.plusx.ai/public-night" target="_blank">Public Night</a></p>
     <p><span class="news-date">Sep 2025</span> — Received an award for our work on Apertus at the <a href="https://luma.com/091dxtgb" target="_blank">Culture & Society AI Awards Night</a></p>
     <p><span class="news-date">Sep 2025</span> — Gave a keynote at the <a href="https://zurichaisafety.day/" target="_blank">Zürich AI Safety Day</a></p>
