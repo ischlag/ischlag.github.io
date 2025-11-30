@@ -60,6 +60,11 @@ title: Teaching
     </div>
   </div>
 
+</section>
+
+<section class="current-courses">
+  <h2>Large-Scale AI Engineering</h2>
+
   <div class="course-card">
     <div class="course-header">
       <div class="course-meta">
@@ -68,11 +73,11 @@ title: Teaching
         <span class="level">MSc students + 15 PhD/Postdocs</span>
       </div>
     </div>
-    
+
     <div class="course-description">
       <p>Focuses on the engineering principles and practices required to develop and optimise large-scale AI systems. Primarily designed for MSc students, the course also attracts PhD students and postdocs seeking practical experience. Students gain hands-on experience training large language models on the Alps supercomputer using 32 GH200 GPUs across 8 nodes, preparing them for real-world AI engineering challenges.</p>
     </div>
-    
+
     <div class="course-collaborators">
       <h4>Teaching Team</h4>
       <ul>
@@ -82,7 +87,7 @@ title: Teaching
         <li><strong>Alexey Gavryushin</strong> - Teaching Assistant</li>
       </ul>
     </div>
-    
+
     <div class="course-links">
       <h4>Course Information</h4>
       <ul>
@@ -91,7 +96,7 @@ title: Teaching
         <li><a href="https://www.cscs.ch/science/computer-science-hpc/2025/eth-zuerich-students-gain-ai-skills-using-cscss-alps-supercomputer" class="external-link">CSCS Collaboration</a> (Alps Supercomputer)</li>
       </ul>
     </div>
-    
+
     <div class="course-topics">
       <h4>Topics Covered</h4>
       <div class="topics-grid">
@@ -105,7 +110,7 @@ title: Teaching
         <span class="topic">Team Collaboration</span>
       </div>
     </div>
-    
+
     <div class="course-info">
       <p class="course-schedule">Schedule: Tuesdays 16:00-18:00 | Location: OAT S 15 and S 16 | Max 80 participants</p>
     </div>
