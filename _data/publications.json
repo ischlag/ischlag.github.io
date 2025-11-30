@@ -1,5 +1,24 @@
 [
   {
+    "key": "hernandezcano2025apertus",
+    "title": "Apertus: Democratizing Open and Compliant LLMs for Global Language Environments",
+    "authors": "Alejandro Hernández-Cano et al. (~100 authors)",
+    "year": 2025,
+    "venue": "Preprint",
+    "venueType": "preprint",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2509.14233",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
     "key": "fan2025can",
     "title": "Can Performant LLMs Be Ethical? Quantifying the Impact of Web Crawling Opt-Outs",
     "authors": "Dongyang Fan, Vinko Sabolčec, Matin Ansaripour, Ayush Kumar Tarun, Martin Jaggi, Antoine Bosselut, <strong>Imanol Schlag</strong>",

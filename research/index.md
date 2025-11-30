@@ -14,7 +14,7 @@ title: Research
 </div>
 
 <div class="paper-list-compact">
-  {% assign responsible_ai_papers = "fan2025can,xu2025positional,stanic2023languini" | split: "," %}
+  {% assign responsible_ai_papers = "hernandezcano2025apertus,fan2025can,xu2025positional,stanic2023languini" | split: "," %}
   {% for paper_key in responsible_ai_papers %}
     {% assign paper = site.data.publications | where: "key", paper_key | first %}
     {% if paper %}
