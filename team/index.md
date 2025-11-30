@@ -9,13 +9,31 @@ title: Team
   <div class="team-grid">
     <div class="team-member">
       <div class="team-photo">
-        <img src="/assets/images/team/antoni-solergibert.jpg" alt="Antoni Solergibert" />
+        <img src="/assets/images/team/allen-huang.jpg" alt="Allen Huang" />
       </div>
-      <h3><a href="https://www.linkedin.com/in/tj-solergibert/" target="_blank">Antoni Solergibert</a></h3>
-      <p class="member-title">Performance Engineer</p>
-      <p class="member-topics">Efficient Pretraining</p>
+      <h3>Allen Huang</h3>
+      <p class="member-title">Research Engineer</p>
+      <p class="member-topics"></p>
     </div>
-    
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/hanna-yukhymenko.jpg" alt="Hanna Yukhymenko" />
+      </div>
+      <h3>Hanna Yukhymenko</h3>
+      <p class="member-title">Research Engineer</p>
+      <p class="member-topics"></p>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/robert-smith.jpg" alt="Robert Smith" />
+      </div>
+      <h3>Robert Smith</h3>
+      <p class="member-title">Research Engineer</p>
+      <p class="member-topics"></p>
+    </div>
+
     <div class="team-member">
       <div class="team-photo">
         <img src="/assets/images/team/eduard-durech.jpg" alt="Eduard Ďurech" />
@@ -24,7 +42,7 @@ title: Team
       <p class="member-title">Research Engineer</p>
       <p class="member-topics">RL with verifiable Rewards</p>
     </div>
-    
+
     <div class="team-member">
       <div class="team-photo">
         <img src="/assets/images/team/sven-najem-meyer.jpg" alt="Dr. Sven Najem-Meyer" />
@@ -33,22 +51,13 @@ title: Team
       <p class="member-title">Research Engineer</p>
       <p class="member-topics">Data Processing</p>
     </div>
-    
+
     <div class="team-member">
       <div class="team-photo">
         <img src="/assets/images/team/yixuan-xu.jpg" alt="Yixuan Xu" />
       </div>
       <h3><a href="https://www.linkedin.com/in/yixuan-xu-9b1575201/" target="_blank">Yixuan Xu</a></h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Multimodality</p>
-    </div>
-    
-    <div class="team-member">
-      <div class="team-photo">
-        <img src="/assets/images/team/nicola-irmiger.jpg" alt="Nicola Irmiger" />
-      </div>
-      <h3><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a></h3>
-      <p class="member-title">Student Project</p>
       <p class="member-topics">Multimodality</p>
     </div>
   </div>
@@ -78,13 +87,31 @@ title: Team
   <div class="alumni-grid">
     <div class="alumni-member">
       <div class="team-photo">
+        <img src="/assets/images/team/antoni-solergibert.jpg" alt="Antoni Solergibert" />
+      </div>
+      <h3><a href="https://www.linkedin.com/in/tj-solergibert/" target="_blank">Antoni Solergibert</a></h3>
+      <p class="member-title">Former Research Engineer</p>
+      <p class="member-topics">Joined Nvidia</p>
+    </div>
+
+    <div class="alumni-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/nicola-irmiger.jpg" alt="Nicola Irmiger" />
+      </div>
+      <h3><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a></h3>
+      <p class="member-title">Former Student Project</p>
+      <p class="member-topics">Multimodality</p>
+    </div>
+
+    <div class="alumni-member">
+      <div class="team-photo">
         <div class="photo-placeholder">Dr. Kyle Matoba</div>
       </div>
       <h3><a href="https://publications.idiap.ch/authors/show/2547" target="_blank">Dr. Kyle Matoba</a></h3>
       <p class="member-title">Former Research Engineer</p>
       <p class="member-topics">Pretraining</p>
     </div>
-    
+
     <div class="alumni-member">
       <div class="team-photo">
         <div class="photo-placeholder">Vanya Pavlov</div>
@@ -93,7 +120,7 @@ title: Team
       <p class="member-title">Former Student Project</p>
       <p class="member-topics">Alignment</p>
     </div>
-    
+
     <div class="alumni-member">
       <div class="team-photo">
         <img src="/assets/images/team/marco-scialanga.jpg" alt="Marco Scialanga" />
