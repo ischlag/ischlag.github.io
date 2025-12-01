@@ -13,7 +13,7 @@ title: Team
       </div>
       <h3>Allen Huang</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics"></p>
+      <p class="member-topics">Pretraining</p>
     </div>
 
     <div class="team-member">
@@ -22,7 +22,7 @@ title: Team
       </div>
       <h3>Hanna Yukhymenko</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics"></p>
+      <p class="member-topics">Posttraining</p>
     </div>
 
     <div class="team-member">
@@ -31,7 +31,7 @@ title: Team
       </div>
       <h3>Robert Smith</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics"></p>
+      <p class="member-topics">LLM Systems</p>
     </div>
 
     <div class="team-member">
