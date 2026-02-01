@@ -36,7 +36,7 @@ title: Research
 ## Neural Architecture Research
 
 <div class="research-section-intro">
-  <p>I advance neural architecture research through fast weight programmers such as the <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a>, which contributes to the most significant architectural innovation since the rise of the Transformer. Similar to linear RNNs, like Mamba or RWKV, it offers enhanced efficiency and generality compared to attention-based architectures. This research explores self-referential weight matrices that learn to modify themselves, block-recurrent mechanisms that maintain global context while enabling parallel training, and novel activation functions derived through mathematical integration principles.</p>
+  <p>I advance neural architecture research through fast weight programmers such as the <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a>, which contributes to the most significant architectural innovation since the rise of the Transformer. Similar to linear RNNs, like Mamba or RWKV, it offers enhanced efficiency and generality compared to attention-based architectures. Recently, DeltaNet was integrated as a core component into <a href="https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd" target="_blank">Qwen3-Next</a>, an 80B parameter model from Alibaba. This research explores self-referential weight matrices that learn to modify themselves, block-recurrent mechanisms that maintain global context while enabling parallel training, and novel activation functions derived through mathematical integration principles.</p>
 </div>
 
 <div class="paper-list-compact">
