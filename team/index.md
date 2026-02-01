@@ -3,7 +3,7 @@ layout: default
 title: Team
 ---
 
-<p class="page-description">Meet the talented engineers and students from ETHZ and EPFL building the Swiss LLM, along with researchers from several labs at EPFL and ETHZ. We're creating impactful models that embody Swiss values of transparency and collaboration, serving both our research community and society at large.</p>
+<p class="page-description">Meet the talented engineers and students from ETHZ and EPFL building Apertus, along with researchers from several labs at EPFL and ETHZ. We're creating impactful models that embody Swiss values of transparency and collaboration, serving both our research community and society at large.</p>
 
 <section class="team-section">
   <div class="team-grid">
@@ -22,7 +22,7 @@ title: Team
       </div>
       <h3>Hanna Yukhymenko</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Posttraining</p>
+      <p class="member-topics">Post-training</p>
     </div>
 
     <div class="team-member">
@@ -60,12 +60,30 @@ title: Team
       <p class="member-title">Research Engineer</p>
       <p class="member-topics">Multimodality</p>
     </div>
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/oleg-lavrovsky.jpg" alt="Oleg Lavrovsky" />
+      </div>
+      <h3>Oleg Lavrovsky</h3>
+      <p class="member-title">Research Engineer</p>
+      <p class="member-topics">Community and Outreach</p>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/valentina-pyatkin.jpg" alt="Valentina Pyatkin" />
+      </div>
+      <h3>Valentina Pyatkin</h3>
+      <p class="member-title">Research Engineer</p>
+      <p class="member-topics">Post-training</p>
+    </div>
   </div>
 </section>
 
 <section class="collaboration-section">
   <h2>Collaborations</h2>
-  <p>Beyond our team, we deeply collaborate with 30+ PhD students and Postdocs from various academic labs, such as the ones listed below.</p>
+  <p>Beyond our team, we collaborate with 30+ MSc students, PhD students, and Postdocs from various academic labs, such as the ones listed below.</p>
   <ul class="collaboration-list">
     <li><a href="https://mlo.epfl.ch/" target="_blank"><strong>Machine Learning and Optimization Lab</strong></a> - Prof. Martin Jaggi, EPFL</li>
     <li><a href="https://nlp.epfl.ch/" target="_blank"><strong>Natural Language Processing Lab</strong></a> - Prof. Antoine Bosselut, EPFL</li>
@@ -76,7 +94,7 @@ title: Team
     <li><a href="https://anakli.inf.ethz.ch/" target="_blank"><strong>Efficient Architectures and Systems Lab</strong></a> - Prof. Ana Klimović, ETH Zurich</li>
     <li><a href="https://ai.ethz.ch/" target="_blank"><strong>ETH AI Center</strong></a> - Fellows and researchers</li>
     <li><a href="https://ai.epfl.ch/" target="_blank"><strong>EPFL AI Center</strong></a> - Fellows and researchers</li>
-    <li><a href="https://www.cscs.ch/" target="_blank"><strong>Swiss National Supercomputing Centre (CSCS)</strong></a> - High-performance computing resources</li>
+    <li><a href="https://www.cscs.ch/" target="_blank"><strong>Swiss National Supercomputing Centre (CSCS)</strong></a> - Several full-time employees</li>
   </ul>
 </section>
 
@@ -136,7 +154,7 @@ title: Team
       </div>
       <h3><a href="https://www.linkedin.com/in/ilia-badanin" target="_blank">Ilia Badanin</a></h3>
       <p class="member-title">Former Student Assistant</p>
-      <p class="member-topics">Serving & Posttraining</p>
+      <p class="member-topics">Serving & Post-training</p>
     </div>
 
     <div class="alumni-member">
