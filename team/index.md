@@ -81,6 +81,29 @@ title: Team
   </div>
 </section>
 
+<section class="student-section">
+  <h2>Student Researchers</h2>
+  <div class="student-lines">
+    <p>Mukhammadali Sayfiddinov, Student Researcher (Reinforcement Learning)</p>
+    <p>Tommy Chu, Student Researcher (Multimodality - Health)</p>
+    <p>Ahmed Rockey Saikia, Student Researcher (Audio)</p>
+    <p>Ahmad Fraji, Student Researcher (Applications)</p>
+    <p>Yuhei Fukuhara, Student Researcher (Inference and Multimodal Evaluations)</p>
+    <p>Alex Padula, Student Researcher (Coding Environments)</p>
+    <p>Alessandro Tazza, Student Researcher (RL with verifiable Rewards)</p>
+    <p>Khanh Nguyen, Student Researcher (Coding Environments)</p>
+    <p>Aryan Ahadinia, Student Researcher (Inference Optimisation)</p>
+    <p>Anunay Yadav, Student Researcher (Multimodal Evals)</p>
+    <p>Bich (Rubi) Ngoc Doan, Student Researcher (Multicultural Evals)</p>
+    <p>Raphael Kreft (Thesis on Multimodality)</p>
+    <p>Juan Garcia Giraldo (Thesis on Steering and Interpretability)</p>
+    <p>Wanja Pletscher (Thesis on LLM Psycho-Counseling)</p>
+    <p>Matteo Santelmo (Thesis on RLVR)</p>
+    <p>Nicola Dall'Acqua (Thesis on Synthetic Data Generation)</p>
+  </div>
+  <p>In addition, a larger list of MSc students, PhD students, and Postdocs contribute and lead parts of the Apertus development as part of their education and research.</p>
+</section>
+
 <section class="collaboration-section">
   <h2>Collaborations</h2>
   <p>Beyond our team, we collaborate with 30+ MSc students, PhD students, and Postdocs from various academic labs, such as the ones listed below.</p>
