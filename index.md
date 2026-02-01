@@ -53,7 +53,7 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
-    <p><span class="news-date">Jan 2026</span> — Attended the WEF AI House in Davos and received the Global Swiss AI Award 2025 from the Mindfire Foundation for Apertus (<a href="https://www.handelszeitung.ch/tech/auszeichnung-fur-schweizer-ki-modell-903541" target="_blank">Handelszeitung Artikel</a>)</p>
+    <p><span class="news-date">Jan 2026</span> — Received the Global Swiss AI Award 2025 from the Mindfire Foundation for Apertus (<a href="https://www.handelszeitung.ch/tech/auszeichnung-fur-schweizer-ki-modell-903541" target="_blank">newsarticle in Handelszeitung</a>)</p>
     <p><span class="news-date">Dec 2025</span> — Invited talk at the <a href="https://www.meetup.com/language-ai-meetup/" target="_blank">Language AI Meetup</a></p>
     <p><span class="news-date">Nov 2025</span> — Invited talk at the <a href="https://www.microsoft.com/en-us/research/lab/spatial-ai-zurich/" target="_blank">Microsoft Spatial AI Lab</a></p>
     <p><span class="news-date">Nov 2025</span> — Invited talk at the Swisscom Event <a href="https://b2b-events.swisscom.ch/profile/form/index.cfm?PKformID=0x45620f9bb" target="_blank">«AI Governance, Risk und Compliance (GRC) für schweizer Banken»</a></p>
