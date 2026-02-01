@@ -125,7 +125,7 @@ title: Team
   <h2>Alumni</h2>
   <p class="alumni-description">Former team members who have moved on to new opportunities:</p>
   <table class="alumni-table">
-    <tr><td><a href="https://www.linkedin.com/in/tj-solergibert/" target="_blank">Antoni Solergibert</a></td><td>Research Engineer</td><td>Joined Nvidia</td></tr>
+    <tr><td><a href="https://www.linkedin.com/in/tj-solergibert/" target="_blank">Antoni Solergibert</a></td><td>Research Engineer</td><td>Pretraining (joined Nvidia)</td></tr>
     <tr><td><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a></td><td>Student Researcher</td><td>Multimodality</td></tr>
     <tr><td><a href="https://publications.idiap.ch/authors/show/2547" target="_blank">Dr. Kyle Matoba</a></td><td>Research Engineer</td><td>Pretraining</td></tr>
     <tr><td><a href="https://github.com/pavlov200912" target="_blank">Vanya Pavlov</a></td><td>Student Researcher</td><td>Alignment</td></tr>
