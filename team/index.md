@@ -117,6 +117,7 @@ title: Team
     <p>Jakhongir Saydaliev, Student Researcher (RL with verifiable Rewards)</p>
     <p>Jiaming Jiang, Student Researcher (RL with verifiable Rewards)</p>
     <p>Clément Charmillot, Student Researcher (RL with verifiable Rewards)</p>
+    <p>Rongxiao Qu, Student Researcher (Multimodality)</p>
   </div>
 </section>
 
