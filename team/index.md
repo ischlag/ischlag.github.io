@@ -124,23 +124,23 @@ title: Team
 <section class="alumni-section">
   <h2>Alumni</h2>
   <p class="alumni-description">Former team members who have moved on to new opportunities:</p>
-  <div class="alumni-lines">
-    <p><a href="https://www.linkedin.com/in/tj-solergibert/" target="_blank">Antoni Solergibert</a>, Research Engineer (Joined Nvidia)</p>
-    <p><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a>, Student Researcher (Multimodality)</p>
-    <p><a href="https://publications.idiap.ch/authors/show/2547" target="_blank">Dr. Kyle Matoba</a>, Research Engineer (Pretraining)</p>
-    <p><a href="https://github.com/pavlov200912" target="_blank">Vanya Pavlov</a>, Student Researcher (Alignment)</p>
-    <p><a href="https://www.linkedin.com/in/marco-scialanga-36b30819b/" target="_blank">Marco Scialanga</a>, Student Researcher (Alignment)</p>
-    <p><a href="https://www.linkedin.com/in/ilia-badanin" target="_blank">Ilia Badanin</a>, Student Researcher (Serving & Post-training)</p>
-    <p>Mathieu Sauser, Student Researcher (Data Processing)</p>
-    <p><a href="https://github.com/dhia680" target="_blank">Dhia Garbaya</a>, Student Researcher (Efficiency)</p>
-    <p><a href="https://www.linkedin.com/in/camille-challier-8975aa250/" target="_blank">Camille Challier</a>, Student Researcher (RL with verifiable Rewards)</p>
-    <p><a href="https://people.epfl.ch/juan.garciagiraldo" target="_blank">Juan Garcia Giraldo</a>, Student Researcher (Alignment)</p>
-    <p><a href="https://www.linkedin.com/in/luca-mouchel-2817321a0/" target="_blank">Luca Mouchel</a>, Student Researcher (Distributed RL Training)</p>
-    <p>Nathan Ranchin, Student Researcher (RL with verifiable Rewards)</p>
-    <p>Jakhongir Saydaliev, Student Researcher (RL with verifiable Rewards)</p>
-    <p>Jiaming Jiang, Student Researcher (RL with verifiable Rewards)</p>
-    <p>Clément Charmillot, Student Researcher (RL with verifiable Rewards)</p>
-    <p>Rongxiao Qu, Student Researcher (Multimodality)</p>
-  </div>
+  <table class="alumni-table">
+    <tr><td><a href="https://www.linkedin.com/in/tj-solergibert/" target="_blank">Antoni Solergibert</a></td><td>Research Engineer</td><td>Joined Nvidia</td></tr>
+    <tr><td><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a></td><td>Student Researcher</td><td>Multimodality</td></tr>
+    <tr><td><a href="https://publications.idiap.ch/authors/show/2547" target="_blank">Dr. Kyle Matoba</a></td><td>Research Engineer</td><td>Pretraining</td></tr>
+    <tr><td><a href="https://github.com/pavlov200912" target="_blank">Vanya Pavlov</a></td><td>Student Researcher</td><td>Alignment</td></tr>
+    <tr><td><a href="https://www.linkedin.com/in/marco-scialanga-36b30819b/" target="_blank">Marco Scialanga</a></td><td>Student Researcher</td><td>Alignment</td></tr>
+    <tr><td><a href="https://www.linkedin.com/in/ilia-badanin" target="_blank">Ilia Badanin</a></td><td>Student Researcher</td><td>Serving & Post-training</td></tr>
+    <tr><td>Mathieu Sauser</td><td>Student Researcher</td><td>Data Processing</td></tr>
+    <tr><td><a href="https://github.com/dhia680" target="_blank">Dhia Garbaya</a></td><td>Student Researcher</td><td>Efficiency</td></tr>
+    <tr><td><a href="https://www.linkedin.com/in/camille-challier-8975aa250/" target="_blank">Camille Challier</a></td><td>Student Researcher</td><td>RL with verifiable Rewards</td></tr>
+    <tr><td><a href="https://people.epfl.ch/juan.garciagiraldo" target="_blank">Juan Garcia Giraldo</a></td><td>Student Researcher</td><td>Alignment</td></tr>
+    <tr><td><a href="https://www.linkedin.com/in/luca-mouchel-2817321a0/" target="_blank">Luca Mouchel</a></td><td>Student Researcher</td><td>Distributed RL Training</td></tr>
+    <tr><td>Nathan Ranchin</td><td>Student Researcher</td><td>RL with verifiable Rewards</td></tr>
+    <tr><td>Jakhongir Saydaliev</td><td>Student Researcher</td><td>RL with verifiable Rewards</td></tr>
+    <tr><td>Jiaming Jiang</td><td>Student Researcher</td><td>RL with verifiable Rewards</td></tr>
+    <tr><td>Clément Charmillot</td><td>Student Researcher</td><td>RL with verifiable Rewards</td></tr>
+    <tr><td>Rongxiao Qu</td><td>Student Researcher</td><td>Multimodality</td></tr>
+  </table>
 </section>
 
