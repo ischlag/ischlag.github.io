@@ -82,25 +82,25 @@ title: Team
 </section>
 
 <section class="student-section">
-  <h2>Student Researchers</h2>
-  <div class="student-lines">
-    <p>Mukhammadali Sayfiddinov, Student Researcher (Reinforcement Learning)</p>
-    <p>Tommy Chu, Student Researcher (Multimodality - Health)</p>
-    <p>Ahmed Rockey Saikia, Student Researcher (Audio)</p>
-    <p>Ahmad Fraji, Student Researcher (Applications)</p>
-    <p>Yuhei Fukuhara, Student Researcher (Inference and Multimodal Evaluations)</p>
-    <p>Alex Padula, Student Researcher (Coding Environments)</p>
-    <p>Alessandro Tazza, Student Researcher (RL with verifiable Rewards)</p>
-    <p>Khanh Nguyen, Student Researcher (Coding Environments)</p>
-    <p>Aryan Ahadinia, Student Researcher (Inference Optimisation)</p>
-    <p>Anunay Yadav, Student Researcher (Multimodal Evals)</p>
-    <p>Bich (Rubi) Ngoc Doan, Student Researcher (Multicultural Evals)</p>
-    <p>Raphael Kreft (Thesis on Multimodality)</p>
-    <p>Juan Garcia Giraldo (Thesis on Steering and Interpretability)</p>
-    <p>Wanja Pletscher (Thesis on LLM Psycho-Counseling)</p>
-    <p>Matteo Santelmo (Thesis on RLVR)</p>
-    <p>Nicola Dall'Acqua (Thesis on Synthetic Data Generation)</p>
-  </div>
+  <h2>Current Student Researchers</h2>
+  <table class="student-table">
+    <tr><td>Mukhammadali Sayfiddinov</td><td>Student Researcher</td><td>Reinforcement Learning</td></tr>
+    <tr><td>Tommy Chu</td><td>Student Researcher</td><td>Multimodality - Health</td></tr>
+    <tr><td>Ahmed Rockey Saikia</td><td>Student Researcher</td><td>Audio</td></tr>
+    <tr><td>Ahmad Fraji</td><td>Student Researcher</td><td>Applications</td></tr>
+    <tr><td>Yuhei Fukuhara</td><td>Student Researcher</td><td>Inference and Multimodal Evaluations</td></tr>
+    <tr><td>Alex Padula</td><td>Student Researcher</td><td>Coding Environments</td></tr>
+    <tr><td>Alessandro Tazza</td><td>Student Researcher</td><td>RL with verifiable Rewards</td></tr>
+    <tr><td>Khanh Nguyen</td><td>Student Researcher</td><td>Coding Environments</td></tr>
+    <tr><td>Aryan Ahadinia</td><td>Student Researcher</td><td>Inference Optimisation</td></tr>
+    <tr><td>Anunay Yadav</td><td>Student Researcher</td><td>Multimodal Evals</td></tr>
+    <tr><td>Bich (Rubi) Ngoc Doan</td><td>Student Researcher</td><td>Multicultural Evals</td></tr>
+    <tr><td>Raphael Kreft</td><td>Thesis</td><td>Multimodality</td></tr>
+    <tr><td>Juan Garcia Giraldo</td><td>Thesis</td><td>Steering and Interpretability</td></tr>
+    <tr><td>Wanja Pletscher</td><td>Thesis</td><td>LLM Psycho-Counseling</td></tr>
+    <tr><td>Matteo Santelmo</td><td>Thesis</td><td>RLVR</td></tr>
+    <tr><td>Nicola Dall'Acqua</td><td>Thesis</td><td>Synthetic Data Generation</td></tr>
+  </table>
   <p>In addition, a larger list of MSc students, PhD students, and Postdocs contribute and lead parts of the Apertus development as part of their education and research.</p>
 </section>
 
