@@ -31,7 +31,7 @@ title: Team
       </div>
       <h3>Robert Smith</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">LLM Systems</p>
+      <p class="member-topics">Applications</p>
     </div>
 
     <div class="team-member">
@@ -49,7 +49,7 @@ title: Team
       </div>
       <h3><a href="https://github.com/sven-nm" target="_blank">Dr. Sven Najem-Meyer</a></h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Data Processing</p>
+      <p class="member-topics">Data Lead</p>
     </div>
 
     <div class="team-member">
