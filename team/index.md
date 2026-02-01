@@ -97,7 +97,7 @@ title: Team
     <tr><td>Bich (Rubi) Ngoc Doan</td><td>Student Researcher</td><td>Multicultural Evals</td></tr>
     <tr><td>Raphael Kreft</td><td>Thesis</td><td>Multimodality</td></tr>
     <tr><td>Juan Garcia Giraldo</td><td>Thesis</td><td>Steering and Interpretability</td></tr>
-    <tr><td>Wanja Pletscher</td><td>Thesis</td><td>LLM Psycho-Counseling</td></tr>
+    <tr><td>Wanja Pletscher</td><td>Thesis</td><td>LLM Interpretability</td></tr>
     <tr><td>Matteo Santelmo</td><td>Thesis</td><td>RLVR</td></tr>
     <tr><td>Nicola Dall'Acqua</td><td>Thesis</td><td>Synthetic Data Generation</td></tr>
   </table>
