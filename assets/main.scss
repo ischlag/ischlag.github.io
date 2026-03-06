@@ -830,6 +830,35 @@ h1, h2, h3 {
   }
 }
 
+.semester-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+
+  thead td {
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 0.5rem;
+  }
+
+  td {
+    border: none;
+    padding: 0.4rem 1rem 0.4rem 0;
+    vertical-align: top;
+    font-size: 0.9rem;
+    color: #555;
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .collaboration-section {
   margin-top: 2rem;
   padding-top: 1rem;
@@ -995,6 +1024,11 @@ h1, h2, h3 {
   
   .project-card.featured .project-content {
     grid-template-columns: 1fr !important;
+  }
+
+  .semester-table {
+    display: block;
+    overflow-x: auto;
   }
 }
 
