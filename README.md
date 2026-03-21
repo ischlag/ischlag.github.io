@@ -1,28 +1,25 @@
 # Imanol Schlag - Personal Website
 
-Personal academic website built with Jekyll and Claude Code, featuring research publications, teaching activities, and professional updates.
+Personal academic website built with Jekyll, featuring research publications, teaching activities, and professional updates.
 
 ## About
 
-This is the source code for [ischlag.github.io](https://ischlag.github.io), the personal website of Dr. Imanol Schlag, Research Scientist at the ETH AI Center and co-leader of the LLM effort of the Swiss AI Initiative.
+Source code for [ischlag.github.io](https://ischlag.github.io), the personal website of Dr. Imanol Schlag, Research Scientist at the ETH AI Center and co-lead of [Apertus](https://arxiv.org/abs/2509.14233), the LLM effort of the Swiss AI Initiative.
 
-## Features
+## Sections
 
-- **Research Publications** - Organized by thematic areas with direct links
-- **Teaching Portfolio** - Current courses and teaching activities at ETH Zurich
-- **News & Updates** - Latest talks, publications, and professional activities
-- **Team & Collaborations** - Current team members and research partnerships
-- **Exploration Articles** - Long-form content with comment system via GitHub PRs
-- **Article Versioning** - Semantic versioning system for content updates
+- **About** - Bio, research focus, news, and selected publications
+- **Research** - Full publication list organized by venue type (auto-generated from BibTeX)
+- **Team** - Current team members and research collaborations
+- **Teaching** - Courses and teaching activities at ETH Zurich
+- **CV** - Academic curriculum vitae
 
 ## Technical Stack
 
-- **Claude Code** - For development
 - **Jekyll** - Static site generator
 - **GitHub Pages** - Hosting and deployment
 - **SCSS** - Styling with responsive design
-- **JavaScript** - Interactive features and comment system
-- **JSON** - Publication and content management
+- **BibTeX** - Publication management (`references.bib` → `_data/publications.json`)
 
 ## Local Development
 
@@ -38,13 +35,12 @@ bundle exec jekyll serve
 
 ## Content Management
 
-- **Publications**: Edit `_data/publications.json`
+- **Publications**: Edit `references.bib`, then run `node parse-bibtex.js` to regenerate `_data/publications.json`
 - **News**: Update the news section in `index.md`
-- **Articles**: Add to `_articles/` directory with versioning support
-- **Explorations**: Add to `explorations/` directory
+- **Team/Teaching/CV**: Edit the corresponding `index.md` files
 
 ## License
 
-Content © 2025 Imanol Schlag. All rights reserved.
+Content © 2026 Imanol Schlag. All rights reserved.
 
 Code is available under MIT License for educational and non-commercial use.
