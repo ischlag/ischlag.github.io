@@ -53,7 +53,11 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Mar 2026</span> — Panel discussion on <a href="https://www.m4music.ch/events/de/2026/m4music-festival/conference/ki-im-musikschaffen-zwischen-recht-kreativitat-und-zukunftsperspektiven/" target="_blank">KI im Musikschaffen – zwischen Recht, Kreativität und Zukunftsperspektiven</a> at the m4music Festival</p>
+    <p><span class="news-date">Mar 2026</span> — Presentation on Apertus and the Swiss AI Initiative to the AI@EC Network, the European Commission's internal AI community led by the Directorate-General for Translation</p>
     <p><span class="news-date">Mar 2026</span> — <a href="https://allenai.org/blog/olmohybrid" target="_blank">OLMo Hybrid</a> by the Allen Institute for AI uses a close variant of <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a></p>
+    <p><span class="news-date">Feb 2026</span> — Lecture at the <a href="https://www.ivz.ch/index.html" target="_blank">Industrieverband Zürich (IVZ)</a></p>
+    <p><span class="news-date">Feb 2026</span> — Presentation on Apertus at the <a href="https://agenda-ch-sap-public-services-forum-2026.cfapps.eu10-004.hana.ondemand.com/#/event/components/1244/agenda_items/3048/show" target="_blank">SAP Public Services Forum</a></p>
     <p><span class="news-date">Jan 2026</span> — Received the Global Swiss AI Award 2025 from the Mindfire Foundation for Apertus (<a href="https://www.handelszeitung.ch/tech/auszeichnung-fur-schweizer-ki-modell-903541" target="_blank">newsarticle in Handelszeitung</a>)</p>
     <p><span class="news-date">Dec 2025</span> — Invited talk at the <a href="https://www.meetup.com/language-ai-meetup/" target="_blank">Language AI Meetup</a></p>
     <p><span class="news-date">Nov 2025</span> — Invited talk at the <a href="https://www.microsoft.com/en-us/research/lab/spatial-ai-zurich/" target="_blank">Microsoft Spatial AI Lab</a></p>
