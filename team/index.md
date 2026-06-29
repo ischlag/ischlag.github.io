@@ -13,7 +13,6 @@ title: Team
       </div>
       <h3>Allen Huang</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Pretraining</p>
     </div>
 
     <div class="team-member">
@@ -22,7 +21,6 @@ title: Team
       </div>
       <h3>Hanna Yukhymenko</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Post-training</p>
     </div>
 
     <div class="team-member">
@@ -31,7 +29,6 @@ title: Team
       </div>
       <h3>Robert Smith</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Applications</p>
     </div>
 
     <div class="team-member">
@@ -40,7 +37,6 @@ title: Team
       </div>
       <h3><a href="https://www.linkedin.com/in/eduarddurech" target="_blank">Eduard Ďurech</a></h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">RL with verifiable Rewards</p>
     </div>
 
     <div class="team-member">
@@ -49,7 +45,6 @@ title: Team
       </div>
       <h3><a href="https://github.com/sven-nm" target="_blank">Dr. Sven Najem-Meyer</a></h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Data Lead</p>
     </div>
 
     <div class="team-member">
@@ -58,7 +53,6 @@ title: Team
       </div>
       <h3><a href="https://www.linkedin.com/in/yixuan-xu-9b1575201/" target="_blank">Yixuan Xu</a></h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Multimodality</p>
     </div>
 
     <div class="team-member">
@@ -66,8 +60,7 @@ title: Team
         <img src="/assets/images/team/oleg-lavrovsky.jpg" alt="Oleg Lavrovsky" />
       </div>
       <h3>Oleg Lavrovsky</h3>
-      <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Community and Outreach</p>
+      <p class="member-title">Community Manager</p>
     </div>
 
     <div class="team-member">
@@ -76,7 +69,38 @@ title: Team
       </div>
       <h3>Valentina Pyatkin</h3>
       <p class="member-title">Research Engineer</p>
-      <p class="member-topics">Post-training</p>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/sean-caroll.jpg" alt="Sean Caroll" />
+      </div>
+      <h3>Sean Caroll</h3>
+      <p class="member-title">Technical Program Manager</p>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/raphael-kreft.jpg" alt="Raphael Kreft" />
+      </div>
+      <h3>Raphael Kreft</h3>
+      <p class="member-title">Research Engineer</p>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/dani-tamayo.jpg" alt="Dani Tamayo" />
+      </div>
+      <h3>Dani Tamayo</h3>
+      <p class="member-title">Research Engineer</p>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/konstantinos-pitas.jpg" alt="Konstantinos Pitas" />
+      </div>
+      <h3>Konstantinos Pitas</h3>
+      <p class="member-title">Research Engineer</p>
     </div>
   </div>
 </section>
@@ -100,9 +124,8 @@ title: Team
   </table>
 
   <h2>Thesis Students</h2>
-  <p>Supervised by members of the team or close academic collaborators.</p>
+  <p>Supervised by me or members of the team.</p>
   <table class="student-table">
-    <tr><td>Raphael Kreft</td><td>Master Thesis</td><td>Multimodality</td></tr>
     <tr><td>Nicola Dall'Acqua</td><td>Bachelor Thesis</td><td>Synthetic Data Generation</td></tr>
     <tr><td>Cédric Laubacher</td><td>Master Thesis</td><td>Long-Context RL</td></tr>
     <tr><td>Juan Garcia Giraldo</td><td>Master Thesis</td><td>Steering and Interpretability</td></tr>
@@ -114,7 +137,7 @@ title: Team
   </table>
 
   <h2>Student Projects</h2>
-  <p>Supervised by members of the team or close academic collaborators.</p>
+  <p>Supervised by me or members of the team.</p>
   <table class="student-table">
     <tr><td>Bartosz Szostakiewicz</td><td>Semester Project</td><td>Coding Environments</td></tr>
     <tr><td>Francesco Monti</td><td>Semester Project</td><td>Multilingual Reasoning</td></tr>

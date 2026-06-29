@@ -34,7 +34,7 @@ title: About
   
   <p><strong>Students.</strong> We welcome motivated MSc students from ETHZ, EPFL, and other universities to join our research efforts through a semester project, MSc thesis, or a student assistant position. We offer research and engineering opportunities across various topics like LLM development, high-performance infrastructure, and responsible AI. Students can apply through our <a href="https://forms.gle/Hm7RSzrECMUiTRyT7" target="_blank">application form</a>.</p>
   
-  <p><strong>Engineers.</strong> We have an engineering team developing cutting-edge foundation models in collaboration with researchers through the Swiss AI Initiative. While we are not actively hiring at the moment, we are always interested in connecting with motivated and talented individuals across all areas of LLM development. Feel free to reach out if you're interested in future opportunities.</p>
+  <p><strong>Engineers.</strong> We have an engineering team developing cutting-edge foundation models in collaboration with researchers through the Swiss AI Initiative. We are currently hiring a <a href="https://careers.epfl.ch/job/Lausanne-Post-Training-Engineer-Apertus/1164610655/" target="_blank">Post-Training Engineer for Apertus</a>. Beyond this, we are always interested in connecting with motivated and talented individuals across all areas of LLM development, so feel free to reach out if you're interested in future opportunities.</p>
 </section>
 
 <section class="about-section">
