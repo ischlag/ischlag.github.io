@@ -53,6 +53,14 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Jun 2026</span> — Invited talk at the <a href="https://santafe.edu/info/epistemic-institutions-in-the-age-of-ai/abstract" target="_blank">Santa Fe Institute</a> in New Mexico, USA, on epistemic institutions in the age of AI</p>
+    <p><span class="news-date">May 2026</span> — Keynote at the <a href="https://www.ch-open.ch/open-source-ai-conference-2026/" target="_blank">Open Source AI Conference</a></p>
+    <p><span class="news-date">May 2026</span> — Invited talk at <a href="https://www.supsi.ch/en/apertus-democratizing-the-foundation-for-global-sovereign-ai" target="_blank">SUPSI</a> on Apertus and democratizing the foundation for global sovereign AI</p>
+    <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://www.hpcadvisorycouncil.ch/agenda/" target="_blank">HPC-AI Swiss Conference</a></p>
+    <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://data-innovation.org/events/13th-ieee-swiss-conference-on-data-science-and-ai/" target="_blank">Swiss Conference on Data Science and AI (SDS 2026)</a></p>
+    <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://uphillconf.com/archive/2026/" target="_blank">Uphill Conference</a></p>
+    <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://www.genaizurich.ch/speakers" target="_blank">GenAI Zurich</a> conference</p>
+    <p><span class="news-date">Mar 2026</span> — Keynote at the <a href="https://www.ey.com/en_ch/events/2026/03/ey-national-ai-conference-2026" target="_blank">EY National AI Conference</a></p>
     <p><span class="news-date">Mar 2026</span> — Panel discussion on <a href="https://www.m4music.ch/events/de/2026/m4music-festival/conference/ki-im-musikschaffen-zwischen-recht-kreativitat-und-zukunftsperspektiven/" target="_blank">KI im Musikschaffen – zwischen Recht, Kreativität und Zukunftsperspektiven</a> at the m4music Festival</p>
     <p><span class="news-date">Mar 2026</span> — Presentation on Apertus and the Swiss AI Initiative to the AI@EC Network, the European Commission's internal AI community led by the Directorate-General for Translation</p>
     <p><span class="news-date">Mar 2026</span> — <a href="https://allenai.org/blog/olmohybrid" target="_blank">OLMo Hybrid</a> by the Allen Institute for AI uses a close variant of <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a></p>
