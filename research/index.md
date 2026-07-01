@@ -14,7 +14,7 @@ title: Research
 </div>
 
 <div class="paper-list-compact">
-  {% assign responsible_ai_papers = "hernandezcano2025apertus,fan2025can,xu2025positional,stanic2023languini" | split: "," %}
+  {% assign responsible_ai_papers = "zheng2026polar,kressig2026building,hernandezcano2025apertus,fan2025can,xu2025positional,stanic2023languini" | split: "," %}
   {% for paper_key in responsible_ai_papers %}
     {% assign paper = site.data.publications | where: "key", paper_key | first %}
     {% if paper %}
@@ -59,14 +59,14 @@ title: Research
   {% endfor %}
 </div>
 
-## LLM Scaling and Generalization
+## LLM Scaling and Generalisation
 
 <div class="research-section-intro">
   <p>I investigate fundamental questions around LLM scaling and generalisation. In particular, how to train these systems more efficiently and enable them to generalise beyond their current limitations. This includes exploring self-modifying neural networks as a pathway toward more general AI systems. Technical focus areas include developing compute-optimal training strategies through adaptive scaling laws, investigating the role of tokenization and language imbalance in cross-lingual transfer, and creating hybrid neuro-symbolic approaches that augment classical algorithms with neural components for robust generalization.</p>
 </div>
 
 <div class="paper-list-compact">
-  {% assign scaling_papers = "schafer2024effect,anagnostidis2024navigating,schafer2024role,schlag2023large,zhuge2023mindstorms,lewkowycz2022solving,schlag2021augmenting,irie2021improving" | split: "," %}
+  {% assign scaling_papers = "limozin2026sft,schafer2024effect,anagnostidis2024navigating,schafer2024role,schlag2023large,zhuge2023mindstorms,lewkowycz2022solving,schlag2021augmenting,irie2021improving" | split: "," %}
   {% for paper_key in scaling_papers %}
     {% assign paper = site.data.publications | where: "key", paper_key | first %}
     {% if paper %}

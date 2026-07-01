@@ -1,5 +1,62 @@
 [
   {
+    "key": "limozin2026sft",
+    "title": "SFT-then-RL Outperforms Mixed-Policy Methods for LLM Reasoning",
+    "authors": "Alexis Limozin, Eduard Ďurech, Torsten Hoefler, <strong>Imanol Schlag</strong>, Valentina Pyatkin",
+    "year": 2026,
+    "venue": "Preprint",
+    "venueType": "preprint",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2604.23747",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "zheng2026polar",
+    "title": "POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents",
+    "authors": "Qiaoyuan Zheng, Yiqu Yang, Qi Gao, <strong>Imanol Schlag</strong>",
+    "year": 2026,
+    "venue": "Preprint",
+    "venueType": "preprint",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2605.19127",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
+    "key": "kressig2026building",
+    "title": "Building AI Benchmarks from Exam Documents",
+    "authors": "Benjamin Kressig, Noah Koller, <strong>Imanol Schlag</strong>",
+    "year": 2026,
+    "venue": "IEEE SDS",
+    "venueType": "conference",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://ieeexplore.ieee.org/document/11540485",
+        "text": "IEEE"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
     "key": "hernandezcano2025apertus",
     "title": "Apertus: Democratizing Open and Compliant LLMs for Global Language Environments",
     "authors": "Alejandro Hernández-Cano et al. (~100 authors)",
