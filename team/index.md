@@ -102,6 +102,14 @@ title: Team
       <h3>Konstantinos Pitas</h3>
       <p class="member-title">Research Engineer</p>
     </div>
+
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="/assets/images/team/mel-zuericher.jpg" alt="Mel Züricher" />
+      </div>
+      <h3>Mel Züricher</h3>
+      <p class="member-title">Research Engineer</p>
+    </div>
   </div>
 </section>
 
