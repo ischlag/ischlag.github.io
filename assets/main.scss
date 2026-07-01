@@ -209,11 +209,13 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
-    align-items: start;
+    align-items: center;
     margin: 0;
   }
-  
+
   .hero-text {
+    transform: translateY(-2.25rem);
+
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
@@ -233,8 +235,7 @@ h1, h2, h3 {
   }
   
   .hero-image {
-    margin-top: 1.1rem; // Match the first description paragraph margin
-    
+
     .social-icons {
       display: flex;
       justify-content: center;
