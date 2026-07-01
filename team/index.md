@@ -179,6 +179,8 @@ title: Team
     <li><a href="https://elliottash.com/" target="_blank"><strong>Law, Economics, and Data Science Lab</strong></a> - Prof. Elliott Ash, ETH Zurich</li>
     <li><a href="https://www.epfl.ch/labs/claire/" target="_blank"><strong>Caglar Gulcehre Laboratory of Artificial Intelligence Research</strong></a> - Prof. Caglar Gulcehre, EPFL</li>
     <li><a href="https://anakli.inf.ethz.ch/" target="_blank"><strong>Efficient Architectures and Systems Lab</strong></a> - Prof. Ana Klimović, ETH Zurich</li>
+    <li><a href="https://ivia.ch/" target="_blank"><strong>Interactive Visualization and Intelligence Augmentation Lab</strong></a> - Prof. Mennatallah El-Assady, ETH Zurich</li>
+    <li><a href="https://dlab.epfl.ch/" target="_blank"><strong>Data Science Lab</strong></a> - Prof. Robert West, EPFL</li>
     <li><a href="https://ai.ethz.ch/" target="_blank"><strong>ETH AI Center</strong></a> - Fellows and researchers</li>
     <li><a href="https://ai.epfl.ch/" target="_blank"><strong>EPFL AI Center</strong></a> - Fellows and researchers</li>
     <li><a href="https://www.cscs.ch/" target="_blank"><strong>Swiss National Supercomputing Centre (CSCS)</strong></a> - Several full-time employees</li>
@@ -191,7 +193,7 @@ title: Team
   <table class="alumni-table">
     <tr><td><a href="https://www.linkedin.com/in/mukali/" target="_blank">Mukhammadali Sayfiddinov</a></td><td>Student Researcher</td><td>Reinforcement Learning</td><td>2026</td></tr>
     <tr><td><a href="https://www.linkedin.com/in/tj-solergibert/" target="_blank">Antoni Solergibert</a></td><td>Research Engineer</td><td>Pretraining (joined Nvidia)</td><td>2025</td></tr>
-    <tr><td><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a></td><td>Master Thesis</td><td>Multimodality</td><td>2025</td></tr>
+    <tr><td><a href="https://www.linkedin.com/in/nicola-irmiger" target="_blank">Nicola Irmiger</a></td><td>Semester Project</td><td>Multimodality</td><td>2025</td></tr>
     <tr><td><a href="https://publications.idiap.ch/authors/show/2547" target="_blank">Dr. Kyle Matoba</a></td><td>Research Engineer</td><td>Pretraining</td><td>2025</td></tr>
     <tr><td><a href="https://github.com/pavlov200912" target="_blank">Vanya Pavlov</a></td><td>Student Researcher</td><td>Alignment</td><td>2025</td></tr>
     <tr><td><a href="https://www.linkedin.com/in/marco-scialanga-36b30819b/" target="_blank">Marco Scialanga</a></td><td>Student Project</td><td>Alignment</td><td>2025</td></tr>
