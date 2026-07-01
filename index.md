@@ -10,10 +10,6 @@ title: About
         I'm an <strong>AI Research Scientist</strong> at the <a href="https://ai.ethz.ch/" target="_blank">ETH AI Center</a> and co-lead of <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a> developed as part of the <a href="https://www.swiss-ai.org/" target="_blank">Swiss AI Initiative</a>. With a large team of engineers, researchers, and students throughout multiple Swiss institutions, we are currently developing the largest <strong>open-source, responsibly-trained, and compliant large language model</strong> (LLM) in the world. I also teach a novel course at ETHZ called <a href="https://ai.ethz.ch/education/courses/large-scale-ai-engineering.html" target="_blank">Large-Scale AI Engineering</a>, where we provide hands-on, practical training to MSc graduates on how to efficiently train large distributed neural networks using the Alps supercomputer by CSCS. I also serve on the advisory boards of <a href="https://einstain.ch/de/organisation" target="_blank">EinstAIn</a> and the <a href="https://swissai.ch/uber-uns" target="_blank">Swiss AI Association</a> (formerly KImpact). I also help shape <a href="https://vrenni.ai/de/about" target="_blank">vrenni.ai</a>, where we leverage Apertus to empower SMEs.
       </p>
       
-      <p class="hero-description">
-        <strong>Bio.</strong> I began my career with an apprenticeship in informatics at a Swiss bank followed by my military service. I then earned my BSc in Computer Science from FHNW and MSc in Artificial Intelligence with distinction from the University of St Andrews, Scotland. I completed my PhD with distinction at USI/IDSIA under <a href="https://people.idsia.ch/~juergen/" target="_blank">Prof. Jürgen Schmidhuber</a> in 2023, focusing on systematic generalisation of neural networks and fast weight programmers, scalable self-modifying neural architectures <a href="https://susi.usi.ch/usi/documents/326257" target="_blank">(thesis)</a>. During my PhD I was invited to join Meta FAIR, Google Research, and Microsoft Research for research internships, where I investigated foundational questions in neural computation, scalable neural network architectures, and LLMs. After my defense I worked with <a href="https://da.inf.ethz.ch/people/ThomasHofmann/" target="_blank">Prof. Thomas Hofmann</a> as a postdoc before joining the ETH AI Center staff.
-      </p>
-      
     </div>
     
     <div class="hero-image">
@@ -48,6 +44,11 @@ title: About
   <p><strong>Third</strong>, I investigate fundamental questions around LLM scaling and generalisation. In particular, how to train these systems more efficiently and enable them to generalise beyond their current limitations. This includes exploring self-modifying neural networks as a pathway toward more general AI systems.</p>
   
   <p><a href="/research/" class="research-link">Read more</a></p>
+</section>
+
+<section class="about-section">
+  <h2>Bio</h2>
+  <p>I began my career with an apprenticeship in informatics at a Swiss bank followed by my military service. I then earned my BSc in Computer Science from FHNW and MSc in Artificial Intelligence with distinction from the University of St Andrews, Scotland. I completed my PhD with distinction at USI/IDSIA under <a href="https://people.idsia.ch/~juergen/" target="_blank">Prof. Jürgen Schmidhuber</a> in 2023, focusing on systematic generalisation of neural networks and fast weight programmers, scalable self-modifying neural architectures <a href="https://susi.usi.ch/usi/documents/326257" target="_blank">(thesis)</a>. During my PhD I was invited to join Meta FAIR, Google Research, and Microsoft Research for research internships, where I investigated foundational questions in neural computation, scalable neural network architectures, and LLMs. After my defense I worked with <a href="https://da.inf.ethz.ch/people/ThomasHofmann/" target="_blank">Prof. Thomas Hofmann</a> as a postdoc before joining the ETH AI Center staff. Since then, I have been a lecturer at ETHZ and co-lead the development of Apertus.</p>
 </section>
 
 <section class="news-section">
