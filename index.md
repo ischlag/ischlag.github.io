@@ -13,7 +13,7 @@ title: About
     </div>
     
     <div class="hero-image">
-      <img src="/assets/images/imanol-schlag.png" alt="**Imanol Schlag**" class="profile-photo">
+      <img src="/assets/images/imanol-schlag.jpg" alt="**Imanol Schlag**" class="profile-photo">
       <div class="social-icons">
         <a href="mailto:ischlag@ethz.ch">[email]</a>
         <a href="https://scholar.google.com/citations?user=nFQJEskAAAAJ" target="_blank">[Google Scholar]</a>
