@@ -105,9 +105,9 @@ title: Team
 
     <div class="team-member">
       <div class="team-photo">
-        <img src="/assets/images/team/mel-zuericher.jpg" alt="Mel Züricher" />
+        <img src="/assets/images/team/mel-zuercher.jpg" alt="Mel Zürcher" />
       </div>
-      <h3>Mel Züricher</h3>
+      <h3>Mel Zürcher</h3>
       <p class="member-title">Research Engineer</p>
     </div>
   </div>
