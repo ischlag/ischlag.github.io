@@ -3,11 +3,11 @@ layout: default
 ---
 <article class="thesis-proposal">
   <header class="thesis-header">
-    <p class="thesis-kicker">Thesis Proposal</p>
+    <p class="thesis-kicker">{% if page.level %}{{ page.level }} {% endif %}Thesis Proposal</p>
     <h1>{{ page.title }}</h1>
     <div class="thesis-meta">
-      {% if page.level %}<span class="level">{{ page.level }}</span>{% endif %}
       {% if page.duration %}<span class="duration">{{ page.duration }}</span>{% endif %}
+      {% if page.start %}<span class="duration">Start: {{ page.start }}</span>{% endif %}
       {% if page.status %}<span class="status status-{{ page.status | downcase }}">{{ page.status }}</span>{% endif %}
       {% for kw in page.keywords %}<span class="keyword">{{ kw }}</span>{% endfor %}
     </div>
@@ -18,7 +18,11 @@ layout: default
   {% if page.contact %}
   <section class="thesis-contact">
     <h2>Contact</h2>
+    {% if page.contact.first %}
+    <p>If you are interested, email {% for c in page.contact %}<a href="mailto:{{ c }}">{{ c }}</a>{% unless forloop.last %} and {% endunless %}{% endfor %} with your CV, transcript, and a short note on why this topic fits you.</p>
+    {% else %}
     <p>If you are interested, email <a href="mailto:{{ page.contact }}">{{ page.contact }}</a> with your CV, transcript, and a short note on why this topic fits you.</p>
+    {% endif %}
   </section>
   {% endif %}
 </article>
