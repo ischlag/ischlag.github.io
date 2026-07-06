@@ -1250,3 +1250,69 @@ h1, h2, h3 {
   }
 }
 
+
+// Thesis proposals (unlinked pages under /theses/)
+.thesis-proposal {
+  .thesis-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .thesis-header {
+    margin-bottom: 2rem;
+
+    h1 {
+      margin: 0 0 0.75rem 0;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+
+    td, th {
+      border: 1px solid #ddd;
+      padding: 0.4rem 0.75rem;
+      text-align: left;
+    }
+
+    th {
+      background: #f0f0f0;
+    }
+  }
+}
+
+.thesis-meta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+
+  span {
+    background: #f0f0f0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  .status-open {
+    background: #e6f4ea;
+    color: #1e7e34;
+  }
+
+  .status-taken {
+    background: #eee;
+    color: #888;
+  }
+}
+
+.thesis-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: 0.75rem 0;
+  }
+}

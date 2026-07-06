@@ -15,6 +15,17 @@ collections:
   articles:
     output: true
     permalink: /articles/:name/
+  theses:
+    output: true
+    permalink: /theses/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: theses
+    values:
+      layout: thesis
+      noindex: true
 
 sass:
   sass_dir: _sass
