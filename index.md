@@ -54,6 +54,11 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Sep 2026</span> — Invited talk at <a href="https://hackapertus.ch/" target="_blank">Hack Apertus</a>, the Switzerland-wide open-source hackathon series building on Apertus</p>
+    <p><span class="news-date">Sep 2026</span> — Invited talk in the <a href="https://fh-hwz.ch/de/weiterbildung/cas/cas-agentic-ai-hwz" target="_blank">CAS Agentic AI</a> at the HWZ Hochschule für Wirtschaft Zürich</p>
+    <p><span class="news-date">Jul 2026</span> — 🎉 Released <a href="https://apertus-ai.org/articles/2026-07-apertus-1-5/" target="_blank">Apertus 1.5</a>: continued pretraining on 2T additional tokens, image and (experimental) speech input, 262k context, and an optional thinking mode, fully open as before (<a href="https://huggingface.co/swiss-ai/Apertus-v1.5-70B" target="_blank">Hugging Face</a>, <a href="https://ai.ethz.ch/news-and-events/ai-center-news/2026/07/apertus-15-building-the-next-generation-of-open-ai-infrastructure.html" target="_blank">ETH AI Center news</a>)</p>
+    <p><span class="news-date">Jun 2026</span> — Keynote at the <a href="https://www.alumni.ethz.ch/en/welcome/affiliate-organisations/schweiz/ortsgruppe-zuerich.html" target="_blank">ETH Alumni</a> event "KI - Quo vadis" in the ETH Audimax (400+ people), presenting Apertus and the state of AI models</p>
+    <p><span class="news-date">Jun 2026</span> — Presentation on Apertus at <a href="https://ethz-foundation.ch/tg26/" target="_blank">Thanks Giving 2026</a>, the ETH Zürich Foundation's annual event for its donors</p>
     <p><span class="news-date">Jun 2026</span> — Invited talk at the <a href="https://santafe.edu/info/epistemic-institutions-in-the-age-of-ai/abstract" target="_blank">Santa Fe Institute</a> in New Mexico, USA, on epistemic institutions in the age of AI</p>
     <p><span class="news-date">May 2026</span> — Keynote at the <a href="https://www.ch-open.ch/open-source-ai-conference-2026/" target="_blank">Open Source AI Conference</a></p>
     <p><span class="news-date">May 2026</span> — Invited talk at <a href="https://www.supsi.ch/en/apertus-democratizing-the-foundation-for-global-sovereign-ai" target="_blank">SUPSI</a> on Apertus and democratizing the foundation for global sovereign AI</p>
