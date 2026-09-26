@@ -135,6 +135,9 @@ title: Team
     <li><a href="https://anakli.inf.ethz.ch/" target="_blank"><strong>Efficient Architectures and Systems Lab</strong></a> - Prof. Ana Klimović, ETH Zurich</li>
     <li><a href="https://ivia.ch/" target="_blank"><strong>Interactive Visualization and Intelligence Augmentation Lab</strong></a> - Prof. Mennatallah El-Assady, ETH Zurich</li>
     <li><a href="https://dlab.epfl.ch/" target="_blank"><strong>Data Science Lab</strong></a> - Prof. Robert West, EPFL</li>
+    <li><a href="https://www.light-laboratory.org/" target="_blank"><strong>Laboratory for Intelligent Global Health and Humanitarian Response Technologies (LiGHT)</strong></a> - Prof. Annie Hartley, EPFL</li>
+    <li><a href="https://www.hevs.ch/en/collaborateurs/kucharavy-205204" target="_blank"><strong>Institute of Informatics</strong></a> - Prof. Andrei Kucharavy, HES-SO Valais-Wallis</li>
+    <li><a href="https://www.fhnw.ch/en/computer-science/research-services/research/fields/high-performance-computing-hpc" target="_blank"><strong>HPC Lab, Institute for Data Science</strong></a> - Prof. Tomasz Kacprzak, FHNW</li>
     <li><a href="https://ai.ethz.ch/" target="_blank"><strong>ETH AI Center</strong></a> - Fellows and researchers</li>
     <li><a href="https://ai.epfl.ch/" target="_blank"><strong>EPFL AI Center</strong></a> - Fellows and researchers</li>
     <li><a href="https://www.cscs.ch/" target="_blank"><strong>Swiss National Supercomputing Centre (CSCS)</strong></a> - Several full-time employees</li>
