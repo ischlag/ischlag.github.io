@@ -54,6 +54,10 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Sep 2026</span> — Invited talk at the Rotary Club Solothurn</p>
+    <p><span class="news-date">Sep 2026</span> — Invited talk "Apertus - Democratizing the Foundation for Global Sovereign AI" at the <a href="https://digitalswitzerland.com/events/digitalswitzerland-forum-2026" target="_blank">digitalswitzerland forum 2026</a> in Bern, alongside Federal Councillor Albert Rösti</p>
+    <p><span class="news-date">Sep 2026</span> — Invited talk at the <a href="https://www.buhlergroup.com/" target="_blank">Bühler</a> Innovation Day</p>
+    <p><span class="news-date">Sep 2026</span> — Invited talk at the Sommerakademie</p>
     <p><span class="news-date">Sep 2026</span> — Invited talk at <a href="https://hackapertus.ch/" target="_blank">Hack Apertus</a>, the Switzerland-wide open-source hackathon series building on Apertus</p>
     <p><span class="news-date">Sep 2026</span> — Invited talk in the <a href="https://fh-hwz.ch/de/weiterbildung/cas/cas-agentic-ai-hwz" target="_blank">CAS Agentic AI</a> at the HWZ Hochschule für Wirtschaft Zürich</p>
     <p><span class="news-date">Jul 2026</span> — 🎉 Released <a href="https://apertus-ai.org/articles/2026-07-apertus-1-5/" target="_blank">Apertus 1.5</a>: continued pretraining on 2T additional tokens, image and (experimental) speech input, 262k context, and an optional thinking mode, fully open as before (<a href="https://huggingface.co/swiss-ai/Apertus-v1.5-70B" target="_blank">Hugging Face</a>, <a href="https://ai.ethz.ch/news-and-events/ai-center-news/2026/07/apertus-15-building-the-next-generation-of-open-ai-infrastructure.html" target="_blank">ETH AI Center news</a>)</p>
