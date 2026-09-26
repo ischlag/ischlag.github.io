@@ -1,5 +1,24 @@
 [
   {
+    "key": "cerruti2026linear",
+    "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing",
+    "authors": "Tommaso Cerruti, Tim Rieder, George Rowlands, Lingfeng Jin, <strong>Imanol Schlag</strong>",
+    "year": 2026,
+    "venue": "Preprint",
+    "venueType": "preprint",
+    "abstract": "",
+    "keywords": [],
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2607.07953",
+        "text": "arXiv"
+      }
+    ],
+    "note": null,
+    "pages": null,
+    "volume": null
+  },
+  {
     "key": "limozin2026sft",
     "title": "SFT-then-RL Outperforms Mixed-Policy Methods for LLM Reasoning",
     "authors": "Alexis Limozin, Eduard Ďurech, Torsten Hoefler, <strong>Imanol Schlag</strong>, Valentina Pyatkin",
