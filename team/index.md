@@ -57,9 +57,9 @@ title: Team
 
     <div class="team-member">
       <div class="team-photo">
-        <img src="/assets/images/team/valentina-pyatkin.jpg" alt="Valentina Pyatkin" />
+        <img src="/assets/images/team/valentina-pyatkin.jpg" alt="Dr. Valentina Pyatkin" />
       </div>
-      <h3>Valentina Pyatkin</h3>
+      <h3>Dr. Valentina Pyatkin</h3>
       <p class="member-title">Research Engineer</p>
     </div>
 
@@ -89,9 +89,9 @@ title: Team
 
     <div class="team-member">
       <div class="team-photo">
-        <img src="/assets/images/team/konstantinos-pitas.jpg" alt="Konstantinos Pitas" />
+        <img src="/assets/images/team/konstantinos-pitas.jpg" alt="Dr. Konstantinos Pitas" />
       </div>
-      <h3>Konstantinos Pitas</h3>
+      <h3>Dr. Konstantinos Pitas</h3>
       <p class="member-title">Research Engineer</p>
     </div>
 
