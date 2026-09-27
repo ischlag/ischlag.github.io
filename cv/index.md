@@ -14,7 +14,7 @@ title: CV
     <div class="cv-option">
       <h3>Publication List</h3>
       <p>Complete list of publications with citations and links.</p>
-      <a href="https://scholar.google.com/citations?user=nFQJEskAAAAJ" class="btn btn-primary" target="_blank">Google Scholar</a>
+      <a href="https://scholar.google.com/citations?user=nFQJEskAAAAJ&view_op=list_works&sortby=pubdate" class="btn btn-primary" target="_blank">Google Scholar</a>
     </div>
   </div>
 </section>
