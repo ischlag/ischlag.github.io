@@ -79,12 +79,16 @@
     "key": "hernandezcano2025apertus",
     "title": "Apertus: Democratizing Open and Compliant LLMs for Global Language Environments",
     "authors": "Alejandro Hernández-Cano et al. (~100 authors)",
-    "year": 2025,
-    "venue": "Preprint",
-    "venueType": "preprint",
+    "year": 2026,
+    "venue": "ACL",
+    "venueType": "conference",
     "abstract": "",
     "keywords": [],
     "links": [
+      {
+        "url": "https://aclanthology.org/2026.acl-long.2172/",
+        "text": "ACL Anthology"
+      },
       {
         "url": "https://arxiv.org/abs/2509.14233",
         "text": "arXiv"

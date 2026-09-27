@@ -9,7 +9,7 @@ Source code for [ischlag.github.io](https://ischlag.github.io), the personal web
 ## Sections
 
 - **About** - Bio, research focus, news, and selected publications
-- **Research** - Full publication list organized by venue type (auto-generated from BibTeX)
+- **Research** - Full publication list organised by research theme
 - **Team** - Current team members and research collaborations
 - **Teaching** - Courses and teaching activities at ETH Zurich
 - **CV** - Academic curriculum vitae
@@ -19,7 +19,7 @@ Source code for [ischlag.github.io](https://ischlag.github.io), the personal web
 - **Jekyll** - Static site generator
 - **GitHub Pages** - Hosting and deployment
 - **SCSS** - Styling with responsive design
-- **BibTeX** - Publication management (`references.bib` → `_data/publications.json`)
+- **Publications** - `_data/publications.json`, rendered on the Research page
 
 ## Local Development
 
@@ -35,8 +35,8 @@ bundle exec jekyll serve
 
 ## Content Management
 
-- **Publications**: Edit `references.bib`, then run `node parse-bibtex.js` to regenerate `_data/publications.json`
-- **News**: Update the news section in `index.md`
+- **Publications**: Edit `_data/publications.json` and add the key to the matching theme list in `research/index.md`
+- **News**: Update the news section in `index.md`; items older than 12 months go inside the "Show older news" block
 - **Team/Teaching/CV**: Edit the corresponding `index.md` files
 
 ## License

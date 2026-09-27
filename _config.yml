@@ -1,20 +1,49 @@
-title: Your Research Blog
-description: Personal website with versioned articles
-url: ""
+title: Imanol Schlag
+tagline: AI Research Scientist at the ETH AI Center
+description: AI Research Scientist at the ETH AI Center and co-lead of Apertus, the fully open large language model of the Swiss AI Initiative.
+url: "https://ischlag.github.io"
 baseurl: ""
+lang: en_GB
+logo: /assets/images/imanol-schlag.jpg
 
 author:
-  name: Your Name
-  email: your.email@example.com
+  name: Imanol Schlag
+  email: ischlag@ethz.ch
+
+twitter:
+  username: imanolschlag
+
+social:
+  name: Imanol Schlag
+  links:
+    - https://scholar.google.com/citations?user=nFQJEskAAAAJ
+    - https://github.com/ischlag
+    - https://twitter.com/imanolschlag
+    - https://www.linkedin.com/in/imanol-schlag-609b65b0/
+
+# Not published: template leftovers (kept on disk) and local tooling
+exclude:
+  - projects/
+  - articles/
+  - _articles/
+  - explorations/
+  - version-article.js
+  - extract-metadata.js
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - CLAUDE.md
+  - jekyll.log
 
 markdown: kramdown
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 collections:
-  articles:
-    output: true
-    permalink: /articles/:name/
   theses:
     output: true
     permalink: /theses/:name/
@@ -22,10 +51,15 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /assets/images/imanol-schlag.jpg
+  - scope:
+      path: ""
       type: theses
     values:
       layout: thesis
       noindex: true
+      sitemap: false
 
 sass:
   sass_dir: _sass

@@ -1,19 +1,19 @@
 ---
 layout: default
-title: About
+title: Imanol Schlag
 ---
 
 <div class="hero-section">
   <div class="hero-content">
     <div class="hero-text">
       <p class="hero-description">
-        I'm an <strong>AI Research Scientist</strong> at the <a href="https://ai.ethz.ch/" target="_blank">ETH AI Center</a> and co-lead of <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a> developed as part of the <a href="https://www.swiss-ai.org/" target="_blank">Swiss AI Initiative</a>. With a large team of engineers, researchers, and students throughout multiple Swiss institutions, we are currently developing Apertus: the largest <strong>open-source, responsibly-trained, and compliant large language model</strong> (LLM) in the world. This makes us one of the very few organisations worldwide that train models on thousands of GPUs. Alongside this, I teach a novel course at ETHZ called <a href="https://ai.ethz.ch/education/courses/large-scale-ai-engineering.html" target="_blank">Large-Scale AI Engineering</a>, where we provide hands-on, practical training to MSc graduates on how to efficiently train large distributed neural networks using the Alps supercomputer by CSCS. I also serve on the advisory boards of <a href="https://einstain.ch/de/organisation" target="_blank">EinstAIn</a> and the <a href="https://swissai.ch/uber-uns" target="_blank">Swiss AI Association</a> (formerly KImpact), and help shape <a href="https://vrenni.ai/de/about" target="_blank">vrenni.ai</a>, where we leverage Apertus to empower SMEs.
+        I'm an <strong>AI Research Scientist</strong> at the <a href="https://ai.ethz.ch/" target="_blank">ETH AI Center</a> and co-lead of <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a> developed as part of the <a href="https://www.swiss-ai.org/" target="_blank">Swiss AI Initiative</a>. With a large team of engineers, researchers, and students throughout multiple Swiss institutions, we develop Apertus: the largest <strong>open-source, responsibly-trained, and compliant large language model</strong> (LLM) in the world. This makes us one of the very few organisations worldwide that train models on thousands of GPUs. Alongside this, I teach a novel course at ETHZ called <a href="https://ai.ethz.ch/education/courses/large-scale-ai-engineering.html" target="_blank">Large-Scale AI Engineering</a>, where we provide hands-on, practical training to MSc graduates on how to efficiently train large distributed neural networks using the Alps supercomputer by CSCS. I also serve on the advisory boards of <a href="https://einstain.ch/de/organisation" target="_blank">EinstAIn</a> and the <a href="https://swissai.ch/uber-uns" target="_blank">Swiss AI Association</a> (formerly KImpact), and help shape <a href="https://vrenni.ai/de/about" target="_blank">vrenni.ai</a>, where we leverage Apertus to empower SMEs.
       </p>
       
     </div>
     
     <div class="hero-image">
-      <img src="/assets/images/imanol-schlag.jpg" alt="**Imanol Schlag**" class="profile-photo">
+      <img src="/assets/images/imanol-schlag.jpg" alt="Imanol Schlag" class="profile-photo">
       <div class="social-icons">
         <a href="mailto:ischlag@ethz.ch">[email]</a>
         <a href="https://scholar.google.com/citations?user=nFQJEskAAAAJ" target="_blank">[Google Scholar]</a>
@@ -35,9 +35,9 @@ title: About
 
 <section class="about-section">
   <h2>Research Focus</h2>
-  <p>My research centers on three interconnected areas that advance both the capabilities and responsibility of large-scale AI systems.</p>
+  <p>My research centres on three interconnected areas that advance both the capabilities and responsibility of large-scale AI systems.</p>
   
-  <p><strong>First</strong>, I focus on developing <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a>, a state-of-the-art open-source LLMs that is transparent and compliant with current legal frameworks. This work provides a foundation for society to build trustworthy AI products and services while enabling researchers to better understand the benefits and risks of LLM-based systems.</p>
+  <p><strong>First</strong>, I focus on developing <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a>, a state-of-the-art open-source LLM that is transparent and compliant with current legal frameworks. This work provides a foundation for society to build trustworthy AI products and services while enabling researchers to better understand the benefits and risks of LLM-based systems.</p>
   
   <p><strong>Second</strong>, I advance neural architecture research through fast weight programmers such as the <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a>, which I invented together with Kazuki Irie and Jürgen Schmidhuber, and which contributes to the most significant architectural innovation since the rise of the Transformer. Similar to linear RNNs, like Mamba or RWKV, it offers enhanced efficiency and generality compared to attention-based architectures. Recently DeltaNet became a core component of major releases from some of the leading AI labs in the world: Alibaba's <a href="https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list" target="_blank">Qwen3-Next</a>, <a href="https://qwen.ai/blog?id=qwen3.5" target="_blank">Qwen3.5</a>, Qwen3.6, and Qwen3.8 models use Gated DeltaNet, and Moonshot AI's <a href="https://github.com/MoonshotAI/Kimi-Linear" target="_blank">Kimi Linear</a> and <a href="https://www.kimi.ai/blog/kimi-k3" target="_blank">Kimi K3</a> use Kimi Delta Attention, a DeltaNet variant. A close DeltaNet variant is also used in <a href="https://allenai.org/blog/olmohybrid" target="_blank">OLMo Hybrid</a> by the Allen Institute for AI.</p>
   
@@ -54,6 +54,7 @@ title: About
 <section class="news-section">
   <h2>Recent News</h2>
   <div class="news-items">
+    <p><span class="news-date">Sep 2026</span> — <a href="https://ethz.ch/en/news-and-events/eth-news/news/2026/09/apertus-partners-with-protons-lumo-ai-assistant.html" target="_blank">Apertus partners with Proton's Lumo AI assistant</a>: Apertus 1.5 is now available in Lumo, Proton's privacy-focused AI assistant, contributing to greater technological sovereignty in Switzerland and Europe (<a href="https://proton.me/blog/lumo-apertus-partnership" target="_blank">Proton blog</a>)</p>
     <p><span class="news-date">Sep 2026</span> — Invited talk "Apertus - Democratizing the Foundation for Global Sovereign AI" at the <a href="https://digitalswitzerland.com/events/digitalswitzerland-forum-2026" target="_blank">digitalswitzerland forum 2026</a> in Bern, alongside Federal Councillor Albert Rösti</p>
     <p><span class="news-date">Sep 2026</span> — Invited talk at the <a href="https://www.buhlergroup.com/" target="_blank">Bühler</a> Innovation Day</p>
     <p><span class="news-date">Sep 2026</span> — Invited talk at <a href="https://hackapertus.ch/" target="_blank">Hack Apertus</a>, the Switzerland-wide open-source hackathon series building on Apertus</p>
@@ -64,9 +65,9 @@ title: About
     <p><span class="news-date">Jun 2026</span> — Presentation on Apertus at <a href="https://ethz-foundation.ch/tg26/" target="_blank">Thanks Giving 2026</a>, the ETH Zürich Foundation's annual event for its donors</p>
     <p><span class="news-date">Jun 2026</span> — Invited talk at the <a href="https://santafe.edu/info/epistemic-institutions-in-the-age-of-ai/abstract" target="_blank">Santa Fe Institute</a> in New Mexico, USA, on epistemic institutions in the age of AI</p>
     <p><span class="news-date">May 2026</span> — Keynote at the <a href="https://www.ch-open.ch/open-source-ai-conference-2026/" target="_blank">Open Source AI Conference</a></p>
-    <p><span class="news-date">May 2026</span> — Invited talk at <a href="https://www.supsi.ch/en/apertus-democratizing-the-foundation-for-global-sovereign-ai" target="_blank">SUPSI</a> on Apertus and democratizing the foundation for global sovereign AI</p>
+    <p><span class="news-date">May 2026</span> — Invited talk at <a href="https://www.supsi.ch/en/apertus-democratizing-the-foundation-for-global-sovereign-ai" target="_blank">SUPSI</a> on Apertus and democratising the foundation for global sovereign AI</p>
     <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://www.hpcadvisorycouncil.ch/agenda/" target="_blank">HPC-AI Swiss Conference</a></p>
-    <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://data-innovation.org/events/13th-ieee-swiss-conference-on-data-science-and-ai/" target="_blank">Swiss Conference on Data Science and AI (SDS 2026)</a></p>
+    <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://sds2026.ch/" target="_blank">Swiss Conference on Data Science and AI (SDS 2026)</a></p>
     <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://uphillconf.com/archive/2026/" target="_blank">Uphill Conference</a></p>
     <p><span class="news-date">Apr 2026</span> — Keynote at the <a href="https://www.genaizurich.ch/speakers" target="_blank">GenAI Zurich</a> conference</p>
     <p><span class="news-date">Mar 2026</span> — Keynote at the <a href="https://www.ey.com/en_ch/events/2026/03/ey-national-ai-conference-2026" target="_blank">EY National AI Conference</a></p>
@@ -75,10 +76,10 @@ title: About
     <p><span class="news-date">Mar 2026</span> — <a href="https://allenai.org/blog/olmohybrid" target="_blank">OLMo Hybrid</a> by the Allen Institute for AI uses a close variant of <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a></p>
     <p><span class="news-date">Feb 2026</span> — Lecture at the <a href="https://www.ivz.ch/index.html" target="_blank">Industrieverband Zürich (IVZ)</a></p>
     <p><span class="news-date">Feb 2026</span> — Presentation on Apertus at the <a href="https://agenda-ch-sap-public-services-forum-2026.cfapps.eu10-004.hana.ondemand.com/#/event/components/1244/agenda_items/3048/show" target="_blank">SAP Public Services Forum</a></p>
-    <p><span class="news-date">Jan 2026</span> — Received the Global Swiss AI Award 2025 from the Mindfire Foundation for Apertus (<a href="https://www.handelszeitung.ch/tech/auszeichnung-fur-schweizer-ki-modell-903541" target="_blank">newsarticle in Handelszeitung</a>)</p>
+    <p><span class="news-date">Jan 2026</span> — Received the Global Swiss AI Award 2025 from the Mindfire Foundation for Apertus (<a href="https://www.bilanz.ch/unternehmen/global-swiss-ai-award-geht-an-bjoern-ommer-und-apertus/m1z6hqv" target="_blank">news article in Bilanz</a>)</p>
     <p><span class="news-date">Dec 2025</span> — Invited talk at the <a href="https://www.meetup.com/language-ai-meetup/" target="_blank">Language AI Meetup</a></p>
     <p><span class="news-date">Nov 2025</span> — Invited talk at the <a href="https://www.microsoft.com/en-us/research/lab/spatial-ai-zurich/" target="_blank">Microsoft Spatial AI Lab</a></p>
-    <p><span class="news-date">Nov 2025</span> — Invited talk at the Swisscom Event <a href="https://b2b-events.swisscom.ch/profile/form/index.cfm?PKformID=0x45620f9bb" target="_blank">«AI Governance, Risk und Compliance (GRC) für schweizer Banken»</a></p>
+    <p><span class="news-date">Nov 2025</span> — Invited talk at the Swisscom Event «AI Governance, Risk und Compliance (GRC) für schweizer Banken»</p>
     <p><span class="news-date">Nov 2025</span> — Invited talk and discussion at the <a href="https://www.schulthessforum.ch/ipundai/" target="_blank">Schulthess Forum</a> with legal experts from Swiss law firms and the <a href="https://www.ige.ch/en/about-us" target="_blank">Swiss Federal Institute of Intellectual Property (IPI)</a> on intellectual property and copyright</p>
     <p><span class="news-date">Nov 2025</span> — Invited talk on the Swiss AI Initiative and Apertus at the <a href="https://lamarr-institute.org/news/workshop-foundation-model/" target="_blank">International Workshop on Pretraining and Posttraining of Sovereign Foundation Models</a> in Berlin</p>
     <p><span class="news-date">Nov 2025</span> — <a href="https://ai.ethz.ch/research/events/academic-talks/details.working-on-frontier-ai-research-insights-from-anthropic-eth-ai-center.75873.html" target="_blank">Panel discussion with members of the Anthropic team</a> located in Zürich at the ETH AI Center</p>
@@ -90,55 +91,63 @@ title: About
     <p><span class="news-date">Oct 2025</span> — Invited talk at the Language Technologies Lab of the Barcelona Supercomputing Center (BSC), the team behind the <a href="https://projecteaina.cat/tech/en/introducing-the-salamandra-family-of-models/" target="_blank">Salamandra models</a></p>
     <p><span class="news-date">Oct 2025</span> — Guest lecture for CS-461 at EPFL on LLM development and Apertus</p>
     <p><span class="news-date">Oct 2025</span> — Invited talk at <a href="https://www.hslu.ch/de-ch/" target="_blank">HSLU</a> on the Swiss AI Initiative and Apertus</p>
-    <p><span class="news-date">Sep 2025</span> — Received an award for our work on Apertus at the <a href="https://luma.com/091dxtgb" target="_blank">Culture & Society AI Awards Night</a></p>
-    <p><span class="news-date">Sep 2025</span> — Gave a keynote at the <a href="https://zurichaisafety.day/" target="_blank">Zürich AI Safety Day</a></p>
-    <p><span class="news-date">Sep 2025</span> — 2 papers accepted at NeurIPS 2025 (<a href="https://arxiv.org/abs/2505.20524" target="_blank">1</a>, <a href="https://arxiv.org/abs/2505.13171" target="_blank">2</a>) and 1 oral paper accepted at COLM 2025 (<a href="https://arxiv.org/abs/2504.06219" target="_blank">link</a>)</p>
-    <p><span class="news-date">Sep 2025</span> — <a href="https://www.linkedin.com/posts/chrisbeyeler_manchmal-braucht-es-mut-zeit-zu-investieren-activity-7373948854649389056-8rIK" target="_blank">Met with National Council members</a> Gerhard Andrey and Benoit Gaillard (with <a href="https://www.beyonder.ch/team/chris-beyeler" target="_blank">Chris Beyeler</a>, <a href="https://www.lakritza.ch/" target="_blank">Judith Niederberger</a>, and <a href="https://albertoferrara.ch/" target="_blank">Alberto Pasquale Ferrara</a> from KImpact) on AI legislation</p>
-    <p><span class="news-date">Sep 2025</span> — Follow-up interview with <a href="https://www.srf.ch/play/tv/10-vor-10/video/10-vor-10-vom-19-09-2025" target="_blank">10vor10</a> on national TV</p>
-    <p><span class="news-date">Sep 2025</span> — <a href="https://open.spotify.com/episode/5qDXRWQwUU3ytPkVWsJIax" target="_blank">Inside AI Podcast</a> appearance hosted by Marcel Salathé (EPFL AI Center)</p>
-    <p><span class="news-date">Sep 2025</span> — Presented the Swiss AI Initiative and Apertus to the SRG SSR AI & Data Guild</p>
-    <p><span class="news-date">Sep 2025</span> — Keynote at the <a href="https://ehealthsummit.ch/" target="_blank">eHealth Summit</a> presenting Apertus and generative AI use cases in health</p>
-    <p><span class="news-date">Sep 2025</span> — Keynote on Apertus at the <a href="https://latticeflow.ai/lp/trustworthy-ai-in-practice" target="_blank">Trustworthy AI in Practice</a> event by LatticeFlow</p>
-    <p><span class="news-date">Sep 2025</span> — The newly released <a href="https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list" target="_blank">Qwen3-Next</a> model uses <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a>, which I developed with Kazuki Irie, to improve LLM efficiency at scale!</p>
-    <p><span class="news-date">Sep 2025</span> — Presentation on Apertus to <a href="https://www.kimpact.ch/" target="_blank">KImpact - Verband für künstliche Intelligenz</a></p>
-    <p><span class="news-date">Sep 2025</span> — Keynote on the Swiss AI Initiative and Apertus at the <a href="https://symposium.enhancer.ch/" target="_blank">EnhanceR Symposium</a></p>
-    <p><span class="news-date">Sep 2025</span> — Interview on Apertus with <a href="https://www.srf.ch/play/tv/10-vor-10/video/10-vor-10-vom-02-09-2025" target="_blank">10vor10</a> on national TV</p>
-    <p><span class="news-date">Sep 2025</span> — 🎉 Released <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a> 8B and 70B LLMs trained on 15T tokens while fully-open and compliant with Swiss law and EU AI Act</p>
-    <p><span class="news-date">Aug 2025</span> — Presentation on the Swiss AI Initiative and our LLM effort at the <a href="https://www.aimeetup.ch" target="_blank">AI Meetup for Business Leaders</a></p>
-    <p><span class="news-date">Jul 2025</span> — <a href="https://www.youtube.com/watch?v=o6fF8w91emU" target="_blank">Prompt Zero Podcast</a> appearance by Blick (in Swiss German)</p>
-    <p><span class="news-date">Jul 2025</span> — Keynote at the first <a href="https://lu.ma/pfjxc8v9" target="_blank">International Open-Source Model Builder Summit</a> before the AI for Good Summit in Geneva</p>
-    <p><span class="news-date">Jun 2025</span> — <a href="https://www.startupticker.ch/en/events/pan-talk-swiss-ai-initiative-der-weg-zur-ki-souveraenitaet" target="_blank">pan.talk keynote</a> on Swiss AI Initiative: The Path to AI Sovereignty</p>
-    <p><span class="news-date">Jun 2025</span> — Grant accepted "A Swiss-Centric Foundation Model for Switzerland's Sovereign AI Future"</p>
-    <p><span class="news-date">Jun 2025</span> — Grant accepted "Democratizing LLMs for Global Languages with Mixtures of Multilingual Experts"</p>
-    <p><span class="news-date">Jun 2025</span> — Successfully taught the first iteration of our MSc course at ETHZ: Large-Scale AI Engineering</p>
-    <p><span class="news-date">May 2025</span> — Presentation of the Swiss AI Initiative to European Commission with EU delegation from each member state</p>
-    <p><span class="news-date">May 2025</span> — Invited talk at <a href="https://blog.fhgr.ch/ai/ki-an-der-fh-graubuenden/" target="_blank">FH Graubünden AI event</a> presenting the Swiss AI Initiative and our LLM effort</p>
-    <p><span class="news-date">Mar 2025</span> — <a href="https://www.linkedin.com/posts/schulthess-juristische-medien-ag_die-swiss-legal-tech-conference-versammelte-activity-7308510132907208705-cHxI" target="_blank">Keynote at Swiss Legal Tech Conference</a></p>
-    <p><span class="news-date">Mar 2025</span> — <a href="https://www.ai-in-marketing.ch/" target="_blank">Keynote at the AI in Marketing conference</a> (400+ people)</p>
-    <p><span class="news-date">Mar 2025</span> — Invited talk at <a href="https://www.hpcadvisorycouncil.com/events/2025/swiss-conference/" target="_blank">HPC-AI Conference</a> on the Swiss AI Initiative and our LLM Effort</p>
-    <p><span class="news-date">Mar 2025</span> — Invited talk at <a href="https://www.linkedin.com/posts/gen-ai-360_its-coming-the-next-genai-360-will-be-activity-7301179082560405505-u4Tq" target="_blank">GenAI 360</a></p>
-    <p><span class="news-date">Mar 2025</span> — <a href="https://squirro.com/squirro-podcast/dr-imanol-schlag-pioneering-the-future-of-ai" target="_blank">Redefining AI Podcast</a> appearance (Season 3, Ep. 17)</p>
-    <p><span class="news-date">Mar 2025</span> — Expert input to <a href="https://www.srf.ch/wissen/kuenstliche-intelligenz/denken-auf-knopfdruck-warum-chatgpt-jetzt-selbstgespraeche-fuehrt" target="_blank">SRF Echo der Zeit</a> episode</p>
-    <p><span class="news-date">Dec 2024</span> — <a href="https://www.zurichai.ch/events/zurichnlp-14" target="_blank">Zürich NLP Meetup</a> talk on "The Swiss AI LLM Effort: Building Transparent and Responsible AI for Switzerland and Beyond"</p>
-    <p><span class="news-date">Dec 2024</span> — Contributed talk at <a href="https://swissdatacommunity.ch/alle-events/swisscommunity-day-on-data-2024/" target="_blank">Swiss Community Day on Data</a></p>
-    <p><span class="news-date">Dec 2024</span> — Keynote and panel at EY National Trusted AI Conference with <a href="https://www.linkedin.com/in/marcstampfli/" target="_blank">Marc Stampfli</a> and <a href="https://www.linkedin.com/in/anne-scherer/" target="_blank">Anne Scherer</a></p>
-    <p><span class="news-date">Nov 2024</span> — Invited talk at DeepMind, London on Linear Transformers and DeltaNet</p>
-    <p><span class="news-date">Nov 2024</span> — <a href="https://www.srf.ch/wissen/wissens-chats/chat-kuenstliche-intelligenz-die-fachrunde-von-a-bis-z" target="_blank">SRF KI Fachrunde</a> appearance</p>
-    <p><span class="news-date">Oct 2024</span> — Invited talk at AI+X conference at the Swiss AI Initiative workshop</p>
-    <p><span class="news-date">Sep 2024</span> — Invited talk at <a href="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2024/09/kompetenter-umgang-mit-ki.html" target="_blank">ETH-wide AI Upskilling</a> «Die Magie der KI entschlüsseln»</p>
-    <p><span class="news-date">May 2024</span> — Invited talk at <a href="https://ieee.ch/2024/07/08/2024-general-assembly/" target="_blank">2024 IEEE Switzerland Section General Assembly</a></p>
-    <p><span class="news-date">May 2024</span> — Invited talk at the Swiss publisher association (Verlegerverband) on Large Language Models and the Swiss AI Initiative</p>
-    <p><span class="news-date">May 2024</span> — <a href="https://www.beyonder.ch/blog/ki-schwachstellen-entschlusselt-einblick-in-verborgene-risiken-und-manipulationen" target="_blank">Marketing Booster Podcast</a> appearance</p>
-    <p><span class="news-date">Feb 2024</span> — Started a position as research scientist at the ETH AI Center</p>
-    <p><span class="news-date">Oct 2023</span> — Started a postdoctoral position at ETHZ with Prof. Thomas Hofmann</p>
-    <p><span class="news-date">Aug 2023</span> — Invited talk at IBM on Linear Transformers and DeltaNet</p>
-    <p><span class="news-date">May 2023</span> — Defended my PhD on Fast Weight Programmers for Greater Systematic Generalisation in Language with distinction.</p>
   </div>
+  <details class="news-older">
+    <summary>Show older news</summary>
+    <div class="news-items">
+      <p><span class="news-date">Sep 2025</span> — Received an award for our work on Apertus at the <a href="https://luma.com/091dxtgb" target="_blank">Culture & Society AI Awards Night</a></p>
+      <p><span class="news-date">Sep 2025</span> — Gave a keynote at the <a href="https://zurichaisafety.day/" target="_blank">Zürich AI Safety Day</a></p>
+      <p><span class="news-date">Sep 2025</span> — 2 papers accepted at NeurIPS 2025 (<a href="https://arxiv.org/abs/2505.20524" target="_blank">1</a>, <a href="https://arxiv.org/abs/2505.13171" target="_blank">2</a>) and 1 oral paper accepted at COLM 2025 (<a href="https://arxiv.org/abs/2504.06219" target="_blank">link</a>)</p>
+      <p><span class="news-date">Sep 2025</span> — <a href="https://www.linkedin.com/posts/chrisbeyeler_manchmal-braucht-es-mut-zeit-zu-investieren-activity-7373948854649389056-8rIK" target="_blank">Met with National Council members</a> Gerhard Andrey and Benoit Gaillard (with <a href="https://www.beyonder.ch/team/chris-beyeler" target="_blank">Chris Beyeler</a>, <a href="https://www.lakritza.ch/" target="_blank">Judith Niederberger</a>, and <a href="https://albertoferrara.ch/" target="_blank">Alberto Pasquale Ferrara</a> from KImpact) on AI legislation</p>
+      <p><span class="news-date">Sep 2025</span> — Follow-up interview with <a href="https://www.srf.ch/news/wirtschaft/schweizer-ki-sprachmodell-apertus-mitentwickler-fehler-zu-finden-ist-nicht-schwer" target="_blank">10vor10</a> on national TV</p>
+      <p><span class="news-date">Sep 2025</span> — <a href="https://open.spotify.com/episode/5qDXRWQwUU3ytPkVWsJIax" target="_blank">Inside AI Podcast</a> appearance hosted by Marcel Salathé (EPFL AI Center)</p>
+      <p><span class="news-date">Sep 2025</span> — Presented the Swiss AI Initiative and Apertus to the SRG SSR AI & Data Guild</p>
+      <p><span class="news-date">Sep 2025</span> — Keynote at the <a href="https://ehealthsummit.ch/" target="_blank">eHealth Summit</a> presenting Apertus and generative AI use cases in health</p>
+      <p><span class="news-date">Sep 2025</span> — Keynote on Apertus at the <a href="https://latticeflow.ai/lp/trustworthy-ai-in-practice" target="_blank">Trustworthy AI in Practice</a> event by LatticeFlow</p>
+      <p><span class="news-date">Sep 2025</span> — The newly released <a href="https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list" target="_blank">Qwen3-Next</a> model uses <a href="https://proceedings.mlr.press/v139/schlag21a" target="_blank">DeltaNet</a>, which I developed with Kazuki Irie, to improve LLM efficiency at scale!</p>
+      <p><span class="news-date">Sep 2025</span> — Presentation on Apertus to <a href="https://swissai.ch/" target="_blank">KImpact - Verband für künstliche Intelligenz</a> (now the Swiss AI Association)</p>
+      <p><span class="news-date">Sep 2025</span> — Keynote on the Swiss AI Initiative and Apertus at the <a href="https://symposium.enhancer.ch/" target="_blank">EnhanceR Symposium</a></p>
+      <p><span class="news-date">Sep 2025</span> — Interview on Apertus with <a href="https://www.srf.ch/play/tv/10-vor-10/video/apertus-schweizer-ki-sprachmodell-lanciert?urn=urn:srf:video:f65cd0f7-e918-4f4e-bee1-0884bfb9a794" target="_blank">10vor10</a> on national TV</p>
+      <p><span class="news-date">Sep 2025</span> — 🎉 Released <a href="https://arxiv.org/abs/2509.14233" target="_blank">Apertus</a> 8B and 70B LLMs trained on 15T tokens while fully-open and compliant with Swiss law and EU AI Act</p>
+      <p><span class="news-date">Aug 2025</span> — Presentation on the Swiss AI Initiative and our LLM effort at the <a href="https://www.aimeetup.ch" target="_blank">AI Meetup for Business Leaders</a></p>
+      <p><span class="news-date">Jul 2025</span> — <a href="https://www.youtube.com/watch?v=o6fF8w91emU" target="_blank">Prompt Zero Podcast</a> appearance by Blick (in Swiss German)</p>
+      <p><span class="news-date">Jul 2025</span> — Keynote at the first <a href="https://lu.ma/pfjxc8v9" target="_blank">International Open-Source Model Builder Summit</a> before the AI for Good Summit in Geneva</p>
+      <p><span class="news-date">Jun 2025</span> — <a href="https://www.startupticker.ch/en/events/pan-talk-swiss-ai-initiative-der-weg-zur-ki-souveraenitaet" target="_blank">pan.talk keynote</a> on Swiss AI Initiative: The Path to AI Sovereignty</p>
+      <p><span class="news-date">Jun 2025</span> — Grant accepted "A Swiss-Centric Foundation Model for Switzerland's Sovereign AI Future"</p>
+      <p><span class="news-date">Jun 2025</span> — Grant accepted "Democratizing LLMs for Global Languages with Mixtures of Multilingual Experts"</p>
+      <p><span class="news-date">Jun 2025</span> — Successfully taught the first iteration of our MSc course at ETHZ: Large-Scale AI Engineering</p>
+      <p><span class="news-date">May 2025</span> — Presentation of the Swiss AI Initiative to European Commission with EU delegation from each member state</p>
+      <p><span class="news-date">May 2025</span> — Invited talk at <a href="https://blog.fhgr.ch/ai/ki-an-der-fh-graubuenden/" target="_blank">FH Graubünden AI event</a> presenting the Swiss AI Initiative and our LLM effort</p>
+      <p><span class="news-date">Mar 2025</span> — <a href="https://www.linkedin.com/posts/schulthess-juristische-medien-ag_die-swiss-legal-tech-conference-versammelte-activity-7308510132907208705-cHxI" target="_blank">Keynote at Swiss Legal Tech Conference</a></p>
+      <p><span class="news-date">Mar 2025</span> — <a href="https://www.ai-in-marketing.ch/" target="_blank">Keynote at the AI in Marketing conference</a> (400+ people)</p>
+      <p><span class="news-date">Mar 2025</span> — Invited talk at <a href="https://www.hpcadvisorycouncil.com/events/2025/swiss-conference/" target="_blank">HPC-AI Conference</a> on the Swiss AI Initiative and our LLM Effort</p>
+      <p><span class="news-date">Mar 2025</span> — Invited talk at <a href="https://www.linkedin.com/posts/gen-ai-360_its-coming-the-next-genai-360-will-be-activity-7301179082560405505-u4Tq" target="_blank">GenAI 360</a></p>
+      <p><span class="news-date">Mar 2025</span> — <a href="https://squirro.com/squirro-podcast/dr-imanol-schlag-pioneering-the-future-of-ai" target="_blank">Redefining AI Podcast</a> appearance (Season 3, Ep. 17)</p>
+      <p><span class="news-date">Mar 2025</span> — Expert input to <a href="https://www.srf.ch/wissen/kuenstliche-intelligenz/denken-auf-knopfdruck-warum-chatgpt-jetzt-selbstgespraeche-fuehrt" target="_blank">SRF Echo der Zeit</a> episode</p>
+      <p><span class="news-date">Dec 2024</span> — <a href="https://www.zurichai.ch/events/zurichnlp-14" target="_blank">Zürich NLP Meetup</a> talk on "The Swiss AI LLM Effort: Building Transparent and Responsible AI for Switzerland and Beyond"</p>
+      <p><span class="news-date">Dec 2024</span> — Contributed talk at <a href="https://swissdatacommunity.ch/alle-events/swisscommunity-day-on-data-2024/" target="_blank">Swiss Community Day on Data</a></p>
+      <p><span class="news-date">Dec 2024</span> — Keynote and panel at EY National Trusted AI Conference with <a href="https://www.linkedin.com/in/marcstampfli/" target="_blank">Marc Stampfli</a> and <a href="https://www.linkedin.com/in/anne-scherer/" target="_blank">Anne Scherer</a></p>
+      <p><span class="news-date">Nov 2024</span> — Invited talk at DeepMind, London on Linear Transformers and DeltaNet</p>
+      <p><span class="news-date">Nov 2024</span> — <a href="https://www.srf.ch/wissen/wissens-chats/chat-kuenstliche-intelligenz-die-fachrunde-von-a-bis-z" target="_blank">SRF KI Fachrunde</a> appearance</p>
+      <p><span class="news-date">Oct 2024</span> — Invited talk at AI+X conference at the Swiss AI Initiative workshop</p>
+      <p><span class="news-date">Sep 2024</span> — Invited talk at <a href="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2024/09/kompetenter-umgang-mit-ki.html" target="_blank">ETH-wide AI Upskilling</a> «Die Magie der KI entschlüsseln»</p>
+      <p><span class="news-date">May 2024</span> — Invited talk at <a href="https://ieee.ch/2024/07/08/2024-general-assembly/" target="_blank">2024 IEEE Switzerland Section General Assembly</a></p>
+      <p><span class="news-date">May 2024</span> — Invited talk at the Swiss publisher association (Verlegerverband) on Large Language Models and the Swiss AI Initiative</p>
+      <p><span class="news-date">May 2024</span> — <a href="https://www.beyonder.ch/blog/ki-schwachstellen-entschlusselt-einblick-in-verborgene-risiken-und-manipulationen" target="_blank">Marketing Booster Podcast</a> appearance</p>
+      <p><span class="news-date">Feb 2024</span> — Started a position as research scientist at the ETH AI Center</p>
+      <p><span class="news-date">Oct 2023</span> — Started a postdoctoral position at ETHZ with Prof. Thomas Hofmann</p>
+      <p><span class="news-date">Aug 2023</span> — Invited talk at IBM on Linear Transformers and DeltaNet</p>
+      <p><span class="news-date">May 2023</span> — Defended my PhD on Fast Weight Programmers for Greater Systematic Generalisation in Language with distinction.</p>
+    </div>
+  </details>
 </section>
 
 <section class="selected-publications">
   <h2>Selected Publications</h2>
   <div class="publication-items">
+    <p><em>Apertus: Democratizing Open and Compliant LLMs for Global Language Environments</em><br>
+    A. Hernández-Cano, A. Hägele, A.H. Huang, A. Romanou, et al. — <a href="https://aclanthology.org/2026.acl-long.2172/" target="_blank">ACL 2026</a></p>
+    
     <p><em>Can Performant LLMs Be Ethical? Quantifying the Impact of Web Crawling Opt-Outs</em><br>
     D. Fan, V. Sabolčec, M. Ansaripour, A.K. Tarun, M. Jaggi, A. Bosselut, I. Schlag — <a href="https://arxiv.org/abs/2504.06219" target="_blank">COLM 2025</a></p>
     

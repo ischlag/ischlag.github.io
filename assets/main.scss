@@ -106,6 +106,12 @@ h1, h2, h3 {
   .news-items p {
     margin: 0.2rem 0;
   }
+
+  .news-older summary {
+    cursor: pointer;
+    margin: 0.6rem 0 0.2rem;
+    color: #666;
+  }
 }
 
 .selected-publications {

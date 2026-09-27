@@ -160,21 +160,21 @@ title: Team
     <tr><td>Loic Deslarzes</td><td>Course Project</td><td>Tool Gym</td><td>2026</td></tr>
     <tr><td>Leonard Mantel</td><td>Course Project</td><td>Speech Tokenizers</td><td>2026</td></tr>
     <tr><td>Aleks Stepancic</td><td>Course Project</td><td>Hallucination Steering</td><td>2026</td></tr>
-    <tr><td>Tanguy Dieudonné</td><td>Course Project</td><td>Memorization in Language Models</td><td>2026</td></tr>
-    <tr><td>Tobias von Arx</td><td>Course Project</td><td>Memorization in Language Models</td><td>2026</td></tr>
-    <tr><td>Rada Kamysheva</td><td>Course Project</td><td>Personalized Data Generation</td><td>2026</td></tr>
+    <tr><td>Tanguy Dieudonné</td><td>Course Project</td><td>Memorisation in Language Models</td><td>2026</td></tr>
+    <tr><td>Tobias von Arx</td><td>Course Project</td><td>Memorisation in Language Models</td><td>2026</td></tr>
+    <tr><td>Rada Kamysheva</td><td>Course Project</td><td>Personalised Data Generation</td><td>2026</td></tr>
     <tr><td>Luca Baumann</td><td>Course Project</td><td>Post-training Data</td><td>2026</td></tr>
     <tr><td>Jenny (Yizhen) Wang</td><td>Course Project</td><td>Agentic LLMs</td><td>2026</td></tr>
     <tr><td>Tommy Chu</td><td>Student Researcher</td><td>Multimodality - Health</td><td>2026</td></tr>
     <tr><td>Alessandro Tazza</td><td>Student Researcher</td><td>RL Pipeline Optimisation</td><td>2026</td></tr>
     <tr><td>Marian Schneider</td><td>Student Researcher</td><td>Alignment</td><td>2026</td></tr>
     <tr><td>Davit Melikidze</td><td>Student Researcher, Master Thesis</td><td>Alignment</td><td>2026</td></tr>
-    <tr><td><a href="https://people.epfl.ch/juan.garciagiraldo" target="_blank">Juan Garcia Giraldo</a></td><td>Student Researcher, Master Thesis</td><td>Alignment, Steering and Interpretability</td><td>2026</td></tr>
+    <tr><td>Juan Garcia Giraldo</td><td>Student Researcher, Master Thesis</td><td>Alignment, Steering and Interpretability</td><td>2026</td></tr>
     <tr><td>Nicola Dall'Acqua</td><td>Bachelor Thesis</td><td>Synthetic Data Generation</td><td>2026</td></tr>
     <tr><td>Cédric Laubacher</td><td>Master Thesis</td><td>Long-Context RL</td><td>2026</td></tr>
     <tr><td>Wanja Pletscher</td><td>Bachelor Thesis</td><td>LLM Interpretability</td><td>2026</td></tr>
     <tr><td>Matteo Santelmo</td><td>Master Thesis</td><td>RLVR</td><td>2026</td></tr>
-    <tr><td>Elena Lyulina</td><td>Master Thesis</td><td>Memorization in Attention Mechanisms</td><td>2026</td></tr>
+    <tr><td>Elena Lyulina</td><td>Master Thesis</td><td>Memorisation in Attention Mechanisms</td><td>2026</td></tr>
     <tr><td>Guanshujie Fu</td><td>Master Thesis</td><td>MoE Pretraining</td><td>2026</td></tr>
     <tr><td>Petr Grinberg</td><td>Master Thesis</td><td>Multimodal Language Models</td><td>2026</td></tr>
     <tr><td><a href="https://www.linkedin.com/in/mukali/" target="_blank">Mukhammadali Sayfiddinov</a></td><td>Student Researcher</td><td>Reinforcement Learning</td><td>2026</td></tr>
